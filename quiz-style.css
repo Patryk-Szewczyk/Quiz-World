@@ -1,0 +1,1630 @@
+#QuizIntroduction {
+	display: none;
+}
+
+#QuizMainMenu {
+	display: none;
+}
+
+#QuizCategories {
+	display: none;
+}
+    #quizMenuCategoriesBackButton {
+		display:none;
+	}
+
+#QuizProgress {
+	display: none;
+}
+    #quizProgressBackButton {
+		display: none;
+	}
+
+#QuizAchievements {
+	display: none;
+}
+    #quizAchievementsBackButton {
+		display: none;
+	}
+
+#QuizCategoriesCountries {
+	display: none;
+}
+    #catCountL2Unblock {
+		display: none;
+		cursor: default;
+	}
+	#catCountL3Unblock {
+		display: none;
+		cursor: default;
+	}
+	#catCountL2Block {
+		display: flex;
+		cursor: default;
+	}
+	#catCountL3Block {
+		display: flex;
+		cursor: default;
+	}
+    #quizMenuCategoriesCountriesBackButton {
+		display: none;
+	}
+	#quizMenuCategoriesCountriesSummaryBackButton {
+		display: none;
+	}
+
+#QuizCategoriesHistory {
+	display: none;
+}
+    #catHisL2Unblock {
+		display: none;
+		cursor: default;
+	}
+	#catHisL3Unblock {
+		display: none;
+		cursor: default;
+	}
+	#catHisL2Block {
+		display: flex;
+		cursor: default;
+	}
+	#catHisL3Block {
+		display: flex;
+		cursor: default;
+	}
+    #quizMenuCategoriesHistoryBackButton {
+		display: none;
+	}
+	#quizMenuCategoriesHistorySummaryBackButton {
+		display: none;
+	}
+
+#QuizCategoriesTrafficRegulations {
+	display: none;
+}
+    #catTraffL2Unblock {
+		display: none;
+		cursor: default;
+	}
+	#catTraffL3Unblock {
+		display: none;
+		cursor: default;
+	}
+	#catTraffL2Block {
+		display: flex;
+		cursor: default;
+	}
+	#catTraffL3Block {
+		display: flex;
+		cursor: default;
+	}
+    #quizMenuCategoriesTrafficRegulationsBackButton {
+		display: none;
+	}
+	#quizMenuCategoriesTrafficRegulationsSummaryBackButton {
+		display: none;
+	}
+	
+#quizMainMenuExtraText {
+	display: none;
+}
+
+#quizBottomPanelCountriesLevelOne {
+	width: 100%;
+	height: 100%;
+	display: none;
+}
+#quizBottomPanelCountriesLevelTwo {
+	width: 100%;
+	height: 100%;
+	display: none;
+}
+#quizBottomPanelCountriesLevelThree {
+	width: 100%;
+	height: 100%;
+	display: none;
+}
+#quizBottomPanelHistoryLevelOne {
+	width: 100%;
+	height: 100%;
+	display: none;
+}
+#quizBottomPanelHistoryLevelTwo {
+	width: 100%;
+	height: 100%;
+	display: none;
+}
+#quizBottomPanelHistoryLevelThree {
+	width: 100%;
+	height: 100%;
+	display: none;
+}
+#quizBottomPanelTrafficRegulationsLevelOne {
+	width: 100%;
+	height: 100%;
+	display: none;
+}
+#quizBottomPanelTrafficRegulationsLevelTwo {
+	width: 100%;
+	height: 100%;
+	display: none;
+}
+#quizBottomPanelTrafficRegulationsLevelThree {
+	width: 100%;
+	height: 100%;
+	display: none;
+}
+
+/* Państwa - poziom 1 */
+#QuizCountriesLevelOnePage1QaA {
+	display: none; /*Dlaczego {block}, a nie {flex}, pomimo iż w tym samym elemencie jest klasa (.question-and-answers-group)?
+					  Nie mam zielonego pojęcia...*/ /*Zmień {:block;} na {:none;},kiedy będziesz robić przejście do danego poziomu quizu.
+					                                   Pomyśl jeszcze nad tym, aby miało to ręce i nogi*/
+}
+#QuizCountriesLevelOnePage2QaA {
+	display: none;
+}
+#QuizCountriesLevelOnePage3QaA {
+	display: none;
+}
+#QuizCountriesLevelOnePage4QaA {
+	display: none;
+}
+#QuizCountriesLevelOnePage5QaA {
+	display: none;
+}
+#QuizCountriesLevelOnePage6QaA {
+	display: none;
+}
+#QuizCountriesLevelOnePage7QaA {
+	display: none;
+}
+#QuizCountriesLevelOnePage8QaA {
+	display: none;
+}
+#QuizCountriesLevelOnePage9QaA {
+	display: none;
+}
+#QuizCountriesLevelOnePage10QaA {
+	display: none;
+}
+#QuizCountriesLevelOnePage11QaA {
+	display: none;
+}
+#QuizCountriesLevelOnePage12QaA {
+	display: none;
+}
+#QuizCountriesLevelOnePage13QaA {
+	display: none;
+}
+#QuizCountriesLevelOnePage14QaA {
+	display: none;
+}
+#QuizCountriesLevelOnePage15QaA {
+	display: none;
+}
+#QuizCountriesLevelOnePage16QaA {
+	display: none;
+}
+#QuizCountriesLevelOnePage17QaA {
+	display: none;
+}
+#QuizCountriesLevelOnePage18QaA {
+	display: none;
+}
+#QuizCountriesLevelOnePage19QaA {
+	display: none;
+}
+#QuizCountriesLevelOnePage20QaA {
+	display: none;
+}
+#QuizCountriesLevelOnePageSummaryQaA {
+	display: none;
+}
+
+/* Państwa - poziom 2 */
+#QuizCountriesLevelTwoPage1QaA {
+	display: none; 
+}
+#QuizCountriesLevelTwoPage2QaA {
+	display: none;
+}
+#QuizCountriesLevelTwoPage3QaA {
+	display: none;
+}
+#QuizCountriesLevelTwoPage4QaA {
+	display: none;
+}
+#QuizCountriesLevelTwoPage5QaA {
+	display: none;
+}
+#QuizCountriesLevelTwoPage6QaA {
+	display: none;
+}
+#QuizCountriesLevelTwoPage7QaA {
+	display: none;
+}
+#QuizCountriesLevelTwoPage8QaA {
+	display: none;
+}
+#QuizCountriesLevelTwoPage9QaA {
+	display: none;
+}
+#QuizCountriesLevelTwoPage10QaA {
+	display: none;
+}
+#QuizCountriesLevelTwoPage11QaA {
+	display: none;
+}
+#QuizCountriesLevelTwoPage12QaA {
+	display: none;
+}
+#QuizCountriesLevelTwoPage13QaA {
+	display: none;
+}
+#QuizCountriesLevelTwoPage14QaA {
+	display: none;
+}
+#QuizCountriesLevelTwoPage15QaA {
+	display: none;
+}
+#QuizCountriesLevelTwoPage16QaA {
+	display: none;
+}
+#QuizCountriesLevelTwoPage17QaA {
+	display: none;
+}
+#QuizCountriesLevelTwoPage18QaA {
+	display: none;
+}
+#QuizCountriesLevelTwoPage19QaA {
+	display: none;
+}
+#QuizCountriesLevelTwoPage20QaA {
+	display: none;
+}
+#QuizCountriesLevelTwoPage21QaA {
+	display: none;
+}
+#QuizCountriesLevelTwoPage22QaA {
+	display: none;
+}
+#QuizCountriesLevelTwoPageSummaryQaA {
+	display: none;
+}
+
+/* Państwa - poziom 3 */
+#QuizCountriesLevelThreePage1QaA {
+	display: none;
+}
+#QuizCountriesLevelThreePage2QaA {
+	display: none;
+}
+#QuizCountriesLevelThreePage3QaA {
+	display: none;
+}
+#QuizCountriesLevelThreePage4QaA {
+	display: none;
+}
+#QuizCountriesLevelThreePage5QaA {
+	display: none;
+}
+#QuizCountriesLevelThreePage6QaA {
+	display: none;
+}
+#QuizCountriesLevelThreePage7QaA {
+	display: none;
+}
+#QuizCountriesLevelThreePage8QaA {
+	display: none;
+}
+#QuizCountriesLevelThreePage9QaA {
+	display: none;
+}
+#QuizCountriesLevelThreePage10QaA {
+	display: none;
+}
+#QuizCountriesLevelThreePage11QaA {
+	display: none;
+}
+#QuizCountriesLevelThreePage12QaA {
+	display: none;
+}
+#QuizCountriesLevelThreePage13QaA {
+	display: none;
+}
+#QuizCountriesLevelThreePage14QaA {
+	display: none;
+}
+#QuizCountriesLevelThreePage15QaA {
+	display: none;
+}
+#QuizCountriesLevelThreePage16QaA {
+	display: none;
+}
+#QuizCountriesLevelThreePage17QaA {
+	display: none;
+}
+#QuizCountriesLevelThreePage18QaA {
+	display: none;
+}
+#QuizCountriesLevelThreePage19QaA {
+	display: none;
+}
+#QuizCountriesLevelThreePage20QaA {
+	display: none;
+}
+#QuizCountriesLevelThreePage21QaA {
+	display: none;
+}
+#QuizCountriesLevelThreePage22QaA {
+	display: none;
+}
+#QuizCountriesLevelThreePage23QaA {
+	display: none;
+}
+#QuizCountriesLevelThreePage24QaA {
+	display: none;
+}
+#QuizCountriesLevelThreePageSummaryQaA {
+	display: none;
+}
+
+/* Historia - poziom 1 */
+#QuizHistoryLevelOnePage1QaA {
+	display: none;
+}
+#QuizHistoryLevelOnePage2QaA {
+	display: none;
+}
+#QuizHistoryLevelOnePage3QaA {
+	display: none;
+}
+#QuizHistoryLevelOnePage4QaA {
+	display: none;
+}
+#QuizHistoryLevelOnePage5QaA {
+	display: none;
+}
+#QuizHistoryLevelOnePage6QaA {
+	display: none;
+}
+#QuizHistoryLevelOnePage7QaA {
+	display: none;
+}
+#QuizHistoryLevelOnePage8QaA {
+	display: none;
+}
+#QuizHistoryLevelOnePage9QaA {
+	display: none;
+}
+#QuizHistoryLevelOnePage10QaA {
+	display: none;
+}
+#QuizHistoryLevelOnePage11QaA {
+	display: none;
+}
+#QuizHistoryLevelOnePage12QaA {
+	display: none;
+}
+#QuizHistoryLevelOnePage13QaA {
+	display: none;
+}
+#QuizHistoryLevelOnePage14QaA {
+	display: none;
+}
+#QuizHistoryLevelOnePage15QaA {
+	display: none;
+}
+#QuizHistoryLevelOnePage16QaA {
+	display: none;
+}
+#QuizHistoryLevelOnePage17QaA {
+	display: none;
+}
+#QuizHistoryLevelOnePage18QaA {
+	display: none;
+}
+#QuizHistoryLevelOnePageSummaryQaA {
+	display: none;
+}
+
+/* Historia - poziom 2 */
+#QuizHistoryLevelTwoPage1QaA {
+	display: none; 
+}
+#QuizHistoryLevelTwoPage2QaA {
+	display: none;
+}
+#QuizHistoryLevelTwoPage3QaA {
+	display: none;
+}
+#QuizHistoryLevelTwoPage4QaA {
+	display: none;
+}
+#QuizHistoryLevelTwoPage5QaA {
+	display: none;
+}
+#QuizHistoryLevelTwoPage6QaA {
+	display: none;
+}
+#QuizHistoryLevelTwoPage7QaA {
+	display: none;
+}
+#QuizHistoryLevelTwoPage8QaA {
+	display: none;
+}
+#QuizHistoryLevelTwoPage9QaA {
+	display: none;
+}
+#QuizHistoryLevelTwoPage10QaA {
+	display: none;
+}
+#QuizHistoryLevelTwoPage11QaA {
+	display: none;
+}
+#QuizHistoryLevelTwoPage12QaA {
+	display: none;
+}
+#QuizHistoryLevelTwoPage13QaA {
+	display: none;
+}
+#QuizHistoryLevelTwoPage14QaA {
+	display: none;
+}
+#QuizHistoryLevelTwoPage15QaA {
+	display: none;
+}
+#QuizHistoryLevelTwoPage16QaA {
+	display: none;
+}
+#QuizHistoryLevelTwoPage17QaA {
+	display: none;
+}
+#QuizHistoryLevelTwoPage18QaA {
+	display: none;
+}
+#QuizHistoryLevelTwoPage19QaA {
+	display: none;
+}
+#QuizHistoryLevelTwoPage20QaA {
+	display: none;
+}
+#QuizHistoryLevelTwoPageSummaryQaA {
+	display: none;
+}
+
+/* Historia - poziom 3 */
+#QuizHistoryLevelThreePage1QaA {
+	display: none;
+}
+#QuizHistoryLevelThreePage2QaA {
+	display: none;
+}
+#QuizHistoryLevelThreePage3QaA {
+	display: none;
+}
+#QuizHistoryLevelThreePage4QaA {
+	display: none;
+}
+#QuizHistoryLevelThreePage5QaA {
+	display: none;
+}
+#QuizHistoryLevelThreePage6QaA {
+	display: none;
+}
+#QuizHistoryLevelThreePage7QaA {
+	display: none;
+}
+#QuizHistoryLevelThreePage8QaA {
+	display: none;
+}
+#QuizHistoryLevelThreePage9QaA {
+	display: none;
+}
+#QuizHistoryLevelThreePage10QaA {
+	display: none;
+}
+#QuizHistoryLevelThreePage11QaA {
+	display: none;
+}
+#QuizHistoryLevelThreePage12QaA {
+	display: none;
+}
+#QuizHistoryLevelThreePage13QaA {
+	display: none;
+}
+#QuizHistoryLevelThreePage14QaA {
+	display: none;
+}
+#QuizHistoryLevelThreePage15QaA {
+	display: none;
+}
+#QuizHistoryLevelThreePage16QaA {
+	display: none;
+}
+#QuizHistoryLevelThreePage17QaA {
+	display: none;
+}
+#QuizHistoryLevelThreePage18QaA {
+	display: none;
+}
+#QuizHistoryLevelThreePage19QaA {
+	display: none;
+}
+#QuizHistoryLevelThreePage20QaA {
+	display: none;
+}
+#QuizHistoryLevelThreePage21QaA {
+	display: none;
+}
+#QuizHistoryLevelThreePage22QaA {
+	display: none;
+}
+#QuizHistoryLevelThreePageSummaryQaA {
+	display: none;
+}
+
+/* Prawo jazdy - poziom 1 */
+#QuizTrafficRegulationsLevelOnePage1QaA {
+	display: none;
+}
+#QuizTrafficRegulationsLevelOnePage2QaA {
+	display: none;
+}
+#QuizTrafficRegulationsLevelOnePage3QaA {
+	display: none;
+}
+#QuizTrafficRegulationsLevelOnePage4QaA {
+	display: none;
+}
+#QuizTrafficRegulationsLevelOnePage5QaA {
+	display: none;
+}
+#QuizTrafficRegulationsLevelOnePage6QaA {
+	display: none;
+}
+#QuizTrafficRegulationsLevelOnePage7QaA {
+	display: none;
+}
+#QuizTrafficRegulationsLevelOnePage8QaA {
+	display: none;
+}
+#QuizTrafficRegulationsLevelOnePage9QaA {
+	display: none;
+}
+#QuizTrafficRegulationsLevelOnePage10QaA {
+	display: none;
+}
+#QuizTrafficRegulationsLevelOnePage11QaA {
+	display: none;
+}
+#QuizTrafficRegulationsLevelOnePage12QaA {
+	display: none;
+}
+#QuizTrafficRegulationsLevelOnePage13QaA {
+	display: none;
+}
+#QuizTrafficRegulationsLevelOnePage14QaA {
+	display: none;
+}
+#QuizTrafficRegulationsLevelOnePage15QaA {
+	display: none;
+}
+#QuizTrafficRegulationsLevelOnePage16QaA {
+	display: none;
+}
+#QuizTrafficRegulationsLevelOnePage17QaA {
+	display: none;
+}
+#QuizTrafficRegulationsLevelOnePage18QaA {
+	display: none;
+}
+#QuizTrafficRegulationsLevelOnePage19QaA {
+	display: none;
+}
+#QuizTrafficRegulationsLevelOnePage20QaA {
+	display: none;
+}
+#QuizTrafficRegulationsLevelOnePage21QaA {
+	display: none;
+}
+#QuizTrafficRegulationsLevelOnePage22QaA {
+	display: none;
+}
+#QuizTrafficRegulationsLevelOnePageSummaryQaA {
+	display: none;
+}
+
+/* Prawo jazdy - poziom 2 */
+#QuizTrafficRegulationsLevelTwoPage1QaA {
+	display: none; 
+}
+#QuizTrafficRegulationsLevelTwoPage2QaA {
+	display: none;
+}
+#QuizTrafficRegulationsLevelTwoPage3QaA {
+	display: none;
+}
+#QuizTrafficRegulationsLevelTwoPage4QaA {
+	display: none;
+}
+#QuizTrafficRegulationsLevelTwoPage5QaA {
+	display: none;
+}
+#QuizTrafficRegulationsLevelTwoPage6QaA {
+	display: none;
+}
+#QuizTrafficRegulationsLevelTwoPage7QaA {
+	display: none;
+}
+#QuizTrafficRegulationsLevelTwoPage8QaA {
+	display: none;
+}
+#QuizTrafficRegulationsLevelTwoPage9QaA {
+	display: none;
+}
+#QuizTrafficRegulationsLevelTwoPage10QaA {
+	display: none;
+}
+#QuizTrafficRegulationsLevelTwoPage11QaA {
+	display: none;
+}
+#QuizTrafficRegulationsLevelTwoPage12QaA {
+	display: none;
+}
+#QuizTrafficRegulationsLevelTwoPage13QaA {
+	display: none;
+}
+#QuizTrafficRegulationsLevelTwoPage14QaA {
+	display: none;
+}
+#QuizTrafficRegulationsLevelTwoPage15QaA {
+	display: none;
+}
+#QuizTrafficRegulationsLevelTwoPage16QaA {
+	display: none;
+}
+#QuizTrafficRegulationsLevelTwoPage17QaA {
+	display: none;
+}
+#QuizTrafficRegulationsLevelTwoPage18QaA {
+	display: none;
+}
+#QuizTrafficRegulationsLevelTwoPage19QaA {
+	display: none;
+}
+#QuizTrafficRegulationsLevelTwoPage20QaA {
+	display: none;
+}
+#QuizTrafficRegulationsLevelTwoPage21QaA {
+	display: none;
+}
+#QuizTrafficRegulationsLevelTwoPage22QaA {
+	display: none;
+}
+#QuizTrafficRegulationsLevelTwoPage23QaA {
+	display: none;
+}
+#QuizTrafficRegulationsLevelTwoPage24QaA {
+	display: none;
+}
+#QuizTrafficRegulationsLevelTwoPage25QaA {
+	display: none;
+}
+#QuizTrafficRegulationsLevelTwoPageSummaryQaA {
+	display: none;
+}
+
+/* Prawo jazdy - poziom 3 */
+#QuizTrafficRegulationsLevelThreePage1QaA {
+	display: none;
+}
+#QuizTrafficRegulationsLevelThreePage2QaA {
+	display: none;
+}
+#QuizTrafficRegulationsLevelThreePage3QaA {
+	display: none;
+}
+#QuizTrafficRegulationsLevelThreePage4QaA {
+	display: none;
+}
+#QuizTrafficRegulationsLevelThreePage5QaA {
+	display: none;
+}
+#QuizTrafficRegulationsLevelThreePage6QaA {
+	display: none;
+}
+#QuizTrafficRegulationsLevelThreePage7QaA {
+	display: none;
+}
+#QuizTrafficRegulationsLevelThreePage8QaA {
+	display: none;
+}
+#QuizTrafficRegulationsLevelThreePage9QaA {
+	display: none;
+}
+#QuizTrafficRegulationsLevelThreePage10QaA {
+	display: none;
+}
+#QuizTrafficRegulationsLevelThreePage11QaA {
+	display: none;
+}
+#QuizTrafficRegulationsLevelThreePage12QaA {
+	display: none;
+}
+#QuizTrafficRegulationsLevelThreePage13QaA {
+	display: none;
+}
+#QuizTrafficRegulationsLevelThreePage14QaA {
+	display: none;
+}
+#QuizTrafficRegulationsLevelThreePage15QaA {
+	display: none;
+}
+#QuizTrafficRegulationsLevelThreePage16QaA {
+	display: none;
+}
+#QuizTrafficRegulationsLevelThreePage17QaA {
+	display: none;
+}
+#QuizTrafficRegulationsLevelThreePage18QaA {
+	display: none;
+}
+#QuizTrafficRegulationsLevelThreePage19QaA {
+	display: none;
+}
+#QuizTrafficRegulationsLevelThreePage20QaA {
+	display: none;
+}
+#QuizTrafficRegulationsLevelThreePage21QaA {
+	display: none;
+}
+#QuizTrafficRegulationsLevelThreePage22QaA {
+	display: none;
+}
+#QuizTrafficRegulationsLevelThreePage23QaA {
+	display: none;
+}
+#QuizTrafficRegulationsLevelThreePage24QaA {
+	display: none;
+}
+#QuizTrafficRegulationsLevelThreePage25QaA {
+	display: none;
+}
+#QuizTrafficRegulationsLevelThreePage26QaA {
+	display: none;
+}
+#QuizTrafficRegulationsLevelThreePage27QaA {
+	display: none;
+}
+#QuizTrafficRegulationsLevelThreePage28QaA {
+	display: none;
+}
+#QuizTrafficRegulationsLevelThreePageSummaryQaA {
+	display: none;
+}
+
+body {
+	background-color: #f2f2f2; /*rgba(255,255,255,1.0)*/
+}
+
+ abbr {
+	text-decoration: none;
+}
+
+.quiz-area {
+	margin: 30px auto auto auto;
+	width: 1100px;
+	height: 650px;
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	background-color: rgb(145, 145, 145); /*hsl(200deg 58% 53%)*/
+	border-radius: 30px;
+	box-shadow: 0px 0px 20px 2px rgb(145, 145, 145);
+}
+    .quiz-area-vertCent {
+		width: 100%;
+	    height: 550px;
+		/*Uwaga! w tej sytuacji można nie pisać żadnych właściwości do tego elementu, ponieważ samo wzięcie 
+	      elementów "quiz-title-dimension" i "quiz-content-dimension" w element "quiz-area-vertCent"
+          spowoduje, że elementy te bęą połączone ze sobą - tzn. będą się stykać ze sobą. Bardzo ważne
+          w tej st=ytuacji jest dodanie do stylu elementu "quiz-area" właściwości "display: grid;", która 
+		  pozycjonuje elementy pionowo jeden za drugim od nowej linii.*/
+	}
+    .quiz-title-dimension {
+	    width: 100%px;
+		height: 100px;
+		box-sizing: border-box;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border: 0px solid black; /*Block border HERE*/
+    }
+        .quiz-title-proper {
+		    width: 960px;
+		    height: 60px;
+		    box-sizing: border-box;
+		    display: flex;
+		    justify-content: center;
+		    align-items: center;
+		    background-color: #f2f2f2; /*rgba(255,255,255,1.0)*/
+		    color: rgb(60,60,60); /*rgba(227,45,145,1.0)*/
+			/*text-shadow: 0px 0px 5px #AAAAAA;*/
+		    font-family: Comic Sans MS;
+		    font-size: 175%;
+		    font-weight: 600;
+		    border: 0px solid black;
+		    border-radius: 10px;
+			box-shadow: inset 0px 0px 5px 0px rgb(145, 145, 145);
+			-webkit-box-shadow: inset 0px 0px 5px 0px rgb(145, 145, 145);
+			-moz-box-shadow: inset 0px 0px 5px 0px rgb(145, 145, 145);
+	    }
+    .quiz-content-dimension {
+		width: 100%;
+		height: 450px;
+		box-sizing: border-box;
+		display:flex;
+		justify-content: center;
+		align-items: flex-start;
+		border: 0px solid black; /*Block border HERE*/
+	}
+	    .quiz-content-proper {
+	        width: 960px;
+			height: auto; /*Po usunięciu elementu (.question-and-answers-group) = 410px*/ /*Dlaczego 410px a nie 430px? Ponieważ 410px = 430px - {margin-top:20px;} = 410px*/
+			box-sizing: border-box;
+			margin-top: 20px;
+			padding: 25px; /*Właściwość ta włływa na rozmieszcznie elementów "overBlock" w elemencie "quiz-contnt-proper"*/
+			background-color: #f2f2f2; /*rgba(255,255,255,1.0)*/
+			border: 0px solid black;
+			border-radius: 10px;
+			box-shadow: inset 0px 0px 5px 0px rgb(145, 145, 145);
+			-webkit-box-shadow: inset 0px 0px 5px 0px rgb(145, 145, 145);
+			-moz-box-shadow: inset 0px 0px 5px 0px rgb(145, 145, 145);
+		}
+		/*Quiz World: Q&A*/
+		    .question-and-answers-group { /*Block visibility HERE*/
+			    width: 100%;
+			    height: 100%;
+				box-sizing: border-box;
+			    border: 0px solid black; /*Block border HERE*/
+		    }
+		        .question-title-overBlock { /*!!!OVER_BLOCK!!!*/
+				    width: 100%;
+				    height: 65px;
+				    box-sizing: border-box;
+				    display: flex;
+				    background-color: #f2f2f2; /*rgba(255,255,255,1.0)*/
+				    border: 0px solid black; /*Block border HERE*/
+			    }
+			        .question-numberContent-group {
+				    	width: 100%;
+				    	height: 45px;
+				    	box-sizing: border-box;
+				    	display: flex; /*Przy {block}, tekst pozyjonuje się nad pytaniem. Napraw to!*/
+				    	border: 0px solid black; /*Block border HERE*/
+				    }
+			        	.question-number {
+					    	width: 20%;
+					    	height: 100%;
+				        	box-sizing: border-box;
+					    	padding-right: 10px;
+					    	display: flex;
+					    	justify-content: flex-end;
+					    	align-items: center;
+					    	background-color: rgba(70,124,208,1.0); /*rgba(247,85,145,1.0)*/
+					    	color: rgba(255,255,255,1.0);
+					    	font-family: Verdana;
+					    	font-size: 110%;
+				    	}
+				    	.question-content {
+					    	width: 80%;
+					    	height: 100%;
+					    	box-sizing: border-box;
+					    	padding-left: 15px;
+					    	display: flex;
+					    	justify-content: flex-start;
+					    	align-items: center;
+					    	background-color: #f2f2f2; /*rgba(255,255,255,1.0)*/
+							color: rgba(0,0,0,1.0);
+					    	font-family: Verdana;
+					    	font-size: 110%;
+				    	}
+		    	.imgAnsw-content-overBlock { /*!!!OVER_BLOCK!!!*/
+					width: 100%;
+					height: 240px;
+					box-sizing: border-box;
+					display: flex;
+					background-color: #f2f2f2; /*rgba(255,255,255,1.0)*/
+					border: 0px solid black; /*Block border HERE*/
+				}
+			    	.image-dimension {
+						width: 310px;
+						height: 100%;
+						box-sizing: border-box;
+						display: flex;
+						justify-content: center;
+						align-items: flex-start;
+						background-color: #f2f2f2; /*rgba(255,255,255,1.0)*/
+						border: 0px solid black; /*Block border HERE*/
+					}
+				    	.image-proper {
+							width: 100%; /*Na umieszcznie obrazu w nierównej pozycji w poziomie można użyć połącznie właściwości {width} i {margin}.*/
+							height: 225px;
+							box-sizing: border-box;
+							margin: 0px 17px 0px 0px; /*0px 25px 0px 15px*/
+					    	background-color: #f2f2f2; /*rgba(255,255,255,1.0)*/
+					    	border: 0px solid black; /*Block border HERE*/
+						}
+					    	.image {
+								width: 100%;
+								height: 100%;
+								box-sizing: border-box;
+							}
+					.answers-dimension-group {
+						width: 600px; /*600px = 960px - 310px - (25px padding * 2)*/
+						height: 100%;
+						box-sizing: border-box;
+						background-color: #f2f2f2; /*rgba(255,255,255,1.0)*/
+						border: 0px solid black; /*Block border HERE*/
+					}
+				    	.answer-dimension-block {
+							width: 100%;
+							height: 60px;
+							box-sizing: border-box;
+							align-items: flex-start;
+					    	background-color: #f2f2f2; /*rgba(255,255,255,1.0)*/
+					    	border: 0px solid black; /*Block border HERE*/
+						}
+					    	.answer-textNumber-and-answContentProp-dimension {
+								width: 100%;
+								height: 45px;
+								display: flex;
+								box-sizing: border-box;
+					        	background-color: #f2f2f2; /*rgba(255,255,255,1.0)*/
+					        	border: 0px solid black; /*Block border HERE*/
+							}
+						    	.answer-textNumber-proper {
+									width: 45px;
+									height: 100%;
+									margin: 0px 10px 0px 0px;
+									box-sizing: border-box;
+									display: flex;
+									justify-content: center;
+									align-items: center;
+					            	background-color: rgba(70,124,208,1.0); /*rbga(247,85,145,1.0)*/
+									color: rgba(255,255,255,1.0);
+					            	font-family: Verdana;
+					            	font-size: 110%;
+					            	border: 0px solid black; /*Block border HERE*/
+								}
+								.answer-content-proper {
+									width: 545px;
+									height: 100%;
+									padding-left: 12px;
+									box-sizing: border-box;
+					            	display: flex;
+									justify-content: flex-start;
+									align-items: center;
+					            	background-color: rgba(154,129,228,1.0); /*rgba(154,129,228,1.0)*/
+									color: rgba(255,255,255,1.0);
+					            	font-family: Verdana;
+					            	font-size: 105%; /*Unikaj dwóch linijek!*/
+					            	border: 0px solid black; /*Block border HERE*/
+								}
+								    /*Nie potrzebuję, ponieważ mam atrybuty (onmouseover) i (onmouseout)*/
+						        	/*.answer-content-proper:hover {
+								    	background-color: rgba(160,140,230,1.0);
+							    	}
+									.answer-content-proper:active {
+								    	background-color: rgba(187,171,237,1.0);
+							    	}*/
+			.infoNextButton-overBlock { /*!!!OVER_BLOCK!!!*/
+				width: 100%;
+				height: 55px;
+				box-sizing: border-box;
+				display: flex;
+				background-color: #f2f2f2; /*rgba(255,255,255,1.0)*/
+				border: 0px solid black; /*Block border HERE*/
+			}
+			    .info-dimension {
+					width: 50%;
+					height: 100%;
+					box-sizing: border-box;
+					display: flex;
+					justify-content: flex-start;
+					align-items: flex-end;
+				    background-color: #f2f2f2; /*rgba(255,255,255,1.0)*/
+				    border: 0px solid black; /*Block border HERE*/
+				}
+				    .info-proper {
+						width: 80%;
+						height: 45px;
+						box-sizing: border-box;
+						padding-right: 12px;
+						display: flex;
+						justify-content: flex-end;
+						align-items: center;
+						background-color: rgba(236,148,65,1.0); /*112,192,80,1.0*/
+						color: rgba(255,255,255,1.0);
+						font-family: Verdana;
+						font-size: 110%;
+					}
+				.next-question-dimension {
+					width: 50%;
+					height: 100%;
+					box-sizing: border-box;
+					display: flex;
+					justify-content: flex-end;
+					align-items: flex-end;
+				    background-color: #f2f2f2; /*rgba(255,255,255,1.0)*/
+				    border: 0px solid black; /*Block border HERE*/
+				}
+				    .next-question-proper {
+						width: 50%;
+						height: 45px;
+						box-sizing: border-box;
+						padding-left: 12px;
+						display: none; /*flex*/
+						justify-content: flex-start;
+						align-items: center;
+						background-color: rgba(247,85,145,1.0);
+						color: rgba(255,255,255,1.0);
+						font-family: Verdana;
+						font-size: 110%;
+					}
+					.next-question-proper:hover {
+						background-color: rgba(248,109,160,1.0);
+						cursor: pointer;
+					}
+					.next-question-proper:active {
+						background-color: rgba(249,134,176,1.0);
+					}
+		
+		/*Quiz World: Introduction*/
+		.quiz-introduction-header {
+			width: 100%;
+			height: 100%;
+			box-sizing: border-box;
+			padding-left: 15px;
+			display: flex;
+			align-items: center;
+			background-color: inherit;
+			color: rgb(60, 60, 60);
+			font-family: Comic Sans MS;
+			font-size: 150%;
+			font-weight: 600;
+			border: 0px solid black; /*Block border HERE*/
+		}
+		.quiz-introduction-content {
+			width: 100%;
+			height: 100%;
+			box-sizing: border-box;
+			padding-left: 15px;
+			padding-right: 15px;
+			display: block;
+			align-items: flex-start;
+			background-color: inherit;
+			color: rgb(60, 60, 60);
+			font-family: Comic Sans MS;
+			font-size: 125%;
+			font-weight: 600;
+			text-align: justify;
+			text-justify: inter-word;
+			border: 0px solid black; /*Block border HERE*/
+		}
+		.quiz-introduction-content-buttonLine {
+			height: 50px;
+			width: auto;
+			display: flex;
+			justify-content: center;
+			margin-top: 20px;
+			border: 0px solid black; /*Block border HERE*/
+		}
+		    .quiz-introduction-next-button-text {
+				box-sizing: border-box;
+			    padding: 10px 20px 10px 20px;
+			    display: flex;
+			    justify-content: center;
+				align-items:center;
+			    border: 0px solid black; /*Block border HERE*/
+		    }
+		    .quiz-introduction-next-button-proper {
+				box-sizing: border-box;
+			    padding: 10px 20px 10px 20px;
+			    display: flex;
+			    justify-content: center;
+				align-items:center;
+				background-color: rgb(112,192,80,1.0);
+				box-shadow: 0px 0px 10px 0px rgba(112,192,80,1.0);
+				-moz-box-shadow: 0px 0px 10px 0px rgba(112,192,80,1.0);
+				-webkit-box-shadow: 0px 0px 10px 0px rgba(112,192,80,1.0);
+				color: white;
+				letter-spacing: 2px;
+			    border: 4px solid rgb(112,192,80,1.0);
+				border-radius: 10px;
+				transition-duration: 0.2s;
+		    }
+			    .quiz-introduction-next-button-proper:hover {
+					background-color: rgb(112,212,80,1.0);
+					border-color: rgb(112,212,80,1.0);
+					box-shadow: 0px 0px 20px 0px rgba(112,212,80,1.0);
+				    -moz-box-shadow: 0px 0px 20px 0px rgba(112,212,80,1.0);
+				    -webkit-box-shadow: 0px 0px 20px 0px rgba(112,212,80,1.0);
+					cursor: pointer;
+					transition-duration: 0.2s;
+				}
+				    .quiz-introduction-next-button-proper:active {
+						background-color: rgb(112,232,80,1.0);
+						border-color: rgb(112,232,80,1.0);
+						box-shadow: 0px 0px 5px 0px rgba(112,232,80,1.0);
+				        -moz-box-shadow: 0px 0px 5px 0px rgba(112,232,80,1.0);
+				        -webkit-box-shadow: 0px 0px 5px 0px rgba(112,232,80,1.0);
+						transition-duration: 0s;
+					}
+					
+					
+		/*Quiz World: Menu Back Button*/
+        .quiz-menu-back-button-dimension {
+			display: flex;
+			justify-content: left;
+			align-items: flex-end;
+			border: 0px solid black; /*Block border HERE*/
+		}
+		    .quiz-menu-back-button-proper {
+			    width: 200px;
+			    height: 40px;
+			    box-sizing: border-box;
+			    display: inherit;
+				justify-content: center;
+				align-items: center;
+			    background-color: rgb(160,160,160);
+				color: white;
+				font-family: Comic Sans MS;
+				font-size: 125%;
+				font-weight: 500;
+				letter-spacing: 0px;
+				transition-duration: 0.25s;
+		    }
+			    .quiz-menu-back-button-proper:hover {
+					background-color: rgb(170,170,170);
+					letter-spacing: 1px;
+				    cursor: pointer;
+					transition-duration: 0.25s;
+				}
+				    .quiz-menu-back-button-proper:active {
+						background-color: rgb(180,180,180);
+					    transition-duration: 0.0s;
+					}
+
+		
+		/*Quiz World: Main Menu*/
+		.quiz-mainMenu-titleButtons {
+			width: 33%;
+			height: 50px;
+			box-sizing: border-box;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background-color: inherit;
+			color: rgba(60,60,60);
+			font-family: Comic Sans MS;
+			font-size: 135%;
+			font-weight: 500;
+			letter-spacing: 0px;
+			border-style: solid;
+			border-color: rgba(60,60,60);
+			border-width: 5px;
+			transition-duration: 0.25s;
+		}
+		.quiz-mainMenu-titleButtons-last {
+			width: 34%;
+		}
+		    .quiz-mainMenu-titleButtons:hover {
+				letter-spacing: 2px;
+				background-color: rgba(60,60,60);
+				transition-duration: 0.25s;
+				cursor: pointer;
+			}
+			    .quiz-mainMenu-titleButtons:active {
+				    background-color: rgb(180,180,180);
+					transition-duration: 0.0s;
+				}
+				
+	    .quiz-main-menu-extra-text-group {
+			width: 100%;
+			height: 100%;
+			box-sizing: border-box;
+			display: grid;
+			align-items: flex-start;
+			background-color: inherit;
+			border: 0px solid black; /*Block border HERE*/
+		}
+		.quiz-main-menu-extra-text-block {
+			width: 100%;
+			height: 88%;
+			box-sizing: border-box;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			background-color: inherit;
+			color: rgb(60,60,60);
+			font-family: Comic Sans MS;
+			font-size: 120%;
+			font-weight: 600;
+			line-height: 2em;
+			border: 0px solid black; /*Block border HERE*/
+		}
+		.quiz-main-menu-info-extra-text-block {
+			width: 100%;
+			height: 100%;
+			box-sizing: border-box;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			border: 0px solid black; /*Block border HERE*/
+		}
+		    .quiz-main-menu-info-extra-text-proper {
+				display: flex;
+				justify-content: center;
+				color: rgb(60,60,60);
+			    font-family: Comic Sans MS;
+			    font-size: 110%;
+			    font-weight: 600;
+				line-height: 1.4em;
+				text-align: center;
+				border: 0px solid black; /*Block border HERE*/
+			}
+					
+					
+		/*Quiz World: Categories*/
+		.quiz-categories-title {
+			width: 100%;
+			height: 50px;
+			box-sizing: border-box;
+			padding-left: 15px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background-color: rgb(160,160,160);
+			color: white;
+			font-family: Comic Sans MS;
+			font-size: 135%;
+			font-weight: 500;
+			letter-spacing: 1px;
+			border: 0px solid black; /*Block border HERE*/
+		}
+		.quiz-categories-block-group {
+			width: 100%;
+			height: 100%;
+			box-sizing: border-box;
+			display: flex;
+			justify-content: space-evenly;
+			align-items: center;
+			border: 0px solid black; /*Block border HERE*/
+		}
+			.quiz-categories-dropdown {
+			    width: 30%;
+			    height: 100%;
+			    box-sizing: border-box;
+			    display: flex;
+			    justify-content: center;
+			    align-items: center;
+			    background-color: #f2f2f2;
+			    color: rgb(60,60,60);
+			    font-family: Comic Sans MS;
+			    font-size: 130%;
+			    font-weight: 600;
+				letter-spacing: 1px;
+				text-align: center;
+			    border: 0px solid #00000033; /*Block border HERE*/
+				box-shadow: 0px 0px 5px 1px #00000033;
+				-moz-box-shadow:  0px 0px 5px 1px #00000033;
+				-webkit-box-shadow:  0px 0px 5px 1px #00000033;
+				position: relative;
+				z-index: 10;
+		    }
+			.quiz-categories-block {
+			    width: 55%;
+			    height: 55%;
+			    box-sizing: border-box;
+			    display: flex;
+			    justify-content: center;
+			    align-items: center;
+			    background-color: rgba(255,255,255,0.0);
+			    border: 0px solid black; /*Block border HERE*/
+				transition-duration: 0.25s;
+		    }
+		    .quiz-categories-dropdown:hover .quiz-categories-block {
+			    width: 100%;
+			    height: 100%;
+			    box-sizing: border-box;
+			    display: flex;
+			    justify-content: center;
+			    align-items: center;
+			    background-color: #e2e2e2;
+			    border: 0px solid black; /*Block border HERE*/
+				cursor: pointer;
+				transition-duration: 0.25s;
+		    }
+			.quiz-categories-dropdown:active .quiz-categories-block {
+				background-color: #f2f2f2;
+				transition-duration: 0.0s;
+			}
+			
+			
+		    .quiz-countries-dropdown {
+			    width: 30%;
+			    height: 100%;
+			    box-sizing: border-box;
+				padding: 0px;
+			    display: flex;
+			    justify-content: center;
+			    align-items: center;
+			    background-color: #f2f2f2;
+			    color: rgb(60,60,60);
+			    font-family: Comic Sans MS;
+			    font-size: 130%;
+			    font-weight: 600;
+				letter-spacing: 1px;
+				text-align: center;
+			    border: 0px solid black; /*Block border HERE*/
+		    }
+			.quiz-countries-block {
+			    width: 100%;
+			    height: 100%;
+			    box-sizing: border-box;
+			    display: flex;
+			    justify-content: center;
+			    align-items: center;
+			    background-color: rgba(255,255,255,0.0);
+			    border: 0px solid black; /*Block border HERE*/
+				transition-duration: 0.25s;
+		    }
+		    .quiz-countries-dropdown:hover .quiz-countries-block {
+			    width: 100%;
+			    height: 100%;
+			    box-sizing: border-box;
+			    display: flex;
+			    justify-content: center;
+			    align-items: center;
+			    background-color: #e2e2e2;
+			    border: 0px solid black;
+				transition-duration: 0.25s;
+		    }
+			/*.quiz-countries-dropdown:active .quiz-countries-block {
+				background-color: #f2f2f2;
+				transition-duration: 0.0s;
+			}*/
+			    
+				.quiz-countries-block-TC-group {
+					width: 100%;
+					height: 100%;
+					box-sizing: border-box;
+					display: block;
+					box-shadow: 0px 0px 5px 1px #00000033;
+				    -moz-box-shadow:  0px 0px 5px 1px #00000033;
+				    -webkit-box-shadow:  0px 0px 5px 1px #00000033;
+				}
+				    .quiz-countries-block-title {
+					    width: 100%;
+					    height: 46%;
+					    box-sizing: border-box;
+					    display: flex;
+					    justify-content: center;
+					    align-items: flex-end;
+						padding: 0px 0px 7px 0px;
+						border-style: solid; 
+						border-color: rgb(60,60,60);
+					    border-width: 0px 0px 1px 0px;
+				    }
+				    .quiz-countries-block-content {
+					    width: 100%;
+					    height: 54%;
+					    clear: both;
+					    box-sizing: border-box;
+					    display: flex;
+					    justify-content: center;
+					    align-items: flex-start;
+					    padding: 3px 0px 0px 0px;
+						border-style: solid; 
+						border-color: rgb(60,60,60);
+					    border-width: 1px 0px 0px 0px;
+				    }
+					
+					
+		/*Quiz World: Progress*/
+		table {
+			border-radius: 10px;
+			box-shadow:0px 0px 4px 0px #3D3D3D;
+		}
+		.tables-progress-group {
+			width: 100%;
+			height: 100%;
+			box-sizing: border-box;
+			display: block; /*block*/
+			justify-content: center;
+			align-items: center;
+			border: 0px solid black; /*Block border HERE*/
+		}
+		    /*.tables-complete-progress-block {
+				width: 100%;
+			    height: 20%;
+			    box-sizing: border-box;
+			    display: flex;
+			    justify-content: center;
+			    align-items: center;
+				background-color: #DDDDDD;
+				color: rgb(60,60,60);
+				font-family: Comic Sans MS;
+				font-size: 115%;
+				font-weight: 600;
+				letter-spacing: 1px;
+			    border: 0px solid black;
+			}*/
+			.tables-progress-block {
+				width: 100%;
+			    height: 100%;
+			    box-sizing: border-box;
+			    display: flex;
+			    justify-content: space-evenly;
+			    align-items: center;
+			    border: 0px solid black; /*Block border HERE*/
+			}
+		        .table-progress-dimension {
+					width: 30%;
+					height: 100%;
+					box-sizing: border-box;
+			        display: flex;
+			        justify-content: center;
+			        align-items: center;
+			        border: 0px solid black; /*Block border HERE*/
+				}
+		            .table-progress-proper {
+						width: 100%;
+						height: 100%;
+				        border-spacing: 0px;
+				        border: 0px solid black; /*Block border HERE*/
+			        }
+						tr:nth-child(2n+0) {
+							background-color: #dcdcdc;
+						}
+						tr:nth-child(2n+1) { /*tak tez będzie dobrze: (2n-1)*/
+							background-color: #eaeaea;
+						}
+						td {
+							align-items: center;
+				            color: rgb(60,60,60);
+				            font-family: Comic Sans MS;
+				            font-size: 115%;
+				            font-weight: 600;
+				            letter-spacing: 1px;
+						    border: 0px solid black;
+					    }
+						.left-title-td {
+							width: 70%;
+							background-color: #c6c6c6;
+							text-align: left;
+							padding-left: 20px;
+							border-radius:10px 0px 0px 0px;
+						}
+						.right-title-td {
+							width: 30%;
+							background-color: #c6c6c6;
+							text-align: right;
+							padding-right: 20px;
+							border-radius:0px 10px 0px 0px;
+						}
+						.left-td {
+							width: 70%;
+							/*background-color: #e2e2e2;*/
+							text-align: left;
+							padding-left: 20px;
+						}
+						.right-td {
+							width: 30%;
+							/*background-color: #e2e2e2;*/
+							text-align: right;
+							padding-right: 20px;
+						}
+		.quiz-menu-progress-buttons-group {
+			width: 100%;
+			height: 100%;
+			display: flex;
+			box-sizing: border-box;
+			border: 0px solid black; /*Block border HERE*/
+		}
+		    .quiz-menu-delete-button-dimension {
+				width: 100%;
+				height: 55px;
+				box-sizing: border-box;
+				display: flex;
+				justify-content: flex-end;
+				align-items: flex-end;
+				background-color: inherit;
+			    border: 0px solid black; /*Block border HERE*/
+			}
+			    .quiz-menu-delete-button-proper {
+			        width: 200px;
+					height: 40px;
+			        box-sizing: border-box;
+			        display: flex;
+				    justify-content: center;
+				    align-items: center;
+			        background-color: rgb(230,90,90);
+				    color: white;
+				    font-family: Comic Sans MS;
+				    font-size: 125%;
+				    font-weight: 500;
+				    letter-spacing: 0px;
+				    transition-duration: 0.25s;
+		        }
+			        .quiz-menu-delete-button-proper:hover {
+					    background-color: rgb(240,105,105);
+					    letter-spacing: 1px;
+				        cursor: pointer;
+					    transition-duration: 0.25s;
+				    }
+				        .quiz-menu-delete-button-proper:active {
+						    background-color: rgb(250,120,120);
+					        transition-duration: 0.0s;
+					    }
+					
+					
+					
+		/*Quiz World: Achievements*/
+		.table-achievements-dimension {
+			width: 100%;
+			height: 100%;
+			box-sizing: border-box;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			border: 0px solid black; /*Block border HERE*/
+		}
+		.table-achievements-proper {
+			width: 100%;
+			height: 100%;
+			box-sizing: border-box;
+			border-spacing: 0px;
+			border: 0px solid black; /*Block border HERE*/
+		}
+		    .table-achievements-proper td {
+				border: 0px solid black; /*Block border HERE*/
+			}
+			
+			
+		/*Quiz World: Summary (after done test)*/
+		.summary-group {
+			width: 100%;
+			height: 100%;
+			box-sizing: border-box;
+			display: block;
+			background-color: inherit;
+			border: 0px solid black; /*Block border HERE*/
+		}
+		    .summary-current-score, 
+			.summary-best-score {
+				width: 100%;
+				height: 50%;
+				box-sizing: border-box;
+			    display: flex;
+			    justify-content: center;
+			    align-items: center;
+				font-family: Comic Sans MS;
+				background-color: inherit;
+			    color: rgb(60,60,60);
+			    font-family: Comic Sans MS;
+			    font-size: 120%;
+			    font-weight: 600;
+			    line-height: 2em;
+				border: 0px solid black; /*Block border HERE*/
+			}
+		
+
+.function-info-counters {
+	position: absolute;
+	top: 30px;
+	font-size: 90%;
+}
