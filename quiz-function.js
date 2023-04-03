@@ -1,4 +1,4 @@
-//Zmienne liczników przerzutnika stron quizu oraz funkcji wybierania odpowiedzi:
+//Zmienne liczników przerzutnika stron quizu oraz funkcji wybierania odpowiedzi: info_Proper_Value
 var oneTimeFuncPointScoreBlockade = 0;
 var oneTimeFuncPointAnswerBlockade = 0;
 var oneTimeFuncPointAnswerBackgroundColorBlockade = 0;
@@ -712,8 +712,8 @@ function oneTimeActiveQCatCountL1True() {
 		document.getElementById("helpValueOneTimeFPScoreBlockade").innerHTML = oneTimeFuncPointScoreBlockade;   // Pomocniczy licznik
 		userScoreQuizCountriesLevelOne = userScoreQuizCountriesLevelOne + 1;
 		document.getElementById("userScoreValue").innerHTML = userScoreQuizCountriesLevelOne;
-		document.getElementById("info_Proper_Block").style.backgroundColor = "rgba(112,192,80,1.0)";
-		document.getElementById("info_Proper_Value").innerHTML = "Poprawna odpowiedź!";
+		document.getElementById("info_Proper_Block_C_L1").style.backgroundColor = "rgba(112,192,80,1.0)";
+		document.getElementById("info_Proper_Value_C_L1").innerHTML = "Poprawna odpowiedź!";
 		document.getElementById("audio_Yay").play();
     }
 	else {
@@ -728,8 +728,8 @@ function oneTimeActiveQCatCountL1False() {
 		document.getElementById("helpValueOneTimeFPScoreBlockade").innerHTML = oneTimeFuncPointScoreBlockade;   // Pomocniczy licznik & Nie zmieniaj nazw
 		userScoreQuizCountriesLevelOne = userScoreQuizCountriesLevelOne + 0;
 		document.getElementById("userScoreValue").innerHTML = userScoreQuizCountriesLevelOne;   // Pomocniczy licznik & Nie zmieniaj nazw!!!
-		document.getElementById("info_Proper_Block").style.backgroundColor = "rgba(236,65,65,1.0)";
-		document.getElementById("info_Proper_Value").innerHTML = "Błędna odpowiedź!";
+		document.getElementById("info_Proper_Block_C_L1").style.backgroundColor = "rgba(236,65,65,1.0)";
+		document.getElementById("info_Proper_Value_C_L1").innerHTML = "Błędna odpowiedź!";
 		document.getElementById("audio_Laugh").play();
     }
 	else {
@@ -746,8 +746,8 @@ function oneTimeActiveQCatCountL2True() {
 		document.getElementById("helpValueOneTimeFPScoreBlockade").innerHTML = oneTimeFuncPointScoreBlockade;   // Pomocniczy licznik & Nie zmieniaj nazw
 		userScoreQuizCountriesLevelTwo = userScoreQuizCountriesLevelTwo + 1;
 		document.getElementById("userScoreValue").innerHTML = userScoreQuizCountriesLevelTwo;   // Pomocniczy licznik
-		document.getElementById("info_Proper_Block").style.backgroundColor = "rgba(112,192,80,1.0)";
-		document.getElementById("info_Proper_Value").innerHTML = "Poprawna odpowiedź!";
+		document.getElementById("info_Proper_Block_C_L2").style.backgroundColor = "rgba(112,192,80,1.0)";
+		document.getElementById("info_Proper_Value_C_L2").innerHTML = "Poprawna odpowiedź!";
 		document.getElementById("audio_Yay").play();
     }
 	else {
@@ -762,8 +762,8 @@ function oneTimeActiveQCatCountL2False() {
 		document.getElementById("helpValueOneTimeFPScoreBlockade").innerHTML = oneTimeFuncPointScoreBlockade;   // Pomocniczy licznik & Nie zmieniaj nazw
 		userScoreQuizCountriesLevelTwo = userScoreQuizCountriesLevelTwo + 0;
 		document.getElementById("userScoreValue").innerHTML = userScoreQuizCountriesLevelTwo;   // Pomocniczy licznik
-		document.getElementById("info_Proper_Block").style.backgroundColor = "rgba(236,65,65,1.0)";
-		document.getElementById("info_Proper_Value").innerHTML = "Błędna odpowiedź!";
+		document.getElementById("info_Proper_Block_C_L2").style.backgroundColor = "rgba(236,65,65,1.0)";
+		document.getElementById("info_Proper_Value_C_L2").innerHTML = "Błędna odpowiedź!";
 		document.getElementById("audio_Laugh").play();
     }
 	else {
@@ -780,8 +780,8 @@ function oneTimeActiveQCatCountL3True() {
 		document.getElementById("helpValueOneTimeFPScoreBlockade").innerHTML = oneTimeFuncPointScoreBlockade;   // Pomocniczy licznik & Nie zmieniaj nazw
 		userScoreQuizCountriesLevelThree = userScoreQuizCountriesLevelThree + 1;
 		document.getElementById("userScoreValue").innerHTML = userScoreQuizCountriesLevelThree;   // Pomocniczy licznik
-		document.getElementById("info_Proper_Block").style.backgroundColor = "rgba(112,192,80,1.0)";
-		document.getElementById("info_Proper_Value").innerHTML = "Poprawna odpowiedź!";
+		document.getElementById("info_Proper_Block_C_L3").style.backgroundColor = "rgba(112,192,80,1.0)";
+		document.getElementById("info_Proper_Value_C_L3").innerHTML = "Poprawna odpowiedź!";
 		document.getElementById("audio_Yay").play();
     }
 	else {
@@ -796,8 +796,8 @@ function oneTimeActiveQCatCountL3False() {
 		document.getElementById("helpValueOneTimeFPScoreBlockade").innerHTML = oneTimeFuncPointScoreBlockade;   // Pomocniczy licznik & Nie zmieniaj nazw
 		userScoreQuizCountriesLevelThree = userScoreQuizCountriesLevelThree + 0;
 		document.getElementById("userScoreValue").innerHTML = userScoreQuizCountriesLevelThree;   // Pomocniczy licznik
-		document.getElementById("info_Proper_Block").style.backgroundColor = "rgba(236,65,65,1.0)";
-		document.getElementById("info_Proper_Value").innerHTML = "Błędna odpowiedź!";
+		document.getElementById("info_Proper_Block_C_L3").style.backgroundColor = "rgba(236,65,65,1.0)";
+		document.getElementById("info_Proper_Value_C_L3").innerHTML = "Błędna odpowiedź!";
 		document.getElementById("audio_Laugh").play();
     }
 	else {
@@ -814,8 +814,8 @@ function oneTimeActiveQCatHisL1True() {
 		document.getElementById("helpValueOneTimeFPScoreBlockade").innerHTML = oneTimeFuncPointScoreBlockade;   // Pomocniczy licznik
 		userScoreQuizHistoryLevelOne = userScoreQuizHistoryLevelOne + 1;
 		document.getElementById("userScoreValue").innerHTML = userScoreQuizHistoryLevelOne;
-		document.getElementById("info_Proper_Block").style.backgroundColor = "rgba(112,192,80,1.0)";
-		document.getElementById("info_Proper_Value").innerHTML = "Poprawna odpowiedź!";
+		document.getElementById("info_Proper_Block_H_L1").style.backgroundColor = "rgba(112,192,80,1.0)";
+		document.getElementById("info_Proper_Value_H_L1").innerHTML = "Poprawna odpowiedź!";
 		document.getElementById("audio_Yay").play();
     }
 	else {
@@ -830,8 +830,8 @@ function oneTimeActiveQCatHisL1False() {
 		document.getElementById("helpValueOneTimeFPScoreBlockade").innerHTML = oneTimeFuncPointScoreBlockade;   // Pomocniczy licznik & Nie zmieniaj nazw
 		userScoreQuizHistoryLevelOne = userScoreQuizHistoryLevelOne + 0;
 		document.getElementById("userScoreValue").innerHTML = userScoreQuizHistoryLevelOne;   // Pomocniczy licznik & Nie zmieniaj nazw!!!
-		document.getElementById("info_Proper_Block").style.backgroundColor = "rgba(236,65,65,1.0)";
-		document.getElementById("info_Proper_Value").innerHTML = "Błędna odpowiedź!";
+		document.getElementById("info_Proper_Block_H_L1").style.backgroundColor = "rgba(236,65,65,1.0)";
+		document.getElementById("info_Proper_Value_H_L1").innerHTML = "Błędna odpowiedź!";
 		document.getElementById("audio_Laugh").play();
     }
 	else {
@@ -848,8 +848,8 @@ function oneTimeActiveQCatHisL2True() {
 		document.getElementById("helpValueOneTimeFPScoreBlockade").innerHTML = oneTimeFuncPointScoreBlockade;   // Pomocniczy licznik
 		userScoreQuizHistoryLevelTwo = userScoreQuizHistoryLevelTwo + 1;
 		document.getElementById("userScoreValue").innerHTML = userScoreQuizHistoryLevelTwo;
-		document.getElementById("info_Proper_Block").style.backgroundColor = "rgba(112,192,80,1.0)";
-		document.getElementById("info_Proper_Value").innerHTML = "Poprawna odpowiedź!";
+		document.getElementById("info_Proper_Block_H_L2").style.backgroundColor = "rgba(112,192,80,1.0)";
+		document.getElementById("info_Proper_Value_H_L2").innerHTML = "Poprawna odpowiedź!";
 		document.getElementById("audio_Yay").play();
     }
 	else {
@@ -864,8 +864,8 @@ function oneTimeActiveQCatHisL2False() {
 		document.getElementById("helpValueOneTimeFPScoreBlockade").innerHTML = oneTimeFuncPointScoreBlockade;   // Pomocniczy licznik & Nie zmieniaj nazw
 		userScoreQuizHistoryLevelTwo = userScoreQuizHistoryLevelTwo + 0;
 		document.getElementById("userScoreValue").innerHTML = userScoreQuizHistoryLevelTwo;   // Pomocniczy licznik & Nie zmieniaj nazw!!!
-		document.getElementById("info_Proper_Block").style.backgroundColor = "rgba(236,65,65,1.0)";
-		document.getElementById("info_Proper_Value").innerHTML = "Błędna odpowiedź!";
+		document.getElementById("info_Proper_Block_H_L2").style.backgroundColor = "rgba(236,65,65,1.0)";
+		document.getElementById("info_Proper_Value_H_L2").innerHTML = "Błędna odpowiedź!";
 		document.getElementById("audio_Laugh").play();
     }
 	else {
@@ -882,8 +882,8 @@ function oneTimeActiveQCatHisL3True() {
 		document.getElementById("helpValueOneTimeFPScoreBlockade").innerHTML = oneTimeFuncPointScoreBlockade;   // Pomocniczy licznik
 		userScoreQuizHistoryLevelThree = userScoreQuizHistoryLevelThree + 1;
 		document.getElementById("userScoreValue").innerHTML = userScoreQuizHistoryLevelThree;
-		document.getElementById("info_Proper_Block").style.backgroundColor = "rgba(112,192,80,1.0)";
-		document.getElementById("info_Proper_Value").innerHTML = "Poprawna odpowiedź!";
+		document.getElementById("info_Proper_Block_H_L3").style.backgroundColor = "rgba(112,192,80,1.0)";
+		document.getElementById("info_Proper_Value_H_L3").innerHTML = "Poprawna odpowiedź!";
 		document.getElementById("audio_Yay").play();
     }
 	else {
@@ -898,8 +898,8 @@ function oneTimeActiveQCatHisL3False() {
 		document.getElementById("helpValueOneTimeFPScoreBlockade").innerHTML = oneTimeFuncPointScoreBlockade;   // Pomocniczy licznik & Nie zmieniaj nazw
 		userScoreQuizHistoryLevelThree = userScoreQuizHistoryLevelThree + 0;
 		document.getElementById("userScoreValue").innerHTML = userScoreQuizHistoryLevelThree;   // Pomocniczy licznik & Nie zmieniaj nazw!!!
-		document.getElementById("info_Proper_Block").style.backgroundColor = "rgba(236,65,65,1.0)";
-		document.getElementById("info_Proper_Value").innerHTML = "Błędna odpowiedź!";
+		document.getElementById("info_Proper_Block_H_L3").style.backgroundColor = "rgba(236,65,65,1.0)";
+		document.getElementById("info_Proper_Value_H_L3").innerHTML = "Błędna odpowiedź!";
 		document.getElementById("audio_Laugh").play();
     }
 	else {
@@ -916,8 +916,8 @@ function oneTimeActiveQCatTraffL1True() {
 		document.getElementById("helpValueOneTimeFPScoreBlockade").innerHTML = oneTimeFuncPointScoreBlockade;   // Pomocniczy licznik
 		userScoreQuizTrafficRegulationsLevelOne = userScoreQuizTrafficRegulationsLevelOne + 1;
 		document.getElementById("userScoreValue").innerHTML = userScoreQuizTrafficRegulationsLevelOne;
-		document.getElementById("info_Proper_Block").style.backgroundColor = "rgba(112,192,80,1.0)";
-		document.getElementById("info_Proper_Value").innerHTML = "Poprawna odpowiedź!";
+		document.getElementById("info_Proper_Block_T_L1").style.backgroundColor = "rgba(112,192,80,1.0)";
+		document.getElementById("info_Proper_Value_T_L1").innerHTML = "Poprawna odpowiedź!";
 		document.getElementById("audio_Yay").play();
     }
 	else {
@@ -932,8 +932,8 @@ function oneTimeActiveQCatTraffL1False() {
 		document.getElementById("helpValueOneTimeFPScoreBlockade").innerHTML = oneTimeFuncPointScoreBlockade;   // Pomocniczy licznik & Nie zmieniaj nazw
 		userScoreQuizTrafficRegulationsLevelOne = userScoreQuizTrafficRegulationsLevelOne + 0;
 		document.getElementById("userScoreValue").innerHTML = userScoreQuizTrafficRegulationsLevelOne;   // Pomocniczy licznik & Nie zmieniaj nazw!!!
-		document.getElementById("info_Proper_Block").style.backgroundColor = "rgba(236,65,65,1.0)";
-		document.getElementById("info_Proper_Value").innerHTML = "Błędna odpowiedź!";
+		document.getElementById("info_Proper_Block_T_L1").style.backgroundColor = "rgba(236,65,65,1.0)";
+		document.getElementById("info_Proper_Value_T_L1").innerHTML = "Błędna odpowiedź!";
 		document.getElementById("audio_Laugh").play();
     }
 	else {
@@ -950,8 +950,8 @@ function oneTimeActiveQCatTraffL2True() {
 		document.getElementById("helpValueOneTimeFPScoreBlockade").innerHTML = oneTimeFuncPointScoreBlockade;   // Pomocniczy licznik
 		userScoreQuizTrafficRegulationsLevelTwo = userScoreQuizTrafficRegulationsLevelTwo + 1;
 		document.getElementById("userScoreValue").innerHTML = userScoreQuizTrafficRegulationsLevelTwo;
-		document.getElementById("info_Proper_Block").style.backgroundColor = "rgba(112,192,80,1.0)";
-		document.getElementById("info_Proper_Value").innerHTML = "Poprawna odpowiedź!";
+		document.getElementById("info_Proper_Block_T_L2").style.backgroundColor = "rgba(112,192,80,1.0)";
+		document.getElementById("info_Proper_Value_T_L2").innerHTML = "Poprawna odpowiedź!";
 		document.getElementById("audio_Yay").play();
     }
 	else {
@@ -966,8 +966,8 @@ function oneTimeActiveQCatTraffL2False() {
 		document.getElementById("helpValueOneTimeFPScoreBlockade").innerHTML = oneTimeFuncPointScoreBlockade;   // Pomocniczy licznik & Nie zmieniaj nazw
 		userScoreQuizTrafficRegulationsLevelTwo = userScoreQuizTrafficRegulationsLevelTwo + 0;
 		document.getElementById("userScoreValue").innerHTML = userScoreQuizTrafficRegulationsLevelTwo;   // Pomocniczy licznik & Nie zmieniaj nazw!!!
-		document.getElementById("info_Proper_Block").style.backgroundColor = "rgba(236,65,65,1.0)";
-		document.getElementById("info_Proper_Value").innerHTML = "Błędna odpowiedź!";
+		document.getElementById("info_Proper_Block_T_L2").style.backgroundColor = "rgba(236,65,65,1.0)";
+		document.getElementById("info_Proper_Value_T_L2").innerHTML = "Błędna odpowiedź!";
 		document.getElementById("audio_Laugh").play();
     }
 	else {
@@ -984,8 +984,8 @@ function oneTimeActiveQCatTraffL3True() {
 		document.getElementById("helpValueOneTimeFPScoreBlockade").innerHTML = oneTimeFuncPointScoreBlockade;   // Pomocniczy licznik
 		userScoreQuizTrafficRegulationsLevelThree = userScoreQuizTrafficRegulationsLevelThree + 1;
 		document.getElementById("userScoreValue").innerHTML = userScoreQuizTrafficRegulationsLevelThree;
-		document.getElementById("info_Proper_Block").style.backgroundColor = "rgba(112,192,80,1.0)";
-		document.getElementById("info_Proper_Value").innerHTML = "Poprawna odpowiedź!";
+		document.getElementById("info_Proper_Block_T_L3").style.backgroundColor = "rgba(112,192,80,1.0)";
+		document.getElementById("info_Proper_Value_T_L3").innerHTML = "Poprawna odpowiedź!";
 		document.getElementById("audio_Yay").play();
     }
 	else {
@@ -1000,8 +1000,8 @@ function oneTimeActiveQCatTraffL3False() {
 		document.getElementById("helpValueOneTimeFPScoreBlockade").innerHTML = oneTimeFuncPointScoreBlockade;   // Pomocniczy licznik & Nie zmieniaj nazw
 		userScoreQuizTrafficRegulationsLevelThree = userScoreQuizTrafficRegulationsLevelThree + 0;
 		document.getElementById("userScoreValue").innerHTML = userScoreQuizTrafficRegulationsLevelThree;   // Pomocniczy licznik & Nie zmieniaj nazw!!!
-		document.getElementById("info_Proper_Block").style.backgroundColor = "rgba(236,65,65,1.0)";
-		document.getElementById("info_Proper_Value").innerHTML = "Błędna odpowiedź!";
+		document.getElementById("info_Proper_Block_T_L3").style.backgroundColor = "rgba(236,65,65,1.0)";
+		document.getElementById("info_Proper_Value_T_L3").innerHTML = "Błędna odpowiedź!";
 		document.getElementById("audio_Laugh").play();
     }
 	else {
@@ -1027,8 +1027,8 @@ function nextQuizCountLevelOnePage() {
 		for (let i = 0; i < collectionAnswerContentProperResetBgColor.length; i++) {
 			collectionAnswerContentProperResetBgColor[i].style.backgroundColor = "rgba(154,129,228,1.0)";
 		}
-		document.getElementById("info_Proper_Block").style.backgroundColor = "rgba(236,148,65,1.0)";
-		document.getElementById("info_Proper_Value").innerHTML = "Wybierz poprawną odpowiedź!";
+		document.getElementById("info_Proper_Block_C_L1").style.backgroundColor = "rgba(236,148,65,1.0)";
+		document.getElementById("info_Proper_Value_C_L1").innerHTML = "Wybierz poprawną odpowiedź!";
 		if (nextQuizCountriesLevelOnePage <= 20) {
 			nextQuizCountriesLevelOnePage = nextQuizCountriesLevelOnePage + 1;
 		    document.getElementById("helpValuenextQuizCategoryLevelOnePageBlockade").innerHTML = nextQuizCountriesLevelOnePage;
@@ -1358,8 +1358,8 @@ function nextQuizCountLevelTwoPage() {
 		for (let i = 0; i < collectionAnswerContentProperResetBgColor.length; i++) {
 			collectionAnswerContentProperResetBgColor[i].style.backgroundColor = "rgba(154,129,228,1.0)";
 		}
-		document.getElementById("info_Proper_Block").style.backgroundColor = "rgba(236,148,65,1.0)";
-		document.getElementById("info_Proper_Value").innerHTML = "Wybierz poprawną odpowiedź!";
+		document.getElementById("info_Proper_Block_C_L2").style.backgroundColor = "rgba(236,148,65,1.0)";
+		document.getElementById("info_Proper_Value_C_L2").innerHTML = "Wybierz poprawną odpowiedź!";
 		if (nextQuizCountriesLevelTwoPage <= 22) {
 			nextQuizCountriesLevelTwoPage = nextQuizCountriesLevelTwoPage + 1;
 		    document.getElementById("helpValuenextQuizCategoryLevelOnePageBlockade").innerHTML = nextQuizCountriesLevelTwoPage;
@@ -1697,8 +1697,8 @@ function nextQuizCountLevelThreePage() {
 		for (let i = 0; i < collectionAnswerContentProperResetBgColor.length; i++) {
 			collectionAnswerContentProperResetBgColor[i].style.backgroundColor = "rgba(154,129,228,1.0)";
 		}
-		document.getElementById("info_Proper_Block").style.backgroundColor = "rgba(236,148,65,1.0)";
-		document.getElementById("info_Proper_Value").innerHTML = "Wybierz poprawną odpowiedź!";
+		document.getElementById("info_Proper_Block_C_L3").style.backgroundColor = "rgba(236,148,65,1.0)";
+		document.getElementById("info_Proper_Value_C_L3").innerHTML = "Wybierz poprawną odpowiedź!";
 		if (nextQuizCountriesLevelThreePage <= 24) {
 			nextQuizCountriesLevelThreePage = nextQuizCountriesLevelThreePage + 1;
 		    document.getElementById("helpValuenextQuizCategoryLevelOnePageBlockade").innerHTML = nextQuizCountriesLevelThreePage;
@@ -2038,8 +2038,8 @@ function nextQuizHisLevelOnePage() {
 		for (let i = 0; i < collectionAnswerContentProperResetBgColor.length; i++) {
 			collectionAnswerContentProperResetBgColor[i].style.backgroundColor = "rgba(154,129,228,1.0)";
 		}
-		document.getElementById("info_Proper_Block").style.backgroundColor = "rgba(236,148,65,1.0)";
-		document.getElementById("info_Proper_Value").innerHTML = "Wybierz poprawną odpowiedź!";
+		document.getElementById("info_Proper_Block_H_L1").style.backgroundColor = "rgba(236,148,65,1.0)";
+		document.getElementById("info_Proper_Value_H_L1").innerHTML = "Wybierz poprawną odpowiedź!";
 		if (nextQuizHistoryLevelOnePage <= 18) {
 			nextQuizHistoryLevelOnePage = nextQuizHistoryLevelOnePage + 1;
 		    document.getElementById("helpValuenextQuizCategoryLevelOnePageBlockade").innerHTML = nextQuizHistoryLevelOnePage;
@@ -2361,8 +2361,8 @@ function nextQuizHisLevelTwoPage() {
 		for (let i = 0; i < collectionAnswerContentProperResetBgColor.length; i++) {
 			collectionAnswerContentProperResetBgColor[i].style.backgroundColor = "rgba(154,129,228,1.0)";
 		}
-		document.getElementById("info_Proper_Block").style.backgroundColor = "rgba(236,148,65,1.0)";
-		document.getElementById("info_Proper_Value").innerHTML = "Wybierz poprawną odpowiedź!";
+		document.getElementById("info_Proper_Block_H_L2").style.backgroundColor = "rgba(236,148,65,1.0)";
+		document.getElementById("info_Proper_Value_H_L2").innerHTML = "Wybierz poprawną odpowiedź!";
 		if (nextQuizHistoryLevelTwoPage <= 20) {
 			nextQuizHistoryLevelTwoPage = nextQuizHistoryLevelTwoPage + 1;
 		    document.getElementById("helpValuenextQuizCategoryLevelOnePageBlockade").innerHTML = nextQuizHistoryLevelTwoPage;
@@ -2693,8 +2693,8 @@ function nextQuizHisLevelThreePage() {
 		for (let i = 0; i < collectionAnswerContentProperResetBgColor.length; i++) {
 			collectionAnswerContentProperResetBgColor[i].style.backgroundColor = "rgba(154,129,228,1.0)";
 		}
-		document.getElementById("info_Proper_Block").style.backgroundColor = "rgba(236,148,65,1.0)";
-		document.getElementById("info_Proper_Value").innerHTML = "Wybierz poprawną odpowiedź!";
+		document.getElementById("info_Proper_Block_H_L3").style.backgroundColor = "rgba(236,148,65,1.0)";
+		document.getElementById("info_Proper_Value_H_L3").innerHTML = "Wybierz poprawną odpowiedź!";
 		if (nextQuizHistoryLevelThreePage <= 22) {
 			nextQuizHistoryLevelThreePage = nextQuizHistoryLevelThreePage + 1;
 		    document.getElementById("helpValuenextQuizCategoryLevelOnePageBlockade").innerHTML = nextQuizHistoryLevelThreePage;
@@ -3026,8 +3026,8 @@ function nextQuizTraffLevelOnePage() {
 		for (let i = 0; i < collectionAnswerContentProperResetBgColor.length; i++) {
 			collectionAnswerContentProperResetBgColor[i].style.backgroundColor = "rgba(154,129,228,1.0)";
 		}
-		document.getElementById("info_Proper_Block").style.backgroundColor = "rgba(236,148,65,1.0)";
-		document.getElementById("info_Proper_Value").innerHTML = "Wybierz poprawną odpowiedź!";
+		document.getElementById("info_Proper_Block_T_L1").style.backgroundColor = "rgba(236,148,65,1.0)";
+		document.getElementById("info_Proper_Value_T_L1").innerHTML = "Wybierz poprawną odpowiedź!";
 		if (nextQuizTrafficRegulationsLevelOnePage <= 22) {
 			nextQuizTrafficRegulationsLevelOnePage = nextQuizTrafficRegulationsLevelOnePage + 1;
 		    document.getElementById("helpValuenextQuizCategoryLevelOnePageBlockade").innerHTML = nextQuizTrafficRegulationsLevelOnePage;
@@ -3366,8 +3366,8 @@ function nextQuizTraffLevelTwoPage() {
 		for (let i = 0; i < collectionAnswerContentProperResetBgColor.length; i++) {
 			collectionAnswerContentProperResetBgColor[i].style.backgroundColor = "rgba(154,129,228,1.0)";
 		}
-		document.getElementById("info_Proper_Block").style.backgroundColor = "rgba(236,148,65,1.0)";
-		document.getElementById("info_Proper_Value").innerHTML = "Wybierz poprawną odpowiedź!";
+		document.getElementById("info_Proper_Block_T_L2").style.backgroundColor = "rgba(236,148,65,1.0)";
+		document.getElementById("info_Proper_Value_T_L2").innerHTML = "Wybierz poprawną odpowiedź!";
 		if (nextQuizTrafficRegulationsLevelTwoPage <= 25) {
 			nextQuizTrafficRegulationsLevelTwoPage = nextQuizTrafficRegulationsLevelTwoPage + 1;
 		    document.getElementById("helpValuenextQuizCategoryLevelOnePageBlockade").innerHTML = nextQuizTrafficRegulationsLevelTwoPage;
@@ -3718,8 +3718,8 @@ function nextQuizTraffLevelThreePage() {
 		for (let i = 0; i < collectionAnswerContentProperResetBgColor.length; i++) {
 			collectionAnswerContentProperResetBgColor[i].style.backgroundColor = "rgba(154,129,228,1.0)";
 		}
-		document.getElementById("info_Proper_Block").style.backgroundColor = "rgba(236,148,65,1.0)";
-		document.getElementById("info_Proper_Value").innerHTML = "Wybierz poprawną odpowiedź!";
+		document.getElementById("info_Proper_Block_T_L3").style.backgroundColor = "rgba(236,148,65,1.0)";
+		document.getElementById("info_Proper_Value_T_L3").innerHTML = "Wybierz poprawną odpowiedź!";
 		if (nextQuizTrafficRegulationsLevelThreePage <= 28) {
 			nextQuizTrafficRegulationsLevelThreePage = nextQuizTrafficRegulationsLevelThreePage + 1;
 		    document.getElementById("helpValuenextQuizCategoryLevelOnePageBlockade").innerHTML = nextQuizTrafficRegulationsLevelThreePage;
