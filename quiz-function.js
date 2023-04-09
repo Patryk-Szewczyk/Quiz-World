@@ -3,13 +3,24 @@ var oneTimeFuncPointScoreBlockade = 0;
 var oneTimeFuncPointAnswerBlockade = 0;
 var oneTimeFuncPointAnswerBackgroundColorBlockade = 0;
 
+// Muzyka w tle podczas rozwiązywania testó testów:
+const backgroundMusic = document.getElementById("audio_quizBackgroundMusic");
+backgroundMusic.loop = true;
+backgroundMusic.load();
 
+// Ścieżka dźwiękowa na podsumowanie testów:
+const scoreResultSound = document.getElementById("audio_scoreResult");
+
+// Zoom 110%:
+function zoom() {
+	document.body.style.zoom = "110%";
+}
 
 //Całkowyty postęp całego Quiz World:completeQuizProgress
 //var userPercentScoreQuizWorldProgress = 0;
 //document.getElementById("completeQuizProgress").innerHTML = parseFloat(userPercentScoreQuizWorldProgress).toFixed(1) + "%";
 
-alert("Aplikacja Quiz World nie jest jescze ukończona. Aktualnie jest ukończona w około 90%. Są gotowe wszystkie testy z kategorii: Geografia i pierwszy z kategorii: Historia. Pomimo tego Quiz World ma zrobione wszystkie funkcje, więc można z niego korzystać. Z lewej strony są liczniki pomocniecze (przy procesie programowania, które po ukończniu pracy zostaną zakryte).");
+//alert("Aplikacja Quiz World nie jest jescze ukończona. Aktualnie jest ukończona w około 90%. Są gotowe wszystkie testy z kategorii: Geografia i pierwszy z kategorii: Historia. Pomimo tego Quiz World ma zrobione wszystkie funkcje, więc można z niego korzystać. Z lewej strony są liczniki pomocniecze (przy procesie programowania, które po ukończniu pracy zostaną zakryte).");
 
 //Postęp osiągnięć:
 var AchivAmount = 5; // Ilość osiągnięć
@@ -364,6 +375,7 @@ const quizCategoriesCountries = document.getElementById("QuizCategoriesCountries
 const quizCategoriesHistory = document.getElementById("QuizCategoriesHistory");
 const quizCategoriesTrafficRegulations = document.getElementById("QuizCategoriesTrafficRegulations");
 function goToQuizAplicationMainMenu() {
+	document.getElementById("audio_selectSound").play();
 	quizIntroduction.style.display = "none";
 	quizMainMenu.style.display = "block";
 	document.getElementById("quizMainMenuExtraText").style.display = "flex";
@@ -381,6 +393,7 @@ function goToQuizAplicationMainMenu() {
 	document.getElementById("quizMenuCategoriesTrafficRegulationsBackButton").style.display = "none";
 }
 function goToQuizAplicationCategories() {
+	document.getElementById("audio_selectSound").play();
 	quizMainMenu.style.display = "none";
 	document.getElementById("quizMainMenuExtraText").style.display = "none";
 	quizCategories.style.display = "block";
@@ -397,6 +410,7 @@ function goToQuizAplicationCategories() {
 	document.getElementById("quizMenuCategoriesTrafficRegulationsBackButton").style.display = "none";
 }
 function goToQuizAplicationProgress() {
+	document.getElementById("audio_selectSound").play();
 	quizMainMenu.style.display = "none";
 	document.getElementById("quizMainMenuExtraText").style.display = "none";
 	quizCategories.style.display = "none";
@@ -413,6 +427,7 @@ function goToQuizAplicationProgress() {
 	document.getElementById("quizMenuCategoriesTrafficRegulationsBackButton").style.display = "none";
 }
 function goToQuizAplicationAchievements() {
+	document.getElementById("audio_selectSound").play();
 	quizMainMenu.style.display = "none";
 	document.getElementById("quizMainMenuExtraText").style.display = "none";
 	quizCategories.style.display = "none";
@@ -429,6 +444,7 @@ function goToQuizAplicationAchievements() {
 	document.getElementById("quizMenuCategoriesTrafficRegulationsBackButton").style.display = "none";
 }
 function goToQuizAplicationCountries() {
+	document.getElementById("audio_selectSound").play();
 	quizMainMenu.style.display = "none";
 	document.getElementById("quizMainMenuExtraText").style.display = "none";
 	quizCategories.style.display = "none";
@@ -472,6 +488,7 @@ function goToQuizAplicationCountries() {
 		document.getElementById("qCount_L3_score").innerHTML = userScoreQuizCountriesLevelThree;
 	}
 function goToQuizAplicationHistory() {
+	document.getElementById("audio_selectSound").play();
 	quizMainMenu.style.display = "none";
 	document.getElementById("quizMainMenuExtraText").style.display = "none";
 	quizCategories.style.display = "none";
@@ -515,6 +532,7 @@ function goToQuizAplicationHistory() {
 		document.getElementById("qHis_L3_score").innerHTML = userScoreQuizHistoryLevelThree;
 	}
 function goToQuizAplicationTrafficRegulations() {
+	document.getElementById("audio_selectSound").play();
 	quizMainMenu.style.display = "none";
 	document.getElementById("quizMainMenuExtraText").style.display = "none";
 	quizCategories.style.display = "none";
@@ -563,6 +581,9 @@ function goToQuizAplicationTrafficRegulations() {
 /*Start testów:*/
 // Countries - level 1:
 function quizCategoryCountriesLevelOneStart() {
+	backgroundMusic.currentTime = 0;   // Odtwarzanie ścieżki dżwiękowej / filmu od nowa
+	backgroundMusic.play();
+	backgroundMusic.volume = 0.4;
 	nextQuizCountriesLevelOnePage = nextQuizCountriesLevelOnePage + 1;
 	document.getElementById("helpValuenextQuizCategoryLevelOnePageBlockade").innerHTML = nextQuizCountriesLevelOnePage; // Pomocniczy licznik
 	quizCategoriesCountries.style.display = "none";
@@ -578,6 +599,9 @@ function quizCategoryCountriesLevelOneStart() {
 }
 // Countries - level 2:
 function quizCategoryCountriesLevelTwoStart() {
+	backgroundMusic.currentTime = 0;   // Odtwarzanie ścieżki dżwiękowej / filmu od nowa
+	backgroundMusic.play();
+	backgroundMusic.volume = 0.4;
 	nextQuizCountriesLevelTwoPage = nextQuizCountriesLevelTwoPage + 1;
 	document.getElementById("helpValuenextQuizCategoryLevelOnePageBlockade").innerHTML = nextQuizCountriesLevelTwoPage; // Pomocniczy licznik
 	quizCategoriesCountries.style.display = "none";
@@ -593,6 +617,9 @@ function quizCategoryCountriesLevelTwoStart() {
 }
 // Countries - level 3:
 function quizCategoryCountriesLevelThreeStart() {
+	backgroundMusic.currentTime = 0;   // Odtwarzanie ścieżki dżwiękowej / filmu od nowa
+	backgroundMusic.play();
+	backgroundMusic.volume = 0.4;
 	nextQuizCountriesLevelThreePage = nextQuizCountriesLevelThreePage + 1;
 	document.getElementById("helpValuenextQuizCategoryLevelOnePageBlockade").innerHTML = nextQuizCountriesLevelThreePage; // Pomocniczy licznik
 	quizCategoriesCountries.style.display = "none";
@@ -608,6 +635,9 @@ function quizCategoryCountriesLevelThreeStart() {
 }
 // History - level 1:
 function quizCategoryHistoryLevelOneStart() {
+	backgroundMusic.currentTime = 0;   // Odtwarzanie ścieżki dżwiękowej / filmu od nowa
+	backgroundMusic.play();
+	backgroundMusic.volume = 0.4;
 	nextQuizHistoryLevelOnePage = nextQuizHistoryLevelOnePage + 1;
 	document.getElementById("helpValuenextQuizCategoryLevelOnePageBlockade").innerHTML = nextQuizHistoryLevelOnePage; // Pomocniczy licznik
 	quizCategoriesHistory.style.display = "none";
@@ -623,6 +653,9 @@ function quizCategoryHistoryLevelOneStart() {
 }
 // History - level 2:
 function quizCategoryHistoryLevelTwoStart() {
+	backgroundMusic.currentTime = 0;   // Odtwarzanie ścieżki dżwiękowej / filmu od nowa
+	backgroundMusic.play();
+	backgroundMusic.volume = 0.4;
 	nextQuizHistoryLevelTwoPage = nextQuizHistoryLevelTwoPage + 1;
 	document.getElementById("helpValuenextQuizCategoryLevelOnePageBlockade").innerHTML = nextQuizHistoryLevelTwoPage; // Pomocniczy licznik
 	quizCategoriesHistory.style.display = "none";
@@ -638,6 +671,9 @@ function quizCategoryHistoryLevelTwoStart() {
 }
 // History - level 3:
 function quizCategoryHistoryLevelThreeStart() {
+	backgroundMusic.currentTime = 0;   // Odtwarzanie ścieżki dżwiękowej / filmu od nowa
+	backgroundMusic.play();
+	backgroundMusic.volume = 0.4;
 	nextQuizHistoryLevelThreePage = nextQuizHistoryLevelThreePage + 1;
 	document.getElementById("helpValuenextQuizCategoryLevelOnePageBlockade").innerHTML = nextQuizHistoryLevelThreePage; // Pomocniczy licznik
 	quizCategoriesHistory.style.display = "none";
@@ -653,6 +689,9 @@ function quizCategoryHistoryLevelThreeStart() {
 }
 // Traffic Regulations - level 1:
 function quizCategoryTrafficRegulationsLevelOneStart() {
+	backgroundMusic.currentTime = 0;   // Odtwarzanie ścieżki dżwiękowej / filmu od nowa
+	backgroundMusic.play();
+	backgroundMusic.volume = 0.4;
 	nextQuizTrafficRegulationsLevelOnePage = nextQuizTrafficRegulationsLevelOnePage + 1;
 	document.getElementById("helpValuenextQuizCategoryLevelOnePageBlockade").innerHTML = nextQuizTrafficRegulationsLevelOnePage; // Pomocniczy licznik
 	quizCategoriesTrafficRegulations.style.display = "none";
@@ -668,6 +707,9 @@ function quizCategoryTrafficRegulationsLevelOneStart() {
 }
 // Traffic Regulations - level 2:
 function quizCategoryTrafficRegulationsLevelTwoStart() {
+	backgroundMusic.currentTime = 0;   // Odtwarzanie ścieżki dżwiękowej / filmu od nowa
+	backgroundMusic.play();
+	backgroundMusic.volume = 0.4;
 	nextQuizTrafficRegulationsLevelTwoPage = nextQuizTrafficRegulationsLevelTwoPage + 1;
 	document.getElementById("helpValuenextQuizCategoryLevelOnePageBlockade").innerHTML = nextQuizTrafficRegulationsLevelTwoPage; // Pomocniczy licznik
 	quizCategoriesTrafficRegulations.style.display = "none";
@@ -683,6 +725,9 @@ function quizCategoryTrafficRegulationsLevelTwoStart() {
 }
 // Traffic Regulations - level 3:
 function quizCategoryTrafficRegulationsLevelThreeStart() {
+	backgroundMusic.currentTime = 0;   // Odtwarzanie ścieżki dżwiękowej / filmu od nowa
+	backgroundMusic.play();
+	backgroundMusic.volume = 0.4;
 	nextQuizTrafficRegulationsLevelThreePage = nextQuizTrafficRegulationsLevelThreePage + 1;
 	document.getElementById("helpValuenextQuizCategoryLevelOnePageBlockade").innerHTML = nextQuizTrafficRegulationsLevelThreePage; // Pomocniczy licznik
 	quizCategoriesTrafficRegulations.style.display = "none";
@@ -714,7 +759,7 @@ function oneTimeActiveQCatCountL1True() {
 		document.getElementById("userScoreValue").innerHTML = userScoreQuizCountriesLevelOne;
 		document.getElementById("info_Proper_Block_C_L1").style.backgroundColor = "rgba(112,192,80,1.0)";
 		document.getElementById("info_Proper_Value_C_L1").innerHTML = "Poprawna odpowiedź!";
-		document.getElementById("audio_Yay").play();
+		document.getElementById("audio_Yay_1").play();
     }
 	else {
 		
@@ -730,7 +775,7 @@ function oneTimeActiveQCatCountL1False() {
 		document.getElementById("userScoreValue").innerHTML = userScoreQuizCountriesLevelOne;   // Pomocniczy licznik & Nie zmieniaj nazw!!!
 		document.getElementById("info_Proper_Block_C_L1").style.backgroundColor = "rgba(236,65,65,1.0)";
 		document.getElementById("info_Proper_Value_C_L1").innerHTML = "Błędna odpowiedź!";
-		document.getElementById("audio_Laugh").play();
+		document.getElementById("audio_Laugh_1").play();
     }
 	else {
 		
@@ -748,7 +793,7 @@ function oneTimeActiveQCatCountL2True() {
 		document.getElementById("userScoreValue").innerHTML = userScoreQuizCountriesLevelTwo;   // Pomocniczy licznik
 		document.getElementById("info_Proper_Block_C_L2").style.backgroundColor = "rgba(112,192,80,1.0)";
 		document.getElementById("info_Proper_Value_C_L2").innerHTML = "Poprawna odpowiedź!";
-		document.getElementById("audio_Yay").play();
+		document.getElementById("audio_Yay_2").play();
     }
 	else {
 		
@@ -764,7 +809,7 @@ function oneTimeActiveQCatCountL2False() {
 		document.getElementById("userScoreValue").innerHTML = userScoreQuizCountriesLevelTwo;   // Pomocniczy licznik
 		document.getElementById("info_Proper_Block_C_L2").style.backgroundColor = "rgba(236,65,65,1.0)";
 		document.getElementById("info_Proper_Value_C_L2").innerHTML = "Błędna odpowiedź!";
-		document.getElementById("audio_Laugh").play();
+		document.getElementById("audio_Laugh_2").play();
     }
 	else {
 		
@@ -782,7 +827,7 @@ function oneTimeActiveQCatCountL3True() {
 		document.getElementById("userScoreValue").innerHTML = userScoreQuizCountriesLevelThree;   // Pomocniczy licznik
 		document.getElementById("info_Proper_Block_C_L3").style.backgroundColor = "rgba(112,192,80,1.0)";
 		document.getElementById("info_Proper_Value_C_L3").innerHTML = "Poprawna odpowiedź!";
-		document.getElementById("audio_Yay").play();
+		document.getElementById("audio_Yay_3").play();
     }
 	else {
 		
@@ -798,7 +843,7 @@ function oneTimeActiveQCatCountL3False() {
 		document.getElementById("userScoreValue").innerHTML = userScoreQuizCountriesLevelThree;   // Pomocniczy licznik
 		document.getElementById("info_Proper_Block_C_L3").style.backgroundColor = "rgba(236,65,65,1.0)";
 		document.getElementById("info_Proper_Value_C_L3").innerHTML = "Błędna odpowiedź!";
-		document.getElementById("audio_Laugh").play();
+		document.getElementById("audio_Laugh_3").play();
     }
 	else {
 		
@@ -816,7 +861,7 @@ function oneTimeActiveQCatHisL1True() {
 		document.getElementById("userScoreValue").innerHTML = userScoreQuizHistoryLevelOne;
 		document.getElementById("info_Proper_Block_H_L1").style.backgroundColor = "rgba(112,192,80,1.0)";
 		document.getElementById("info_Proper_Value_H_L1").innerHTML = "Poprawna odpowiedź!";
-		document.getElementById("audio_Yay").play();
+		document.getElementById("audio_Yay_4").play();
     }
 	else {
 		
@@ -832,7 +877,7 @@ function oneTimeActiveQCatHisL1False() {
 		document.getElementById("userScoreValue").innerHTML = userScoreQuizHistoryLevelOne;   // Pomocniczy licznik & Nie zmieniaj nazw!!!
 		document.getElementById("info_Proper_Block_H_L1").style.backgroundColor = "rgba(236,65,65,1.0)";
 		document.getElementById("info_Proper_Value_H_L1").innerHTML = "Błędna odpowiedź!";
-		document.getElementById("audio_Laugh").play();
+		document.getElementById("audio_Laugh_4").play();
     }
 	else {
 		
@@ -850,7 +895,7 @@ function oneTimeActiveQCatHisL2True() {
 		document.getElementById("userScoreValue").innerHTML = userScoreQuizHistoryLevelTwo;
 		document.getElementById("info_Proper_Block_H_L2").style.backgroundColor = "rgba(112,192,80,1.0)";
 		document.getElementById("info_Proper_Value_H_L2").innerHTML = "Poprawna odpowiedź!";
-		document.getElementById("audio_Yay").play();
+		document.getElementById("audio_Yay_5").play();
     }
 	else {
 		
@@ -866,7 +911,7 @@ function oneTimeActiveQCatHisL2False() {
 		document.getElementById("userScoreValue").innerHTML = userScoreQuizHistoryLevelTwo;   // Pomocniczy licznik & Nie zmieniaj nazw!!!
 		document.getElementById("info_Proper_Block_H_L2").style.backgroundColor = "rgba(236,65,65,1.0)";
 		document.getElementById("info_Proper_Value_H_L2").innerHTML = "Błędna odpowiedź!";
-		document.getElementById("audio_Laugh").play();
+		document.getElementById("audio_Laugh_5").play();
     }
 	else {
 		
@@ -884,7 +929,7 @@ function oneTimeActiveQCatHisL3True() {
 		document.getElementById("userScoreValue").innerHTML = userScoreQuizHistoryLevelThree;
 		document.getElementById("info_Proper_Block_H_L3").style.backgroundColor = "rgba(112,192,80,1.0)";
 		document.getElementById("info_Proper_Value_H_L3").innerHTML = "Poprawna odpowiedź!";
-		document.getElementById("audio_Yay").play();
+		document.getElementById("audio_Yay_6").play();
     }
 	else {
 		
@@ -900,7 +945,7 @@ function oneTimeActiveQCatHisL3False() {
 		document.getElementById("userScoreValue").innerHTML = userScoreQuizHistoryLevelThree;   // Pomocniczy licznik & Nie zmieniaj nazw!!!
 		document.getElementById("info_Proper_Block_H_L3").style.backgroundColor = "rgba(236,65,65,1.0)";
 		document.getElementById("info_Proper_Value_H_L3").innerHTML = "Błędna odpowiedź!";
-		document.getElementById("audio_Laugh").play();
+		document.getElementById("audio_Laugh_6").play();
     }
 	else {
 		
@@ -918,7 +963,7 @@ function oneTimeActiveQCatTraffL1True() {
 		document.getElementById("userScoreValue").innerHTML = userScoreQuizTrafficRegulationsLevelOne;
 		document.getElementById("info_Proper_Block_T_L1").style.backgroundColor = "rgba(112,192,80,1.0)";
 		document.getElementById("info_Proper_Value_T_L1").innerHTML = "Poprawna odpowiedź!";
-		document.getElementById("audio_Yay").play();
+		document.getElementById("audio_Yay_7").play();
     }
 	else {
 		
@@ -934,7 +979,7 @@ function oneTimeActiveQCatTraffL1False() {
 		document.getElementById("userScoreValue").innerHTML = userScoreQuizTrafficRegulationsLevelOne;   // Pomocniczy licznik & Nie zmieniaj nazw!!!
 		document.getElementById("info_Proper_Block_T_L1").style.backgroundColor = "rgba(236,65,65,1.0)";
 		document.getElementById("info_Proper_Value_T_L1").innerHTML = "Błędna odpowiedź!";
-		document.getElementById("audio_Laugh").play();
+		document.getElementById("audio_Laugh_7").play();
     }
 	else {
 		
@@ -952,7 +997,7 @@ function oneTimeActiveQCatTraffL2True() {
 		document.getElementById("userScoreValue").innerHTML = userScoreQuizTrafficRegulationsLevelTwo;
 		document.getElementById("info_Proper_Block_T_L2").style.backgroundColor = "rgba(112,192,80,1.0)";
 		document.getElementById("info_Proper_Value_T_L2").innerHTML = "Poprawna odpowiedź!";
-		document.getElementById("audio_Yay").play();
+		document.getElementById("audio_Yay_8").play();
     }
 	else {
 		
@@ -968,7 +1013,7 @@ function oneTimeActiveQCatTraffL2False() {
 		document.getElementById("userScoreValue").innerHTML = userScoreQuizTrafficRegulationsLevelTwo;   // Pomocniczy licznik & Nie zmieniaj nazw!!!
 		document.getElementById("info_Proper_Block_T_L2").style.backgroundColor = "rgba(236,65,65,1.0)";
 		document.getElementById("info_Proper_Value_T_L2").innerHTML = "Błędna odpowiedź!";
-		document.getElementById("audio_Laugh").play();
+		document.getElementById("audio_Laugh_8").play();
     }
 	else {
 		
@@ -986,7 +1031,7 @@ function oneTimeActiveQCatTraffL3True() {
 		document.getElementById("userScoreValue").innerHTML = userScoreQuizTrafficRegulationsLevelThree;
 		document.getElementById("info_Proper_Block_T_L3").style.backgroundColor = "rgba(112,192,80,1.0)";
 		document.getElementById("info_Proper_Value_T_L3").innerHTML = "Poprawna odpowiedź!";
-		document.getElementById("audio_Yay").play();
+		document.getElementById("audio_Yay_9").play();
     }
 	else {
 		
@@ -1002,7 +1047,7 @@ function oneTimeActiveQCatTraffL3False() {
 		document.getElementById("userScoreValue").innerHTML = userScoreQuizTrafficRegulationsLevelThree;   // Pomocniczy licznik & Nie zmieniaj nazw!!!
 		document.getElementById("info_Proper_Block_T_L3").style.backgroundColor = "rgba(236,65,65,1.0)";
 		document.getElementById("info_Proper_Value_T_L3").innerHTML = "Błędna odpowiedź!";
-		document.getElementById("audio_Laugh").play();
+		document.getElementById("audio_Laugh_9").play();
     }
 	else {
 		
@@ -1111,6 +1156,8 @@ function nextQuizCountLevelOnePage() {
 				document.getElementById("next_question_button_text").innerHTML = "Podsumowanie";
 			}
 			else if (nextQuizCountriesLevelOnePage == 21) {
+				backgroundMusic.pause();
+				scoreResultSound.play();
 				document.getElementById("QuizCountriesLevelOnePage20QaA").style.display = "none";
 				document.getElementById("QuizCountriesLevelOnePageSummaryQaA").style.display = "block";
 				document.getElementById("quizMenuCategoriesCountriesSummaryBackButton").style.display ="flex";
@@ -1450,6 +1497,8 @@ function nextQuizCountLevelTwoPage() {
 				document.getElementById("next_question_button_text").innerHTML = "Podsumowanie";
 			}
 			else if (nextQuizCountriesLevelTwoPage == 23) {
+				backgroundMusic.pause();
+				scoreResultSound.play();
 				document.getElementById("QuizCountriesLevelTwoPage22QaA").style.display = "none";
 				document.getElementById("QuizCountriesLevelTwoPageSummaryQaA").style.display = "block";
 				document.getElementById("quizMenuCategoriesCountriesSummaryBackButton").style.display ="flex";
@@ -1797,6 +1846,8 @@ function nextQuizCountLevelThreePage() {
 				document.getElementById("next_question_button_text").innerHTML = "Podsumowanie";
 			}
 			else if (nextQuizCountriesLevelThreePage == 25) {
+				backgroundMusic.pause();
+				scoreResultSound.play();
 				document.getElementById("QuizCountriesLevelThreePage24QaA").style.display = "none";
 				document.getElementById("QuizCountriesLevelThreePageSummaryQaA").style.display = "block";
 				document.getElementById("quizMenuCategoriesCountriesSummaryBackButton").style.display ="flex";
@@ -2113,6 +2164,8 @@ function nextQuizHisLevelOnePage() {
 				document.getElementById("QuizHistoryLevelOnePage18QaA").style.display = "block";
 			}
 			else if (nextQuizHistoryLevelOnePage == 19) {
+				backgroundMusic.pause();
+				scoreResultSound.play();
 				document.getElementById("QuizHistoryLevelOnePage18QaA").style.display = "none";
 				document.getElementById("QuizHistoryLevelOnePageSummaryQaA").style.display = "block";
 				document.getElementById("quizMenuCategoriesHistorySummaryBackButton").style.display ="flex";
@@ -2445,6 +2498,8 @@ function nextQuizHisLevelTwoPage() {
 				document.getElementById("next_question_button_text").innerHTML = "Podsumowanie";
 			}
 			else if (nextQuizHistoryLevelTwoPage == 21) {
+				backgroundMusic.pause();
+				scoreResultSound.play();
 				document.getElementById("QuizHistoryLevelTwoPage20QaA").style.display = "none";
 				document.getElementById("QuizHistoryLevelTwoPageSummaryQaA").style.display = "block";
 				document.getElementById("quizMenuCategoriesHistorySummaryBackButton").style.display ="flex";
@@ -2785,6 +2840,8 @@ function nextQuizHisLevelThreePage() {
 				document.getElementById("next_question_button_text").innerHTML = "Podsumowanie";
 			}
 			else if (nextQuizHistoryLevelThreePage == 23) {
+				backgroundMusic.pause();
+				scoreResultSound.play();
 				document.getElementById("QuizHistoryLevelThreePage22QaA").style.display = "none";
 				document.getElementById("QuizHistoryLevelThreePageSummaryQaA").style.display = "block";
 				document.getElementById("quizMenuCategoriesHistorySummaryBackButton").style.display ="flex";
@@ -3118,6 +3175,8 @@ function nextQuizTraffLevelOnePage() {
 				document.getElementById("next_question_button_text").innerHTML = "Podsumowanie";
 			}
 			else if (nextQuizTrafficRegulationsLevelOnePage == 23) {
+				backgroundMusic.pause();
+				scoreResultSound.play();
 				document.getElementById("QuizTrafficRegulationsLevelOnePage22QaA").style.display = "none";
 				document.getElementById("QuizTrafficRegulationsLevelOnePageSummaryQaA").style.display = "block";
 				document.getElementById("quizMenuCategoriesTrafficRegulationsSummaryBackButton").style.display ="flex";
@@ -3470,6 +3529,8 @@ function nextQuizTraffLevelTwoPage() {
 				document.getElementById("next_question_button_text").innerHTML = "Podsumowanie";
 			}
 			else if (nextQuizTrafficRegulationsLevelTwoPage == 26) {
+				backgroundMusic.pause();
+				scoreResultSound.play();
 				document.getElementById("QuizTrafficRegulationsLevelTwoPage25QaA").style.display = "none";
 				document.getElementById("QuizTrafficRegulationsLevelTwoPageSummaryQaA").style.display = "block";
 				document.getElementById("quizMenuCategoriesTrafficRegulationsSummaryBackButton").style.display ="flex";
@@ -3834,6 +3895,8 @@ function nextQuizTraffLevelThreePage() {
 				document.getElementById("next_question_button_text").innerHTML = "Podsumowanie";
 			}
 			else if (nextQuizTrafficRegulationsLevelThreePage == 29) {
+				backgroundMusic.pause();
+				scoreResultSound.play();
 				document.getElementById("QuizTrafficRegulationsLevelThreePage28QaA").style.display = "none";
 				document.getElementById("QuizTrafficRegulationsLevelThreePageSummaryQaA").style.display = "block";
 				document.getElementById("quizMenuCategoriesTrafficRegulationsSummaryBackButton").style.display ="flex";
@@ -4364,6 +4427,7 @@ function FourthAnswerFalseFunction() {
 
 // localStorage - wczytanie danych po ponownym otwarciu strony:
 function showSavedQuizData() {
+	
 	// Całkowity postęp Quiz World:
 	var userPercentScoreQuizWorldProgress = Number(window.localStorage.getItem("localStorage_userPercentScoreQuizWorldProgress"));
 	window.localStorage.setItem("localStorage_userPercentScoreQuizWorldProgress", userPercentScoreQuizWorldProgress);
@@ -4599,6 +4663,7 @@ function deleteQuizMemory() {
 	
 	window.localStorage.clear();
 	
+	document.getElementById("audio_selectSound").play();
 	
 	//Zrób obliczenia sprowadzające się do zera, a na końcu zrób łącze do id'ków
 	//Prawdopodobnie działa to dobrze, tylko trzeba, ogarnąć oblicznia, równe 0.
