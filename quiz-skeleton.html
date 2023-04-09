@@ -5,11 +5,29 @@
   <title>Quiz World</title>
   <link rel="stylesheet" href="quiz-style.css" type="text/css" />
 </head>
-<body onload="showSavedQuizData()">
+<body onload="showSavedQuizData(); zoom();">
   
-  <audio id="audio_Laugh" src="quiz-sounds/crowd-laugh-sound-1.mp3"></audio>
-  <audio id="audio_Yay" src="quiz-sounds/cheering-kids.mp3"></audio>
-  <audio id="audio_Win" src="quiz-sounds/applause-crowd-sound.mp3"></audio>
+  <audio id="audio_selectSound" src="quiz-sounds/stop-13692.mp3"></audio>
+  <audio id="audio_quizBackgroundMusic" src="quiz-sounds/background-music-pa-57786.mp3"></audio>
+  <audio id="audio_scoreResult" src="quiz-sounds/success-fanfare-trumpets-6185.mp3"></audio>
+  <audio id="audio_Laugh_1" src="quiz-sounds/laughing-man-117725.mp3"></audio>
+  <audio id="audio_Laugh_2" src="quiz-sounds/woman-laugh-44487.mp3"></audio>
+  <audio id="audio_Laugh_3" src="quiz-sounds/.mp3"></audio><!--TUTAJ-->
+  <audio id="audio_Laugh_4" src="quiz-sounds/young-girl-laughing-uncontrollably-89542.mp3"></audio>
+  <audio id="audio_Laugh_5" src="quiz-sounds/dat-evil-laugh-104401.mp3"></audio>
+  <audio id="audio_Laugh_6" src="quiz-sounds/shrieking-laughter-104590.mp3"></audio>
+  <audio id="audio_Laugh_7" src="quiz-sounds/crowd-laughing-03-120582.mp3"></audio>
+  <audio id="audio_Laugh_8" src="quiz-sounds/all-da-laughs-103138.mp3"></audio>
+  <audio id="audio_Laugh_9" src="quiz-sounds/evil-shreik-45560.mp3"></audio>
+  <audio id="audio_Yay_1" src="quiz-sounds/euphoric-cheer-102976.mp3"></audio>
+  <audio id="audio_Yay_2" src="quiz-sounds/group_yay_cheer-101509.mp3"></audio>
+  <audio id="audio_Yay_3" src="quiz-sounds/small-audience-applause-self-recorded-102256.mp3"></audio>
+  <audio id="audio_Yay_4" src="quiz-sounds/woo-hoo-82843.mp3"></audio>
+  <audio id="audio_Yay_5" src="quiz-sounds/yay2-86405.mp3"></audio>
+  <audio id="audio_Yay_6" src="quiz-sounds/triumphant-yes-x2-103141.mp3"></audio>
+  <audio id="audio_Yay_7" src="quiz-sounds/small-applause-6695.mp3"></audio>
+  <audio id="audio_Yay_8" src="quiz-sounds/crowd-applause-113728.mp3"></audio>
+  <audio id="audio_Yay_9" src="quiz-sounds/wow-121578.mp3"></audio>
   
   <div class="quiz-area">
     <div class="quiz-area-vertCent">
@@ -28,9 +46,9 @@
 			    Quiz World to aplikacja służąca do rozwiązywania testów z różnych dziedzin wiedzy.
 				Aplikacja ta ma na celu wzbudzenie u internauty chęci zgłębienia nowej wiedzy i 
 				poznania świata zewnętrznego. Aplikacja została napisana w języku znaczników HTML i 
-				w językach programowania CSS i JavaScript. Zdjęcia przedstawione w testach pochodzą 
-                z &bdquo;Pixabay&rdquo;, gdzie są na darmowej licencji. Autorem aplikacji jest: 
-				Patryk Szewczyk.
+				w językach programowania CSS i JavaScript. Zdjęcia przedstawione w testach, 
+				pojawiające się efekty dźwiękowe i muzyka pochodzą z &bdquo;Pixabay&rdquo;, gdzie są na 
+				darmowej licencji. Autorem aplikacji jest: Patryk Szewczyk.
 				<div class="quiz-introduction-content-buttonLine">
 				  <div class="quiz-introduction-next-button-text">Nie zwlekaj, tylko zaczynaj przygodę z tą aplikacją!</div>
 				  <div class="quiz-introduction-next-button-proper" onclick="goToQuizAplicationMainMenu()">START</div>
@@ -5016,7 +5034,7 @@
 		    <div class="question-title-overBlock"> <!--pamiętaj o {padding:20px;}-->
 		      <div class="question-numberContent-group">
 		        <div class="question-number"><div id="HisL2Q1Number"></div></div>
-			    <div class="question-content">W którym roku wybuchła II Wojna Światowa?</div>
+			    <div class="question-content">W którym wieku Mikołaj Kopernik wydał traktat &bdquo;O obrotach ciał niebieskich&rdquo;, w którym udowodnił, że Ziemia kręci się wokół Słońca?</div>
 			  </div>
 		    </div>
 		    <div class="imgAnsw-content-overBlock">
@@ -5032,7 +5050,7 @@
 				    <div class="answer-textNumber-proper">A</div>
 				    <button type="button" class="answer-content-proper answer-content-proper-first first-true-answer first-false-answer" 
 					        onclick="oneTimeActiveQCatHisL2False(); FirstAnswerBlockadeFunction(); FirstAnswerFalseFunction();" 
-					        onmouseover="FirstAnswerOnmouseover()" onmouseout="FirstAnswerOnmouseout()">1914
+					        onmouseover="FirstAnswerOnmouseover()" onmouseout="FirstAnswerOnmouseout()">XII
 					</button>
 				  </div>
 			    </div>
@@ -5040,8 +5058,8 @@
 			      <div class="answer-textNumber-and-answContentProp-dimension">
 				    <div class="answer-textNumber-proper">B</div>
 				    <button type="button" class="answer-content-proper answer-content-proper-second second-true-answer second-false-answer" 
-					        onclick="oneTimeActiveQCatHisL2True(); SecondAnswerBlockadeFunction(); SecondAnswerTrueFunction();" 
-					        onmouseover="SecondAnswerOnmouseover()" onmouseout="SecondAnswerOnmouseout()">1939
+					        onclick="oneTimeActiveQCatHisL2False(); SecondAnswerBlockadeFunction(); SecondAnswerFalseFunction();" 
+					        onmouseover="SecondAnswerOnmouseover()" onmouseout="SecondAnswerOnmouseout()">XIV
 					</button>
 				  </div>
 			    </div>
@@ -5050,7 +5068,7 @@
 				    <div class="answer-textNumber-proper">C</div>
 				    <button type="button" class="answer-content-proper answer-content-proper-third third-true-answer third-false-answer" 
 					        onclick="oneTimeActiveQCatHisL2False(); ThirdAnswerBlockadeFunction(); ThirdAnswerFalseFunction();" 
-							onmouseover="ThirdAnswerOnmouseover()" onmouseout="ThirdAnswerOnmouseout()">1945
+							onmouseover="ThirdAnswerOnmouseover()" onmouseout="ThirdAnswerOnmouseout()">XV
 					</button>
 				  </div>
 			    </div>
@@ -5058,8 +5076,8 @@
 			      <div class="answer-textNumber-and-answContentProp-dimension">
 				    <div class="answer-textNumber-proper">D</div>
 				    <button type="button" class="answer-content-proper answer-content-proper-fourth fourth-true-answer fourth-false-answer" 
-					        onclick="oneTimeActiveQCatHisL2False(); FourthAnswerBlockadeFunction(); FourthAnswerFalseFunction();" 
-							onmouseover="FourthAnswerOnmouseover()" onmouseout="FoutrhAnswerOnmouseout()">1918
+					        onclick="oneTimeActiveQCatHisL2True(); FourthAnswerBlockadeFunction(); FourthAnswerTrueFunction();" 
+							onmouseover="FourthAnswerOnmouseover()" onmouseout="FoutrhAnswerOnmouseout()">XVI
 					</button>
 				  </div>
 			    </div>
@@ -5071,13 +5089,13 @@
 		    <div class="question-title-overBlock"> <!--pamiętaj o {padding:20px;}-->
 		      <div class="question-numberContent-group">
 		        <div class="question-number"><div id="HisL2Q2Number"></div></div>
-			    <div class="question-content">Berlin jest stolicą:</div>
+			    <div class="question-content">Kto znajduje się na tym zdjęciu?</div>
 			  </div>
 		    </div>
 		    <div class="imgAnsw-content-overBlock">
 		      <div class="image-dimension">
 			    <div class="image-proper">
-			      <img class="image" src="quiz-images/his-2/h2q2.jpg" 
+			      <img class="image" src="quiz-images/his-2/h2q2.png" 
 				       alt="obraz_History_L2_Q2" />
 			    </div>
 			  </div>
@@ -5087,7 +5105,7 @@
 				    <div class="answer-textNumber-proper">A</div>
 				    <button type="button" class="answer-content-proper answer-content-proper-first first-true-answer first-false-answer" 
 					        onclick="oneTimeActiveQCatHisL2False(); FirstAnswerBlockadeFunction(); FirstAnswerFalseFunction();" 
-					        onmouseover="FirstAnswerOnmouseover()" onmouseout="FirstAnswerOnmouseout()">Francji
+					        onmouseover="FirstAnswerOnmouseover()" onmouseout="FirstAnswerOnmouseout()">Józef Stalin
 					</button>
 				  </div>
 			    </div>
@@ -5096,7 +5114,7 @@
 				    <div class="answer-textNumber-proper">B</div>
 				    <button type="button" class="answer-content-proper answer-content-proper-second second-true-answer second-false-answer" 
 					        onclick="oneTimeActiveQCatHisL2False(); SecondAnswerBlockadeFunction(); SecondAnswerFalseFunction();" 
-					        onmouseover="SecondAnswerOnmouseover()" onmouseout="SecondAnswerOnmouseout()">Szwecji
+					        onmouseover="SecondAnswerOnmouseover()" onmouseout="SecondAnswerOnmouseout()">Roman Dmowski
 					</button>
 				  </div>
 			    </div>
@@ -5104,8 +5122,8 @@
 			      <div class="answer-textNumber-and-answContentProp-dimension">
 				    <div class="answer-textNumber-proper">C</div>
 				    <button type="button" class="answer-content-proper answer-content-proper-third third-true-answer third-false-answer" 
-					        onclick="oneTimeActiveQCatHisL2False(); ThirdAnswerBlockadeFunction(); ThirdAnswerFalseFunction();" 
-					        onmouseover="ThirdAnswerOnmouseover()" onmouseout="ThirdAnswerOnmouseout()">Bawarii
+					        onclick="oneTimeActiveQCatHisL2True(); ThirdAnswerBlockadeFunction(); ThirdAnswerTrueFunction();" 
+					        onmouseover="ThirdAnswerOnmouseover()" onmouseout="ThirdAnswerOnmouseout()">Nikola Tesla
 					</button>
 				  </div>
 			    </div>
@@ -5113,8 +5131,8 @@
 			      <div class="answer-textNumber-and-answContentProp-dimension">
 				    <div class="answer-textNumber-proper">D</div>
 				    <button type="button" class="answer-content-proper answer-content-proper-fourth fourth-true-answer fourth-false-answer" 
-					        onclick="oneTimeActiveQCatHisL2True(); FourthAnswerBlockadeFunction(); FourthAnswerTrueFunction();" 
-					        onmouseover="FourthAnswerOnmouseover()" onmouseout="FoutrhAnswerOnmouseout()">Niemiec
+					        onclick="oneTimeActiveQCatHisL2False(); FourthAnswerBlockadeFunction(); FourthAnswerFalseFunction();" 
+					        onmouseover="FourthAnswerOnmouseover()" onmouseout="FoutrhAnswerOnmouseout()">Adolf Hitler
 					</button>
 				  </div>
 			    </div>
@@ -5126,7 +5144,7 @@
 		    <div class="question-title-overBlock"> <!--pamiętaj o {padding:20px;}-->
 		      <div class="question-numberContent-group">
 		        <div class="question-number"><div id="HisL2Q3Number"></div></div>
-			    <div class="question-content">Jak nazywa się największe państwo na świecie?</div>
+			    <div class="question-content">Kto jest tradycyjnie uważany za ojca historii?</div>
 			  </div>
 		    </div>
 		    <div class="imgAnsw-content-overBlock">
@@ -5142,7 +5160,7 @@
 				    <div class="answer-textNumber-proper">A</div>
 				    <button type="button" class="answer-content-proper answer-content-proper-first first-true-answer first-false-answer" 
 					        onclick="oneTimeActiveQCatHisL2False(); FirstAnswerBlockadeFunction(); FirstAnswerFalseFunction();" 
-					        onmouseover="FirstAnswerOnmouseover()" onmouseout="FirstAnswerOnmouseout()">Stany Zjednoczone Ameryki (USA)
+					        onmouseover="FirstAnswerOnmouseover()" onmouseout="FirstAnswerOnmouseout()">Sofokles
 					</button>
 				  </div>
 			    </div>
@@ -5150,8 +5168,8 @@
 			      <div class="answer-textNumber-and-answContentProp-dimension">
 				    <div class="answer-textNumber-proper">B</div>
 				    <button type="button" class="answer-content-proper answer-content-proper-second second-true-answer second-false-answer" 
-					        onclick="oneTimeActiveQCatHisL2False(); SecondAnswerBlockadeFunction(); SecondAnswerFalseFunction();" 
-					        onmouseover="SecondAnswerOnmouseover()" onmouseout="SecondAnswerOnmouseout()">Kanada
+					        onclick="oneTimeActiveQCatHisL2True(); SecondAnswerBlockadeFunction(); SecondAnswerTrueFunction();" 
+					        onmouseover="SecondAnswerOnmouseover()" onmouseout="SecondAnswerOnmouseout()">Herodot
 					</button>
 				  </div>
 			    </div>
@@ -5159,8 +5177,8 @@
 			      <div class="answer-textNumber-and-answContentProp-dimension">
 				    <div class="answer-textNumber-proper">C</div>
 				    <button type="button" class="answer-content-proper answer-content-proper-third third-true-answer third-false-answer" 
-					        onclick="oneTimeActiveQCatHisL2True(); ThirdAnswerBlockadeFunction(); ThirdAnswerTrueFunction();" 
-					        onmouseover="ThirdAnswerOnmouseover()" onmouseout="ThirdAnswerOnmouseout()">Rosja
+					        onclick="oneTimeActiveQCatHisL2False(); ThirdAnswerBlockadeFunction(); ThirdAnswerFalseFunction();" 
+					        onmouseover="ThirdAnswerOnmouseover()" onmouseout="ThirdAnswerOnmouseout()">Ksenofont
 					</button>
 				  </div>
 			    </div>
@@ -5169,7 +5187,7 @@
 				    <div class="answer-textNumber-proper">D</div>
 				    <button type="button" class="answer-content-proper answer-content-proper-fourth fourth-true-answer fourth-false-answer" 
 					        onclick="oneTimeActiveQCatHisL2False(); FourthAnswerBlockadeFunction(); FourthAnswerFalseFunction();" 
-					        onmouseover="FourthAnswerOnmouseover()" onmouseout="FoutrhAnswerOnmouseout()">Chiny
+					        onmouseover="FourthAnswerOnmouseover()" onmouseout="FoutrhAnswerOnmouseout()">Nikt
 					</button>
 				  </div>
 			    </div>
@@ -5181,7 +5199,7 @@
 		    <div class="question-title-overBlock"> <!--pamiętaj o {padding:20px;}-->
 		      <div class="question-numberContent-group">
 		        <div class="question-number"><div id="HisL2Q4Number"></div></div>
-			    <div class="question-content">Jak nazywa się najludniejsze państwo na świecie?</div>
+			    <div class="question-content">Które z tych urządzeń nie zostało wynalezione przez Thomasa Edisona?</div>
 			  </div>
 		    </div>
 		    <div class="imgAnsw-content-overBlock">
@@ -5197,7 +5215,7 @@
 				    <div class="answer-textNumber-proper">A</div>
 				    <button type="button" class="answer-content-proper answer-content-proper-first first-true-answer first-false-answer" 
 					        onclick="oneTimeActiveQCatHisL2False(); FirstAnswerBlockadeFunction(); FirstAnswerFalseFunction();" 
-					        onmouseover="FirstAnswerOnmouseover()" onmouseout="FirstAnswerOnmouseout()">Stany Zjednoczone Ameryki (USA)
+					        onmouseover="FirstAnswerOnmouseover()" onmouseout="FirstAnswerOnmouseout()">Fonograf
 					</button>
 				  </div>
 			    </div>
@@ -5206,7 +5224,7 @@
 				    <div class="answer-textNumber-proper">B</div>
 				    <button type="button" class="answer-content-proper answer-content-proper-second second-true-answer second-false-answer" 
 					        onclick="oneTimeActiveQCatHisL2True(); SecondAnswerBlockadeFunction(); SecondAnswerTrueFunction();" 
-					        onmouseover="SecondAnswerOnmouseover()" onmouseout="SecondAnswerOnmouseout()">Chiny
+					        onmouseover="SecondAnswerOnmouseover()" onmouseout="SecondAnswerOnmouseout()">Piorunochron
 					</button>
 				  </div>
 			    </div>
@@ -5215,7 +5233,7 @@
 				    <div class="answer-textNumber-proper">C</div>
 				    <button type="button" class="answer-content-proper answer-content-proper-third third-true-answer third-false-answer" 
 					        onclick="oneTimeActiveQCatHisL2False(); ThirdAnswerBlockadeFunction(); ThirdAnswerFalseFunction();" 
-					        onmouseover="ThirdAnswerOnmouseover()" onmouseout="ThirdAnswerOnmouseout()">Indie
+					        onmouseover="ThirdAnswerOnmouseover()" onmouseout="ThirdAnswerOnmouseout()">Żarówka żarnikowa
 					</button>
 				  </div>
 			    </div>
@@ -5224,7 +5242,7 @@
 				    <div class="answer-textNumber-proper">D</div>
 				    <button type="button" class="answer-content-proper answer-content-proper-fourth fourth-true-answer fourth-false-answer" 
 					        onclick="oneTimeActiveQCatHisL2False(); FourthAnswerBlockadeFunction(); FourthAnswerFalseFunction();" 
-					        onmouseover="FourthAnswerOnmouseover()" onmouseout="FoutrhAnswerOnmouseout()">Indonezja
+					        onmouseover="FourthAnswerOnmouseover()" onmouseout="FoutrhAnswerOnmouseout()">Obrabiarka do kół zębatych
 					</button>
 				  </div>
 			    </div>
@@ -5236,7 +5254,7 @@
 		    <div class="question-title-overBlock"> <!--pamiętaj o {padding:20px;}-->
 		      <div class="question-numberContent-group">
 		        <div class="question-number"><div id="HisL2Q5Number"></div></div>
-			    <div class="question-content">Jak nazywa się najmniejsze państwo na świecie?</div>
+			    <div class="question-content">Kto toczył wojny opiumowe?</div>
 			  </div>
 		    </div>
 		    <div class="imgAnsw-content-overBlock">
@@ -5252,7 +5270,7 @@
 				    <div class="answer-textNumber-proper">A</div>
 				    <button type="button" class="answer-content-proper answer-content-proper-first first-true-answer first-false-answer" 
 					        onclick="oneTimeActiveQCatHisL2False(); FirstAnswerBlockadeFunction(); FirstAnswerFalseFunction();" 
-					        onmouseover="FirstAnswerOnmouseover()" onmouseout="FirstAnswerOnmouseout()">Kuba
+					        onmouseover="FirstAnswerOnmouseover()" onmouseout="FirstAnswerOnmouseout()">Rosja i Wietnam
 					</button>
 				  </div>
 			    </div>
@@ -5261,7 +5279,7 @@
 				    <div class="answer-textNumber-proper">B</div>
 				    <button type="button" class="answer-content-proper answer-content-proper-second second-true-answer second-false-answer" 
 					        onclick="oneTimeActiveQCatHisL2False(); SecondAnswerBlockadeFunction(); SecondAnswerFalseFunction();" 
-					        onmouseover="SecondAnswerOnmouseover()" onmouseout="SecondAnswerOnmouseout()">Monako
+					        onmouseover="SecondAnswerOnmouseover()" onmouseout="SecondAnswerOnmouseout()">Chiny i Wielka Brytania
 					</button>
 				  </div>
 			    </div>
@@ -5269,8 +5287,8 @@
 			      <div class="answer-textNumber-and-answContentProp-dimension">
 				    <div class="answer-textNumber-proper">C</div>
 				    <button type="button" class="answer-content-proper answer-content-proper-third third-true-answer third-false-answer" 
-					        onclick="oneTimeActiveQCatHisL2False(); ThirdAnswerBlockadeFunction(); ThirdAnswerFalseFunction();" 
-					        onmouseover="ThirdAnswerOnmouseover()" onmouseout="ThirdAnswerOnmouseout()">San Marino
+					        onclick="oneTimeActiveQCatHisL2True(); ThirdAnswerBlockadeFunction(); ThirdAnswerTrueFunction();" 
+					        onmouseover="ThirdAnswerOnmouseover()" onmouseout="ThirdAnswerOnmouseout()">Francja i Japonia
 					</button>
 				  </div>
 			    </div>
@@ -5278,8 +5296,8 @@
 			      <div class="answer-textNumber-and-answContentProp-dimension">
 				    <div class="answer-textNumber-proper">D</div>
 				    <button type="button" class="answer-content-proper answer-content-proper-fourth fourth-true-answer fourth-false-answer" 
-					        onclick="oneTimeActiveQCatHisL2True(); FourthAnswerBlockadeFunction(); FourthAnswerTrueFunction();" 
-					        onmouseover="FourthAnswerOnmouseover()" onmouseout="FoutrhAnswerOnmouseout()">Watykan
+					        onclick="oneTimeActiveQCatHisL2False(); FourthAnswerBlockadeFunction(); FourthAnswerFalseFunction();" 
+					        onmouseover="FourthAnswerOnmouseover()" onmouseout="FoutrhAnswerOnmouseout()">Stany Zjednoczone i Japonia
 					</button>
 				  </div>
 			    </div>
@@ -5291,7 +5309,7 @@
 		    <div class="question-title-overBlock"> <!--pamiętaj o {padding:20px;}-->
 		      <div class="question-numberContent-group">
 		        <div class="question-number"><div id="HisL2Q6Number"></div></div>
-			    <div class="question-content">Jak nazywa się stolica Francji?</div>
+			    <div class="question-content">Przed zjednoczeniem nazwa Demokratyczna Republika Wietnamu oznaczała:</div>
 			  </div>
 		    </div>
 		    <div class="imgAnsw-content-overBlock">
@@ -5307,7 +5325,7 @@
 				    <div class="answer-textNumber-proper">A</div>
 				    <button type="button" class="answer-content-proper answer-content-proper-first first-true-answer first-false-answer" 
 					        onclick="oneTimeActiveQCatHisL2True(); FirstAnswerBlockadeFunction(); FirstAnswerTrueFunction();" 
-					        onmouseover="FirstAnswerOnmouseover()" onmouseout="FirstAnswerOnmouseout()">Paryż
+					        onmouseover="FirstAnswerOnmouseover()" onmouseout="FirstAnswerOnmouseout()">Wietnam Północny
 					</button>
 				  </div>
 			    </div>
@@ -5316,7 +5334,7 @@
 				    <div class="answer-textNumber-proper">B</div>
 				    <button type="button" class="answer-content-proper answer-content-proper-second second-true-answer second-false-answer" 
 					        onclick="oneTimeActiveQCatHisL2False(); SecondAnswerBlockadeFunction(); SecondAnswerFalseFunction();" 
-					        onmouseover="SecondAnswerOnmouseover()" onmouseout="SecondAnswerOnmouseout()">Madryt
+					        onmouseover="SecondAnswerOnmouseover()" onmouseout="SecondAnswerOnmouseout()">Wietnam Południowy
 					</button>
 				  </div>
 			    </div>
@@ -5325,7 +5343,7 @@
 				    <div class="answer-textNumber-proper">C</div>
 				    <button type="button" class="answer-content-proper answer-content-proper-third third-true-answer third-false-answer" 
 					        onclick="oneTimeActiveQCatHisL2False(); ThirdAnswerBlockadeFunction(); ThirdAnswerFalseFunction();" 
-					        onmouseover="ThirdAnswerOnmouseover()" onmouseout="ThirdAnswerOnmouseout()">Mediolan
+					        onmouseover="ThirdAnswerOnmouseover()" onmouseout="ThirdAnswerOnmouseout()">Wietnam Zachodni
 					</button>
 				  </div>
 			    </div>
@@ -5334,7 +5352,7 @@
 				    <div class="answer-textNumber-proper">D</div>
 				    <button type="button" class="answer-content-proper answer-content-proper-fourth fourth-true-answer fourth-false-answer" 
 					        onclick="oneTimeActiveQCatHisL2False(); FourthAnswerBlockadeFunction(); FourthAnswerFalseFunction();" 
-					        onmouseover="FourthAnswerOnmouseover()" onmouseout="FoutrhAnswerOnmouseout()">Nantes
+					        onmouseover="FourthAnswerOnmouseover()" onmouseout="FoutrhAnswerOnmouseout()">Wietnam Wschodni
 					</button>
 				  </div>
 			    </div>
@@ -5346,7 +5364,7 @@
 		    <div class="question-title-overBlock"> <!--pamiętaj o {padding:20px;}-->
 		      <div class="question-numberContent-group">
 		        <div class="question-number"><div id="HisL2Q7Number"></div></div>
-			    <div class="question-content">Państwo wyspiarskie w Europie Zachodniej, w skład którego wchodzą: Anglia, Walia i Szkocja to:</div>
+			    <div class="question-content">Która z tych postaci nie zdobyła Pokojowej Nagrody Nobla?</div>
 			  </div>
 		    </div>
 		    <div class="imgAnsw-content-overBlock">
@@ -5362,7 +5380,7 @@
 				    <div class="answer-textNumber-proper">A</div>
 				    <button type="button" class="answer-content-proper answer-content-proper-first first-true-answer first-false-answer" 
 					        onclick="oneTimeActiveQCatHisL2False(); FirstAnswerBlockadeFunction(); FirstAnswerFalseFunction();" 
-					        onmouseover="FirstAnswerOnmouseover()" onmouseout="FirstAnswerOnmouseout()">Islandia
+					        onmouseover="FirstAnswerOnmouseover()" onmouseout="FirstAnswerOnmouseout()">Michaił Gorbaczow
 					</button>
 				  </div>
 			    </div>
@@ -5371,7 +5389,7 @@
 				    <div class="answer-textNumber-proper">B</div>
 				    <button type="button" class="answer-content-proper answer-content-proper-second second-true-answer second-false-answer" 
 					        onclick="oneTimeActiveQCatHisL2False(); SecondAnswerBlockadeFunction(); SecondAnswerFalseFunction();" 
-					        onmouseover="SecondAnswerOnmouseover()" onmouseout="SecondAnswerOnmouseout()">Irlandia
+					        onmouseover="SecondAnswerOnmouseover()" onmouseout="SecondAnswerOnmouseout()">Matka Teresa z Kalkuty
 					</button>
 				  </div>
 			    </div>
@@ -5380,7 +5398,7 @@
 				    <div class="answer-textNumber-proper">C</div>
 				    <button type="button" class="answer-content-proper answer-content-proper-third third-true-answer third-false-answer" 
 					        onclick="oneTimeActiveQCatHisL2True(); ThirdAnswerBlockadeFunction(); ThirdAnswerTrueFunction();" 
-					        onmouseover="ThirdAnswerOnmouseover()" onmouseout="ThirdAnswerOnmouseout()">Wielka Brytania
+					        onmouseover="ThirdAnswerOnmouseover()" onmouseout="ThirdAnswerOnmouseout()">Winston Churchill
 					</button>
 				  </div>
 			    </div>
@@ -5389,7 +5407,7 @@
 				    <div class="answer-textNumber-proper">D</div>
 				    <button type="button" class="answer-content-proper answer-content-proper-fourth fourth-true-answer fourth-false-answer" 
 					        onclick="oneTimeActiveQCatHisL2False(); FourthAnswerBlockadeFunction(); FourthAnswerFalseFunction();" 
-					        onmouseover="FourthAnswerOnmouseover()" onmouseout="FoutrhAnswerOnmouseout()">Szwecja
+					        onmouseover="FourthAnswerOnmouseover()" onmouseout="FoutrhAnswerOnmouseout()">Lech Wałęsa
 					</button>
 				  </div>
 			    </div>
@@ -5401,7 +5419,7 @@
 		    <div class="question-title-overBlock"> <!--pamiętaj o {padding:20px;}-->
 		      <div class="question-numberContent-group">
 		        <div class="question-number"><div id="HisL2Q8Number"></div></div>
-			    <div class="question-content">Państwo w Europie Środkowej, graniczące z Niemcami od zachodu i z Ukrainą od wschodu to:</div>
+			    <div class="question-content">W którym roku Indie uzyskały niepodległość?</div>
 			  </div>
 		    </div>
 		    <div class="imgAnsw-content-overBlock">
@@ -5417,7 +5435,7 @@
 				    <div class="answer-textNumber-proper">A</div>
 				    <button type="button" class="answer-content-proper answer-content-proper-first first-true-answer first-false-answer" 
 					        onclick="oneTimeActiveQCatHisL2False(); FirstAnswerBlockadeFunction(); FirstAnswerFalseFunction();" 
-					        onmouseover="FirstAnswerOnmouseover()" onmouseout="FirstAnswerOnmouseout()">Czechy
+					        onmouseover="FirstAnswerOnmouseover()" onmouseout="FirstAnswerOnmouseout()">1955
 					</button>
 				  </div>
 			    </div>
@@ -5426,7 +5444,7 @@
 				    <div class="answer-textNumber-proper">B</div>
 				    <button type="button" class="answer-content-proper answer-content-proper-second second-true-answer second-false-answer" 
 					        onclick="oneTimeActiveQCatHisL2False(); SecondAnswerBlockadeFunction(); SecondAnswerFalseFunction();" 
-					        onmouseover="SecondAnswerOnmouseover()" onmouseout="SecondAnswerOnmouseout()">Słowacja
+					        onmouseover="SecondAnswerOnmouseover()" onmouseout="SecondAnswerOnmouseout()">1963
 					</button>
 				  </div>
 			    </div>
@@ -5435,7 +5453,7 @@
 				    <div class="answer-textNumber-proper">C</div>
 				    <button type="button" class="answer-content-proper answer-content-proper-third third-true-answer third-false-answer" 
 					        onclick="oneTimeActiveQCatHisL2True(); ThirdAnswerBlockadeFunction(); ThirdAnswerTrueFunction();" 
-					        onmouseover="ThirdAnswerOnmouseover()" onmouseout="ThirdAnswerOnmouseout()">Polska
+					        onmouseover="ThirdAnswerOnmouseover()" onmouseout="ThirdAnswerOnmouseout()">1947
 					</button>
 				  </div>
 			    </div>
@@ -5444,19 +5462,19 @@
 				    <div class="answer-textNumber-proper">D</div>
 				    <button type="button" class="answer-content-proper answer-content-proper-fourth fourth-true-answer fourth-false-answer" 
 					        onclick="oneTimeActiveQCatHisL2False(); FourthAnswerBlockadeFunction(); FourthAnswerFalseFunction();" 
-					        onmouseover="FourthAnswerOnmouseover()" onmouseout="FoutrhAnswerOnmouseout()">Białoruś
+					        onmouseover="FourthAnswerOnmouseover()" onmouseout="FoutrhAnswerOnmouseout()">1957
 					</button>
 				  </div>
 			    </div>
 			  </div>
 		    </div>
 		  </div>
-		  <!--Quiz World - History - Level 2 - Ouestion 9: -->
+		  <!--Quiz World - History - Level 2 - Question 9: -->
 		  <div id="QuizHistoryLevelTwoPage9QaA" class="question-and-answers-group">
 		    <div class="question-title-overBlock"> <!--pamiętaj o {padding:20px;}-->
 		      <div class="question-numberContent-group">
 		        <div class="question-number"><div id="HisL2Q9Number"></div></div>
-			    <div class="question-content">Jak nazywa się stolica Czech?</div>
+			    <div class="question-content">Okres nazistowskich Niemiec nazywany jest również:</div>
 			  </div>
 		    </div>
 		    <div class="imgAnsw-content-overBlock">
@@ -5472,7 +5490,7 @@
 				    <div class="answer-textNumber-proper">A</div>
 				    <button type="button" class="answer-content-proper answer-content-proper-first first-true-answer first-false-answer" 
 					        onclick="oneTimeActiveQCatHisL2False(); FirstAnswerBlockadeFunction(); FirstAnswerFalseFunction();" 
-					        onmouseover="FirstAnswerOnmouseover()" onmouseout="FirstAnswerOnmouseout()">Budapeszt
+					        onmouseover="FirstAnswerOnmouseover()" onmouseout="FirstAnswerOnmouseout()">Drugą Rzeszą
 					</button>
 				  </div>
 			    </div>
@@ -5481,7 +5499,7 @@
 				    <div class="answer-textNumber-proper">B</div>
 				    <button type="button" class="answer-content-proper answer-content-proper-second second-true-answer second-false-answer" 
 					        onclick="oneTimeActiveQCatHisL2True(); SecondAnswerBlockadeFunction(); SecondAnswerTrueFunction();" 
-					        onmouseover="SecondAnswerOnmouseover()" onmouseout="SecondAnswerOnmouseout()">Praga
+					        onmouseover="SecondAnswerOnmouseover()" onmouseout="SecondAnswerOnmouseout()">Trzecią Rzeszą
 					</button>
 				  </div>
 			    </div>
@@ -5490,7 +5508,7 @@
 				    <div class="answer-textNumber-proper">C</div>
 				    <button type="button" class="answer-content-proper answer-content-proper-third third-true-answer third-false-answer" 
 					        onclick="oneTimeActiveQCatHisL2False(); ThirdAnswerBlockadeFunction(); ThirdAnswerFalseFunction();" 
-					        onmouseover="ThirdAnswerOnmouseover()" onmouseout="ThirdAnswerOnmouseout()">Brno
+					        onmouseover="ThirdAnswerOnmouseover()" onmouseout="ThirdAnswerOnmouseout()">Czwartą Rzeszą
 					</button>
 				  </div>
 			    </div>
@@ -5499,7 +5517,7 @@
 				    <div class="answer-textNumber-proper">D</div>
 				    <button type="button" class="answer-content-proper answer-content-proper-fourth fourth-true-answer fourth-false-answer" 
 					        onclick="oneTimeActiveQCatHisL2False(); FourthAnswerBlockadeFunction(); FourthAnswerFalseFunction();" 
-					        onmouseover="FourthAnswerOnmouseover()" onmouseout="FoutrhAnswerOnmouseout()">Pilzno
+					        onmouseover="FourthAnswerOnmouseover()" onmouseout="FoutrhAnswerOnmouseout()">Piątą Rzeszą
 					</button>
 				  </div>
 			    </div>
@@ -5511,7 +5529,7 @@
 		    <div class="question-title-overBlock"> <!--pamiętaj o {padding:20px;}-->
 		      <div class="question-numberContent-group">
 		        <div class="question-number"><div id="HisL2Q10Number"></div></div>
-			    <div class="question-content">Najludniejsze państwo Ameryki Północnej to:</div>
+			    <div class="question-content">Kto był mordercą Johna F. Kennedy’ego?</div>
 			  </div>
 		    </div>
 		    <div class="imgAnsw-content-overBlock">
@@ -5527,7 +5545,7 @@
 				    <div class="answer-textNumber-proper">A</div>
 				    <button type="button" class="answer-content-proper answer-content-proper-first first-true-answer first-false-answer" 
 					        onclick="oneTimeActiveQCatHisL2False(); FirstAnswerBlockadeFunction(); FirstAnswerFalseFunction();" 
-					        onmouseover="FirstAnswerOnmouseover()" onmouseout="FirstAnswerOnmouseout()">Meksyk
+					        onmouseover="FirstAnswerOnmouseover()" onmouseout="FirstAnswerOnmouseout()">James Earl Ray
 					</button>
 				  </div>
 			    </div>
@@ -5536,7 +5554,7 @@
 				    <div class="answer-textNumber-proper">B</div>
 				    <button type="button" class="answer-content-proper answer-content-proper-second second-true-answer second-false-answer" 
 					        onclick="oneTimeActiveQCatHisL2False(); SecondAnswerBlockadeFunction(); SecondAnswerFalseFunction();" 
-					        onmouseover="SecondAnswerOnmouseover()" onmouseout="SecondAnswerOnmouseout()">Kanada
+					        onmouseover="SecondAnswerOnmouseover()" onmouseout="SecondAnswerOnmouseout()">Anders Behring Breivik
 					</button>
 				  </div>
 			    </div>
@@ -5545,7 +5563,7 @@
 				    <div class="answer-textNumber-proper">C</div>
 				    <button type="button" class="answer-content-proper answer-content-proper-third third-true-answer third-false-answer" 
 					        onclick="oneTimeActiveQCatHisL2True(); ThirdAnswerBlockadeFunction(); ThirdAnswerTrueFunction();" 
-					        onmouseover="ThirdAnswerOnmouseover()" onmouseout="ThirdAnswerOnmouseout()">Stany Zjednoczone Ameryki (USA)
+					        onmouseover="ThirdAnswerOnmouseover()" onmouseout="ThirdAnswerOnmouseout()">Lee Harvey Oswald
 					</button>
 				  </div>
 			    </div>
@@ -5554,7 +5572,7 @@
 				    <div class="answer-textNumber-proper">D</div>
 				    <button type="button" class="answer-content-proper answer-content-proper-fourth fourth-true-answer fourth-false-answer" 
 					        onclick="oneTimeActiveQCatHisL2False(); FourthAnswerBlockadeFunction(); FourthAnswerFalseFunction();" 
-					        onmouseover="FourthAnswerOnmouseover()" onmouseout="FoutrhAnswerOnmouseout()">Brazylia
+					        onmouseover="FourthAnswerOnmouseover()" onmouseout="FoutrhAnswerOnmouseout()">Nie wiadomo. Niezidentyfikowano przestępcy.
 					</button>
 				  </div>
 			    </div>
@@ -5566,7 +5584,7 @@
 		    <div class="question-title-overBlock"> <!--pamiętaj o {padding:20px;}-->
 		      <div class="question-numberContent-group">
 		        <div class="question-number"><div id="HisL2Q11Number"></div></div>
-			    <div class="question-content">Kultura i tradycja artystyczna tego kraju wywarła ogromny wpływ na sztukę i kulturę innych krajów Europy. Pochodzi stąd Leonardo da Vinci i Michał Anioł.</div>
+			    <div class="question-content">Z czego znany jest włoski fizyk Enrico Fermi?</div>
 			  </div>
 		    </div>
 		    <div class="imgAnsw-content-overBlock">
@@ -5582,7 +5600,7 @@
 				    <div class="answer-textNumber-proper">A</div>
 				    <button type="button" class="answer-content-proper answer-content-proper-first first-true-answer first-false-answer" 
 					        onclick="oneTimeActiveQCatHisL2False(); FirstAnswerBlockadeFunction(); FirstAnswerFalseFunction();" 
-					        onmouseover="FirstAnswerOnmouseover()" onmouseout="FirstAnswerOnmouseout()">Portugalia
+					        onmouseover="FirstAnswerOnmouseover()" onmouseout="FirstAnswerOnmouseout()">Wynalezienie broni laserowej
 					</button>
 				  </div>
 			    </div>
@@ -5591,7 +5609,7 @@
 				    <div class="answer-textNumber-proper">B</div>
 				    <button type="button" class="answer-content-proper answer-content-proper-second second-true-answer second-false-answer" 
 					        onclick="oneTimeActiveQCatHisL2False(); SecondAnswerBlockadeFunction(); SecondAnswerFalseFunction();" 
-					        onmouseover="SecondAnswerOnmouseover()" onmouseout="SecondAnswerOnmouseout()">Francja
+					        onmouseover="SecondAnswerOnmouseover()" onmouseout="SecondAnswerOnmouseout()">Rozwój matematyki fraktalnej
 					</button>
 				  </div>
 			    </div>
@@ -5600,7 +5618,7 @@
 				    <div class="answer-textNumber-proper">C</div>
 				    <button type="button" class="answer-content-proper answer-content-proper-third third-true-answer third-false-answer" 
 					        onclick="oneTimeActiveQCatHisL2False(); ThirdAnswerBlockadeFunction(); ThirdAnswerFalseFunction();" 
-					        onmouseover="ThirdAnswerOnmouseover()" onmouseout="ThirdAnswerOnmouseout()">Hiszpania
+					        onmouseover="ThirdAnswerOnmouseover()" onmouseout="ThirdAnswerOnmouseout()">Rozwój mechaniki kwantowej
 					</button>
 				  </div>
 			    </div>
@@ -5609,7 +5627,7 @@
 				    <div class="answer-textNumber-proper">D</div>
 				    <button type="button" class="answer-content-proper answer-content-proper-fourth fourth-true-answer fourth-false-answer" 
 					        onclick="oneTimeActiveQCatHisL2True(); FourthAnswerBlockadeFunction(); FourthAnswerTrueFunction();" 
-					        onmouseover="FourthAnswerOnmouseover()" onmouseout="FoutrhAnswerOnmouseout()">Włochy
+					        onmouseover="FourthAnswerOnmouseover()" onmouseout="FoutrhAnswerOnmouseout()">Opracowanie pierwszego reaktora jądrowego
 					</button>
 				  </div>
 			    </div>
@@ -5621,7 +5639,7 @@
 		    <div class="question-title-overBlock"> <!--pamiętaj o {padding:20px;}-->
 		      <div class="question-numberContent-group">
 		        <div class="question-number"><div id="HisL2Q12Number"></div></div>
-			    <div class="question-content">Jak nazywa się państwo, które posiada najwyższy szczyt w Tatrach?</div>
+			    <div class="question-content">Pablo Escobar Gaviria był założycielem i głównym przywódcą kartelu:</div>
 			  </div>
 		    </div>
 		    <div class="imgAnsw-content-overBlock">
@@ -5637,7 +5655,7 @@
 				    <div class="answer-textNumber-proper">A</div>
 				    <button type="button" class="answer-content-proper answer-content-proper-first first-true-answer first-false-answer" 
 					        onclick="oneTimeActiveQCatHisL2False(); FirstAnswerBlockadeFunction(); FirstAnswerFalseFunction();" 
-					        onmouseover="FirstAnswerOnmouseover()" onmouseout="FirstAnswerOnmouseout()">Czechy
+					        onmouseover="FirstAnswerOnmouseover()" onmouseout="FirstAnswerOnmouseout()">Cali
 					</button>
 				  </div>
 			    </div>
@@ -5646,7 +5664,7 @@
 				    <div class="answer-textNumber-proper">B</div>
 				    <button type="button" class="answer-content-proper answer-content-proper-second second-true-answer second-false-answer" 
 					        onclick="oneTimeActiveQCatHisL2True(); SecondAnswerBlockadeFunction(); SecondAnswerTrueFunction();" 
-					        onmouseover="SecondAnswerOnmouseover()" onmouseout="SecondAnswerOnmouseout()">Słowacja
+					        onmouseover="SecondAnswerOnmouseover()" onmouseout="SecondAnswerOnmouseout()">Medellin
 					</button>
 				  </div>
 			    </div>
@@ -5655,7 +5673,7 @@
 				    <div class="answer-textNumber-proper">C</div>
 				    <button type="button" class="answer-content-proper answer-content-proper-third third-true-answer third-false-answer" 
 					        onclick="oneTimeActiveQCatHisL2False(); ThirdAnswerBlockadeFunction(); ThirdAnswerFalseFunction();" 
-					        onmouseover="ThirdAnswerOnmouseover()" onmouseout="ThirdAnswerOnmouseout()">Polska
+					        onmouseover="ThirdAnswerOnmouseover()" onmouseout="ThirdAnswerOnmouseout()">CBL
 					</button>
 				  </div>
 			    </div>
@@ -5664,7 +5682,7 @@
 				    <div class="answer-textNumber-proper">D</div>
 				    <button type="button" class="answer-content-proper answer-content-proper-fourth fourth-true-answer fourth-false-answer" 
 					        onclick="oneTimeActiveQCatHisL2False(); FourthAnswerBlockadeFunction(); FourthAnswerFalseFunction();" 
-					        onmouseover="FourthAnswerOnmouseover()" onmouseout="FoutrhAnswerOnmouseout()">Węgry
+					        onmouseover="FourthAnswerOnmouseover()" onmouseout="FoutrhAnswerOnmouseout()">Arellano Félix
 					</button>
 				  </div>
 			    </div>
@@ -5676,7 +5694,7 @@
 		    <div class="question-title-overBlock"> <!--pamiętaj o {padding:20px;}-->
 		      <div class="question-numberContent-group">
 		        <div class="question-number"><div id="HisL2Q13Number"></div></div>
-			    <div class="question-content">Które Państwo posiada najszerszą rzekę na świecie?</div>
+			    <div class="question-content">Kto jest uważany za najwybitniejszą śpiewaczkę operową XX wieku?</div>
 			  </div>
 		    </div>
 		    <div class="imgAnsw-content-overBlock">
@@ -5692,7 +5710,7 @@
 				    <div class="answer-textNumber-proper">A</div>
 				    <button type="button" class="answer-content-proper answer-content-proper-first first-true-answer first-false-answer" 
 					        onclick="oneTimeActiveQCatHisL2False(); FirstAnswerBlockadeFunction(); FirstAnswerFalseFunction();" 
-					        onmouseover="FirstAnswerOnmouseover()" onmouseout="FirstAnswerOnmouseout()">Rosja
+					        onmouseover="FirstAnswerOnmouseover()" onmouseout="FirstAnswerOnmouseout()">Grace Kelly
 					</button>
 				  </div>
 			    </div>
@@ -5701,7 +5719,7 @@
 				    <div class="answer-textNumber-proper">B</div>
 				    <button type="button" class="answer-content-proper answer-content-proper-second second-true-answer second-false-answer" 
 					        onclick="oneTimeActiveQCatHisL2False(); SecondAnswerBlockadeFunction(); SecondAnswerFalseFunction();" 
-					        onmouseover="SecondAnswerOnmouseover()" onmouseout="SecondAnswerOnmouseout()">Stany Zjednoczone Ameryki (USA)
+					        onmouseover="SecondAnswerOnmouseover()" onmouseout="SecondAnswerOnmouseout()">Renata Tebaldi
 					</button>
 				  </div>
 			    </div>
@@ -5709,8 +5727,8 @@
 			      <div class="answer-textNumber-and-answContentProp-dimension">
 				    <div class="answer-textNumber-proper">C</div>
 				    <button type="button" class="answer-content-proper answer-content-proper-third third-true-answer third-false-answer" 
-					        onclick="oneTimeActiveQCatHisL2False(); ThirdAnswerBlockadeFunction(); ThirdAnswerFalseFunction();" 
-					        onmouseover="ThirdAnswerOnmouseover()" onmouseout="ThirdAnswerOnmouseout()">Egipt
+					        onclick="oneTimeActiveQCatHisL2True(); ThirdAnswerBlockadeFunction(); ThirdAnswerTrueFunction();" 
+					        onmouseover="ThirdAnswerOnmouseover()" onmouseout="ThirdAnswerOnmouseout()">Maria Callas
 					</button>
 				  </div>
 			    </div>
@@ -5718,7 +5736,7 @@
 			      <div class="answer-textNumber-and-answContentProp-dimension">
 				    <div class="answer-textNumber-proper">D</div>
 				    <button type="button" class="answer-content-proper answer-content-proper-fourth fourth-true-answer fourth-false-answer" 
-					        onclick="oneTimeActiveQCatHisL2True(); FourthAnswerBlockadeFunction(); FourthAnswerTrueFunction();" 
+					        onclick="oneTimeActiveQCatHisL2False(); FourthAnswerBlockadeFunction(); FourthAnswerFalseFunction();" 
 					        onmouseover="FourthAnswerOnmouseover()" onmouseout="FoutrhAnswerOnmouseout()">Brazylia
 					</button>
 				  </div>
@@ -5731,7 +5749,7 @@
 		    <div class="question-title-overBlock"> <!--pamiętaj o {padding:20px;}-->
 		      <div class="question-numberContent-group">
 		        <div class="question-number"><div id="HisL2Q14Number"></div></div>
-			    <div class="question-content">Mówi się na niego: <i>&nbsp;&bdquo;Kraj kwitnącej wiśni&rdquo;</i>:</div>
+			    <div class="question-content">Podczas wojny krymskiej liga utworzona przez Imperium Osmańskie, Francję, Zjednoczone Królestwo i Królestwo Sardynii walczyła z:</div>
 			  </div>
 		    </div>
 		    <div class="imgAnsw-content-overBlock">
@@ -5747,7 +5765,7 @@
 				    <div class="answer-textNumber-proper">A</div>
 				    <button type="button" class="answer-content-proper answer-content-proper-first first-true-answer first-false-answer" 
 					        onclick="oneTimeActiveQCatHisL2False(); FirstAnswerBlockadeFunction(); FirstAnswerFalseFunction();" 
-					        onmouseover="FirstAnswerOnmouseover()" onmouseout="FirstAnswerOnmouseout()">Portugalia
+					        onmouseover="FirstAnswerOnmouseover()" onmouseout="FirstAnswerOnmouseout()">Cesarstwem Bizantyjskim
 					</button>
 				  </div>
 			    </div>
@@ -5756,7 +5774,7 @@
 				    <div class="answer-textNumber-proper">B</div>
 				    <button type="button" class="answer-content-proper answer-content-proper-second second-true-answer second-false-answer" 
 					        onclick="oneTimeActiveQCatHisL2False(); SecondAnswerBlockadeFunction(); SecondAnswerFalseFunction();" 
-					        onmouseover="SecondAnswerOnmouseover()" onmouseout="SecondAnswerOnmouseout()">Chiny
+					        onmouseover="SecondAnswerOnmouseover()" onmouseout="SecondAnswerOnmouseout()">Cesarstwem Niemieckim
 					</button>
 				  </div>
 			    </div>
@@ -5765,7 +5783,7 @@
 				    <div class="answer-textNumber-proper">C</div>
 				    <button type="button" class="answer-content-proper answer-content-proper-third third-true-answer third-false-answer" 
 					        onclick="oneTimeActiveQCatHisL2True(); ThirdAnswerBlockadeFunction(); ThirdAnswerTrueFunction();" 
-							onmouseover="ThirdAnswerOnmouseover()" onmouseout="ThirdAnswerOnmouseout()">Japonia
+							onmouseover="ThirdAnswerOnmouseover()" onmouseout="ThirdAnswerOnmouseout()">Imperium Rosyjskim
 					</button>
 				  </div>
 			    </div>
@@ -5774,7 +5792,7 @@
 				    <div class="answer-textNumber-proper">D</div>
 				    <button type="button" class="answer-content-proper answer-content-proper-fourth fourth-true-answer fourth-false-answer" 
 					        onclick="oneTimeActiveQCatHisL2False(); FourthAnswerBlockadeFunction(); FourthAnswerFalseFunction();" 
-							onmouseover="FourthAnswerOnmouseover()" onmouseout="FoutrhAnswerOnmouseout()">Francja
+							onmouseover="FourthAnswerOnmouseover()" onmouseout="FoutrhAnswerOnmouseout()">Królestwem Danii
 					</button>
 				  </div>
 			    </div>
@@ -5786,7 +5804,7 @@
 		    <div class="question-title-overBlock"> <!--pamiętaj o {padding:20px;}-->
 		      <div class="question-numberContent-group">
 		        <div class="question-number"><div id="HisL2Q15Number"></div></div>
-			    <div class="question-content">Mówi się na niego: <i>&nbsp;&bdquo;Kraj wschodzącego słońca&rdquo;</i>:</div>
+			    <div class="question-content">W którym wieku żył Gall Anonim?</div>
 			  </div>
 		    </div>
 		    <div class="imgAnsw-content-overBlock">
@@ -5802,7 +5820,7 @@
 				    <div class="answer-textNumber-proper">A</div>
 				    <button type="button" class="answer-content-proper answer-content-proper-first first-true-answer first-false-answer" 
 					        onclick="oneTimeActiveQCatHisL2True(); FirstAnswerBlockadeFunction(); FirstAnswerTrueFunction();" 
-					        onmouseover="FirstAnswerOnmouseover()" onmouseout="FirstAnswerOnmouseout()">Japonia
+					        onmouseover="FirstAnswerOnmouseover()" onmouseout="FirstAnswerOnmouseout()">XII
 					</button>
 				  </div>
 			    </div>
@@ -5811,7 +5829,7 @@
 				    <div class="answer-textNumber-proper">B</div>
 				    <button type="button" class="answer-content-proper answer-content-proper-second second-true-answer second-false-answer" 
 					        onclick="oneTimeActiveQCatHisL2False(); SecondAnswerBlockadeFunction(); SecondAnswerFalseFunction();" 
-					        onmouseover="SecondAnswerOnmouseover()" onmouseout="SecondAnswerOnmouseout()">Chiny
+					        onmouseover="SecondAnswerOnmouseover()" onmouseout="SecondAnswerOnmouseout()">XIII
 					</button>
 				  </div>
 			    </div>
@@ -5820,7 +5838,7 @@
 				    <div class="answer-textNumber-proper">C</div>
 				    <button type="button" class="answer-content-proper answer-content-proper-third third-true-answer third-false-answer" 
 					        onclick="oneTimeActiveQCatHisL2False(); ThirdAnswerBlockadeFunction(); ThirdAnswerFalseFunction();" 
-					        onmouseover="ThirdAnswerOnmouseover()" onmouseout="ThirdAnswerOnmouseout()">Rosja
+					        onmouseover="ThirdAnswerOnmouseover()" onmouseout="ThirdAnswerOnmouseout()">XIV
 					</button>
 				  </div>
 			    </div>
@@ -5829,7 +5847,7 @@
 				    <div class="answer-textNumber-proper">D</div>
 				    <button type="button" class="answer-content-proper answer-content-proper-fourth fourth-true-answer fourth-false-answer" 
 					        onclick="oneTimeActiveQCatHisL2False(); FourthAnswerBlockadeFunction(); FourthAnswerFalseFunction();" 
-					        onmouseover="FourthAnswerOnmouseover()" onmouseout="FoutrhAnswerOnmouseout()">Meksyk
+					        onmouseover="FourthAnswerOnmouseover()" onmouseout="FoutrhAnswerOnmouseout()">XV
 					</button>
 				  </div>
 			    </div>
@@ -5841,7 +5859,7 @@
 		    <div class="question-title-overBlock"> <!--pamiętaj o {padding:20px;}-->
 		      <div class="question-numberContent-group">
 		        <div class="question-number"><div id="HisL2Q16Number"></div></div>
-			    <div class="question-content">Jaki kraj jest największym na świecie producentem tulipanów?</div>
+			    <div class="question-content">O co spierali się Grzegorz VII i niemiecki cesarz Henryk IV</div>
 			  </div>
 		    </div>
 		    <div class="imgAnsw-content-overBlock">
@@ -5857,7 +5875,7 @@
 				    <div class="answer-textNumber-proper">A</div>
 				    <button type="button" class="answer-content-proper answer-content-proper-first first-true-answer first-false-answer" 
 					        onclick="oneTimeActiveQCatHisL2True(); FirstAnswerBlockadeFunction(); FirstAnswerTrueFunction();" 
-					        onmouseover="FirstAnswerOnmouseover()" onmouseout="FirstAnswerOnmouseout()">Holandia
+					        onmouseover="FirstAnswerOnmouseover()" onmouseout="FirstAnswerOnmouseout()">O prawo do inwestytury duchownych
 					</button>
 				  </div>
 			    </div>
@@ -5866,7 +5884,7 @@
 				    <div class="answer-textNumber-proper">B</div>
 				    <button type="button" class="answer-content-proper answer-content-proper-second second-true-answer second-false-answer" 
 					        onclick="oneTimeActiveQCatHisL2False(); SecondAnswerBlockadeFunction(); SecondAnswerFalseFunction();" 
-					        onmouseover="SecondAnswerOnmouseover()" onmouseout="SecondAnswerOnmouseout()">Indie
+					        onmouseover="SecondAnswerOnmouseover()" onmouseout="SecondAnswerOnmouseout()">O budowę nowej świątyni
 					</button>
 				  </div>
 			    </div>
@@ -5875,7 +5893,7 @@
 				    <div class="answer-textNumber-proper">C</div>
 				    <button type="button" class="answer-content-proper answer-content-proper-third third-true-answer third-false-answer" 
 					        onclick="oneTimeActiveQCatHisL2False(); ThirdAnswerBlockadeFunction(); ThirdAnswerFalseFunction();" 
-					        onmouseover="ThirdAnswerOnmouseover()" onmouseout="ThirdAnswerOnmouseout()">Chiny
+					        onmouseover="ThirdAnswerOnmouseover()" onmouseout="ThirdAnswerOnmouseout()">O krucjaty dziecięce
 					</button>
 				  </div>
 			    </div>
@@ -5884,7 +5902,7 @@
 				    <div class="answer-textNumber-proper">D</div>
 				    <button type="button" class="answer-content-proper answer-content-proper-fourth fourth-true-answer fourth-false-answer" 
 					        onclick="oneTimeActiveQCatHisL2False(); FourthAnswerBlockadeFunction(); FourthAnswerFalseFunction();" 
-					        onmouseover="FourthAnswerOnmouseover()" onmouseout="FoutrhAnswerOnmouseout()">Francja
+					        onmouseover="FourthAnswerOnmouseover()" onmouseout="FoutrhAnswerOnmouseout()">O przywileje chłopów
 					</button>
 				  </div>
 			    </div>
@@ -5896,7 +5914,7 @@
 		    <div class="question-title-overBlock"> <!--pamiętaj o {padding:20px;}-->
 		      <div class="question-numberContent-group">
 		        <div class="question-number"><div id="HisL2Q17Number"></div></div>
-			    <div class="question-content">Jak nazywa się stolica Jugosławii?</div>
+			    <div class="question-content">Z którymi zwierzętami Hannibal przeprawiał się przez Alpy?</div>
 			  </div>
 		    </div>
 		    <div class="imgAnsw-content-overBlock">
@@ -5912,7 +5930,7 @@
 				    <div class="answer-textNumber-proper">A</div>
 				    <button type="button" class="answer-content-proper answer-content-proper-first first-true-answer first-false-answer" 
 					        onclick="oneTimeActiveQCatHisL2False(); FirstAnswerBlockadeFunction(); FirstAnswerFalseFunction();" 
-					        onmouseover="FirstAnswerOnmouseover()" onmouseout="FirstAnswerOnmouseout()">Bratysława
+					        onmouseover="FirstAnswerOnmouseover()" onmouseout="FirstAnswerOnmouseout()">Z lwami
 					</button>
 				  </div>
 			    </div>
@@ -5921,7 +5939,7 @@
 				    <div class="answer-textNumber-proper">B</div>
 				    <button type="button" class="answer-content-proper answer-content-proper-second second-true-answer second-false-answer" 
 					        onclick="oneTimeActiveQCatHisL2False(); SecondAnswerBlockadeFunction(); SecondAnswerFalseFunction();" 
-					        onmouseover="SecondAnswerOnmouseover()" onmouseout="SecondAnswerOnmouseout()">Belgrad
+					        onmouseover="SecondAnswerOnmouseover()" onmouseout="SecondAnswerOnmouseout()">Z tygrysami
 					</button>
 				  </div>
 			    </div>
@@ -5930,7 +5948,7 @@
 				    <div class="answer-textNumber-proper">C</div>
 				    <button type="button" class="answer-content-proper answer-content-proper-third third-true-answer third-false-answer" 
 					        onclick="oneTimeActiveQCatHisL2False(); ThirdAnswerBlockadeFunction(); ThirdAnswerFalseFunction();" 
-					        onmouseover="ThirdAnswerOnmouseover()" onmouseout="ThirdAnswerOnmouseout()">To państwo ma dopiero zaistnieć
+					        onmouseover="ThirdAnswerOnmouseover()" onmouseout="ThirdAnswerOnmouseout()">Z wielbłądami
 					</button>
 				  </div>
 			    </div>
@@ -5939,7 +5957,7 @@
 				    <div class="answer-textNumber-proper">D</div>
 				    <button type="button" class="answer-content-proper answer-content-proper-fourth fourth-true-answer fourth-false-answer" 
 					        onclick="oneTimeActiveQCatHisL2True(); FourthAnswerBlockadeFunction(); FourthAnswerTrueFunction();" 
-					        onmouseover="FourthAnswerOnmouseover()" onmouseout="FoutrhAnswerOnmouseout()">To państwo już nie istnieje
+					        onmouseover="FourthAnswerOnmouseover()" onmouseout="FoutrhAnswerOnmouseout()">Ze słoniami
 					</button>
 				  </div>
 			    </div>
@@ -5951,7 +5969,7 @@
 		    <div class="question-title-overBlock"> <!--pamiętaj o {padding:20px;}-->
 		      <div class="question-numberContent-group">
 		        <div class="question-number"><div id="HisL2Q18Number"></div></div>
-			    <div class="question-content">Jak nazywa się kraj, z którego pochodzi poniższe zdjęcie?</div>
+			    <div class="question-content">Gdzie Marcin Luther ogłosił swoje tezy?</div>
 			  </div>
 		    </div>
 		    <div class="imgAnsw-content-overBlock">
@@ -5967,7 +5985,7 @@
 				    <div class="answer-textNumber-proper">A</div>
 				    <button type="button" class="answer-content-proper answer-content-proper-first first-true-answer first-false-answer" 
 					        onclick="oneTimeActiveQCatHisL2False(); FirstAnswerBlockadeFunction(); FirstAnswerFalseFunction();" 
-					        onmouseover="FirstAnswerOnmouseover()" onmouseout="FirstAnswerOnmouseout()">Hiszpania
+					        onmouseover="FirstAnswerOnmouseover()" onmouseout="FirstAnswerOnmouseout()">W Norymberdze
 					</button>
 				  </div>
 			    </div>
@@ -5976,7 +5994,7 @@
 				    <div class="answer-textNumber-proper">B</div>
 				    <button type="button" class="answer-content-proper answer-content-proper-second second-true-answer second-false-answer" 
 					        onclick="oneTimeActiveQCatHisL2False(); SecondAnswerBlockadeFunction(); SecondAnswerFalseFunction();" 
-					        onmouseover="SecondAnswerOnmouseover()" onmouseout="SecondAnswerOnmouseout()">Portugalia
+					        onmouseover="SecondAnswerOnmouseover()" onmouseout="SecondAnswerOnmouseout()">W Monachium
 					</button>
 				  </div>
 			    </div>
@@ -5985,7 +6003,7 @@
 				    <div class="answer-textNumber-proper">C</div>
 				    <button type="button" class="answer-content-proper answer-content-proper-third third-true-answer third-false-answer" 
 					        onclick="oneTimeActiveQCatHisL2True(); ThirdAnswerBlockadeFunction(); ThirdAnswerTrueFunction();" 
-							onmouseover="ThirdAnswerOnmouseover()" onmouseout="ThirdAnswerOnmouseout()">Włochy
+							onmouseover="ThirdAnswerOnmouseover()" onmouseout="ThirdAnswerOnmouseout()">W Wittenberdze
 					</button>
 				  </div>
 			    </div>
@@ -5994,7 +6012,7 @@
 				    <div class="answer-textNumber-proper">D</div>
 				    <button type="button" class="answer-content-proper answer-content-proper-fourth fourth-true-answer fourth-false-answer" 
 					        onclick="oneTimeActiveQCatHisL2False(); FourthAnswerBlockadeFunction(); FourthAnswerFalseFunction();" 
-							onmouseover="FourthAnswerOnmouseover()" onmouseout="FoutrhAnswerOnmouseout()">Francja
+							onmouseover="FourthAnswerOnmouseover()" onmouseout="FoutrhAnswerOnmouseout()">W Akwizgranie
 					</button>
 				  </div>
 			    </div>
@@ -6006,7 +6024,7 @@
 		    <div class="question-title-overBlock"> <!--pamiętaj o {padding:20px;}-->
 		      <div class="question-numberContent-group">
 		        <div class="question-number"><div id="HisL2Q19Number"></div></div>
-			    <div class="question-content">Przedstawiona poniżej Piramida Cheopsa nie znajduje się w:</div>
+			    <div class="question-content">Kiedy został wydany manifest PKWN?</div>
 			  </div>
 		    </div>
 		    <div class="imgAnsw-content-overBlock">
@@ -6022,7 +6040,7 @@
 				    <div class="answer-textNumber-proper">A</div>
 				    <button type="button" class="answer-content-proper answer-content-proper-first first-true-answer first-false-answer" 
 					        onclick="oneTimeActiveQCatHisL2False(); FirstAnswerBlockadeFunction(); FirstAnswerFalseFunction();" 
-					        onmouseover="FirstAnswerOnmouseover()" onmouseout="FirstAnswerOnmouseout()">Afryce
+					        onmouseover="FirstAnswerOnmouseover()" onmouseout="FirstAnswerOnmouseout()">9 maja 1944
 					</button>
 				  </div>
 			    </div>
@@ -6031,7 +6049,7 @@
 				    <div class="answer-textNumber-proper">B</div>
 				    <button type="button" class="answer-content-proper answer-content-proper-second second-true-answer second-false-answer" 
 					        onclick="oneTimeActiveQCatHisL2False(); SecondAnswerBlockadeFunction(); SecondAnswerFalseFunction();" 
-					        onmouseover="SecondAnswerOnmouseover()" onmouseout="SecondAnswerOnmouseout()">Egipcie
+					        onmouseover="SecondAnswerOnmouseover()" onmouseout="SecondAnswerOnmouseout()">23 marca 1953
 					</button>
 				  </div>
 			    </div>
@@ -6040,7 +6058,7 @@
 				    <div class="answer-textNumber-proper">C</div>
 				    <button type="button" class="answer-content-proper answer-content-proper-third third-true-answer third-false-answer" 
 					        onclick="oneTimeActiveQCatHisL2False(); ThirdAnswerBlockadeFunction(); ThirdAnswerFalseFunction();" 
-					        onmouseover="ThirdAnswerOnmouseover()" onmouseout="ThirdAnswerOnmouseout()">Gizie
+					        onmouseover="ThirdAnswerOnmouseover()" onmouseout="ThirdAnswerOnmouseout()">19 lipca 1952
 					</button>
 				  </div>
 			    </div>
@@ -6049,7 +6067,7 @@
 				    <div class="answer-textNumber-proper">D</div>
 				    <button type="button" class="answer-content-proper answer-content-proper-fourth fourth-true-answer fourth-false-answer" 
 					        onclick="oneTimeActiveQCatHisL2True(); FourthAnswerBlockadeFunction(); FourthAnswerTrueFunction();" 
-					        onmouseover="FourthAnswerOnmouseover()" onmouseout="FoutrhAnswerOnmouseout()">Kairze
+					        onmouseover="FourthAnswerOnmouseover()" onmouseout="FoutrhAnswerOnmouseout()">22 lipca 1944
 					</button>
 				  </div>
 			    </div>
@@ -6061,13 +6079,13 @@
 		    <div class="question-title-overBlock"> <!--pamiętaj o {padding:20px;}-->
 		      <div class="question-numberContent-group">
 		        <div class="question-number"><div id="HisL2Q20Number"></div></div>
-			    <div class="question-content">Gdzie mieszkają Indianie?</div>
+			    <div class="question-content">Przedstawicielem jakiej dyastii byŁ Zygmunt August</div>
 			  </div>
 		    </div>
 		    <div class="imgAnsw-content-overBlock">
 		      <div class="image-dimension">
 			    <div class="image-proper">
-			      <img class="image" src="quiz-images/his-2/h2q20.jpg" 
+			      <img class="image" src="quiz-images/his-2/h2q20.png" 
 				       alt="obraz_History_L2_Q20" />
 			    </div>
 			  </div>
@@ -6077,7 +6095,7 @@
 				    <div class="answer-textNumber-proper">A</div>
 				    <button type="button" class="answer-content-proper answer-content-proper-first first-true-answer first-false-answer" 
 					        onclick="oneTimeActiveQCatHisL2False(); FirstAnswerBlockadeFunction(); FirstAnswerFalseFunction();" 
-					        onmouseover="FirstAnswerOnmouseover()" onmouseout="FirstAnswerOnmouseout()">W Meksyku
+					        onmouseover="FirstAnswerOnmouseover()" onmouseout="FirstAnswerOnmouseout()">Wazów
 					</button>
 				  </div>
 			    </div>
@@ -6086,7 +6104,7 @@
 				    <div class="answer-textNumber-proper">B</div>
 				    <button type="button" class="answer-content-proper answer-content-proper-second second-true-answer second-false-answer" 
 					        onclick="oneTimeActiveQCatHisL2False(); SecondAnswerBlockadeFunction(); SecondAnswerFalseFunction();" 
-					        onmouseover="SecondAnswerOnmouseover()" onmouseout="SecondAnswerOnmouseout()">W Indiach
+					        onmouseover="SecondAnswerOnmouseover()" onmouseout="SecondAnswerOnmouseout()">Piastów
 					</button>
 				  </div>
 			    </div>
@@ -6095,7 +6113,7 @@
 				    <div class="answer-textNumber-proper">C</div>
 				    <button type="button" class="answer-content-proper answer-content-proper-third third-true-answer third-false-answer" 
 					        onclick="oneTimeActiveQCatHisL2True(); ThirdAnswerBlockadeFunction(); ThirdAnswerTrueFunction();" 
-					        onmouseover="ThirdAnswerOnmouseover()" onmouseout="ThirdAnswerOnmouseout()">W Stanach Zjednoczonych Ameryki (USA)
+					        onmouseover="ThirdAnswerOnmouseover()" onmouseout="ThirdAnswerOnmouseout()">Jagiellonów
 					</button>
 				  </div>
 			    </div>
@@ -6104,7 +6122,7 @@
 				    <div class="answer-textNumber-proper">D</div>
 				    <button type="button" class="answer-content-proper answer-content-proper-fourth fourth-true-answer fourth-false-answer" 
 					        onclick="oneTimeActiveQCatHisL2False(); FourthAnswerBlockadeFunction(); FourthAnswerFalseFunction();" 
-					        onmouseover="FourthAnswerOnmouseover()" onmouseout="FoutrhAnswerOnmouseout()">Indianów już nie ma. Zostali zabici przez europejczyków.
+					        onmouseover="FourthAnswerOnmouseover()" onmouseout="FoutrhAnswerOnmouseout()">Andegawenów
 					</button>
 				  </div>
 			    </div>
@@ -6134,7 +6152,7 @@
 		    <div class="question-title-overBlock"> <!--pamiętaj o {padding:20px;}-->
 		      <div class="question-numberContent-group">
 		        <div class="question-number"><div id="HisL3Q1Number"></div></div>
-			    <div class="question-content">W którym roku wybuchła II Wojna Światowa?</div>
+			    <div class="question-content">Czego zażądał od Dawida król Saul za rękę swojej córki Mikal?</div>
 			  </div>
 		    </div>
 		    <div class="imgAnsw-content-overBlock">
@@ -6150,7 +6168,7 @@
 				    <div class="answer-textNumber-proper">A</div>
 				    <button type="button" class="answer-content-proper answer-content-proper-first first-true-answer first-false-answer" 
 					        onclick="oneTimeActiveQCatHisL3False(); FirstAnswerBlockadeFunction(); FirstAnswerFalseFunction();" 
-					        onmouseover="FirstAnswerOnmouseover()" onmouseout="FirstAnswerOnmouseout()">1914
+					        onmouseover="FirstAnswerOnmouseover()" onmouseout="FirstAnswerOnmouseout()">Dziesięciorga uszu Rzymian
 					</button>
 				  </div>
 			    </div>
@@ -6159,7 +6177,7 @@
 				    <div class="answer-textNumber-proper">B</div>
 				    <button type="button" class="answer-content-proper answer-content-proper-second second-true-answer second-false-answer" 
 					        onclick="oneTimeActiveQCatHisL3True(); SecondAnswerBlockadeFunction(); SecondAnswerTrueFunction();" 
-					        onmouseover="SecondAnswerOnmouseover()" onmouseout="SecondAnswerOnmouseout()">1939
+					        onmouseover="SecondAnswerOnmouseover()" onmouseout="SecondAnswerOnmouseout()">Stu napletków Filistynów
 					</button>
 				  </div>
 			    </div>
@@ -6168,7 +6186,7 @@
 				    <div class="answer-textNumber-proper">C</div>
 				    <button type="button" class="answer-content-proper answer-content-proper-third third-true-answer third-false-answer" 
 					        onclick="oneTimeActiveQCatHisL3False(); ThirdAnswerBlockadeFunction(); ThirdAnswerFalseFunction();" 
-							onmouseover="ThirdAnswerOnmouseover()" onmouseout="ThirdAnswerOnmouseout()">1945
+							onmouseover="ThirdAnswerOnmouseover()" onmouseout="ThirdAnswerOnmouseout()">Miliona dłoni Edomitów
 					</button>
 				  </div>
 			    </div>
@@ -6177,7 +6195,7 @@
 				    <div class="answer-textNumber-proper">D</div>
 				    <button type="button" class="answer-content-proper answer-content-proper-fourth fourth-true-answer fourth-false-answer" 
 					        onclick="oneTimeActiveQCatHisL3False(); FourthAnswerBlockadeFunction(); FourthAnswerFalseFunction();" 
-							onmouseover="FourthAnswerOnmouseover()" onmouseout="FoutrhAnswerOnmouseout()">1918
+							onmouseover="FourthAnswerOnmouseover()" onmouseout="FoutrhAnswerOnmouseout()">Siedemdziesięciu tysięcy syklów hebrajskich
 					</button>
 				  </div>
 			    </div>
@@ -6189,7 +6207,7 @@
 		    <div class="question-title-overBlock"> <!--pamiętaj o {padding:20px;}-->
 		      <div class="question-numberContent-group">
 		        <div class="question-number"><div id="HisL3Q2Number"></div></div>
-			    <div class="question-content">Berlin jest stolicą:</div>
+			    <div class="question-content">Który region Polski zajął Miecław?</div>
 			  </div>
 		    </div>
 		    <div class="imgAnsw-content-overBlock">
@@ -6204,8 +6222,8 @@
 			      <div class="answer-textNumber-and-answContentProp-dimension">
 				    <div class="answer-textNumber-proper">A</div>
 				    <button type="button" class="answer-content-proper answer-content-proper-first first-true-answer first-false-answer" 
-					        onclick="oneTimeActiveQCatHisL3False(); FirstAnswerBlockadeFunction(); FirstAnswerFalseFunction();" 
-					        onmouseover="FirstAnswerOnmouseover()" onmouseout="FirstAnswerOnmouseout()">Francji
+					        onclick="oneTimeActiveQCatHisL3True(); FirstAnswerBlockadeFunction(); FirstAnswerTrueFunction();" 
+					        onmouseover="FirstAnswerOnmouseover()" onmouseout="FirstAnswerOnmouseout()">Mazowsze
 					</button>
 				  </div>
 			    </div>
@@ -6214,7 +6232,7 @@
 				    <div class="answer-textNumber-proper">B</div>
 				    <button type="button" class="answer-content-proper answer-content-proper-second second-true-answer second-false-answer" 
 					        onclick="oneTimeActiveQCatHisL3False(); SecondAnswerBlockadeFunction(); SecondAnswerFalseFunction();" 
-					        onmouseover="SecondAnswerOnmouseover()" onmouseout="SecondAnswerOnmouseout()">Szwecji
+					        onmouseover="SecondAnswerOnmouseover()" onmouseout="SecondAnswerOnmouseout()">Pomorze
 					</button>
 				  </div>
 			    </div>
@@ -6223,7 +6241,7 @@
 				    <div class="answer-textNumber-proper">C</div>
 				    <button type="button" class="answer-content-proper answer-content-proper-third third-true-answer third-false-answer" 
 					        onclick="oneTimeActiveQCatHisL3False(); ThirdAnswerBlockadeFunction(); ThirdAnswerFalseFunction();" 
-					        onmouseover="ThirdAnswerOnmouseover()" onmouseout="ThirdAnswerOnmouseout()">Bawarii
+					        onmouseover="ThirdAnswerOnmouseover()" onmouseout="ThirdAnswerOnmouseout()">Górny Śląsk
 					</button>
 				  </div>
 			    </div>
@@ -6231,8 +6249,8 @@
 			      <div class="answer-textNumber-and-answContentProp-dimension">
 				    <div class="answer-textNumber-proper">D</div>
 				    <button type="button" class="answer-content-proper answer-content-proper-fourth fourth-true-answer fourth-false-answer" 
-					        onclick="oneTimeActiveQCatHisL3True(); FourthAnswerBlockadeFunction(); FourthAnswerTrueFunction();" 
-					        onmouseover="FourthAnswerOnmouseover()" onmouseout="FoutrhAnswerOnmouseout()">Niemiec
+					        onclick="oneTimeActiveQCatHisL3False(); FourthAnswerBlockadeFunction(); FourthAnswerFalseFunction();" 
+					        onmouseover="FourthAnswerOnmouseover()" onmouseout="FoutrhAnswerOnmouseout()">Kujawy
 					</button>
 				  </div>
 			    </div>
@@ -6244,7 +6262,7 @@
 		    <div class="question-title-overBlock"> <!--pamiętaj o {padding:20px;}-->
 		      <div class="question-numberContent-group">
 		        <div class="question-number"><div id="HisL3Q3Number"></div></div>
-			    <div class="question-content">Jak nazywa się największe państwo na świecie?</div>
+			    <div class="question-content">"Czerwony Baron" Manfred von Richthofen zasłynął jako:</div>
 			  </div>
 		    </div>
 		    <div class="imgAnsw-content-overBlock">
@@ -6260,7 +6278,7 @@
 				    <div class="answer-textNumber-proper">A</div>
 				    <button type="button" class="answer-content-proper answer-content-proper-first first-true-answer first-false-answer" 
 					        onclick="oneTimeActiveQCatHisL3False(); FirstAnswerBlockadeFunction(); FirstAnswerFalseFunction();" 
-					        onmouseover="FirstAnswerOnmouseover()" onmouseout="FirstAnswerOnmouseout()">Stany Zjednoczone Ameryki (USA)
+					        onmouseover="FirstAnswerOnmouseover()" onmouseout="FirstAnswerOnmouseout()">Czołgista
 					</button>
 				  </div>
 			    </div>
@@ -6268,8 +6286,8 @@
 			      <div class="answer-textNumber-and-answContentProp-dimension">
 				    <div class="answer-textNumber-proper">B</div>
 				    <button type="button" class="answer-content-proper answer-content-proper-second second-true-answer second-false-answer" 
-					        onclick="oneTimeActiveQCatHisL3False(); SecondAnswerBlockadeFunction(); SecondAnswerFalseFunction();" 
-					        onmouseover="SecondAnswerOnmouseover()" onmouseout="SecondAnswerOnmouseout()">Kanada
+					        onclick="oneTimeActiveQCatHisL3True(); SecondAnswerBlockadeFunction(); SecondAnswerTrueFunction();" 
+					        onmouseover="SecondAnswerOnmouseover()" onmouseout="SecondAnswerOnmouseout()">As lotnictwa
 					</button>
 				  </div>
 			    </div>
@@ -6277,8 +6295,8 @@
 			      <div class="answer-textNumber-and-answContentProp-dimension">
 				    <div class="answer-textNumber-proper">C</div>
 				    <button type="button" class="answer-content-proper answer-content-proper-third third-true-answer third-false-answer" 
-					        onclick="oneTimeActiveQCatHisL3True(); ThirdAnswerBlockadeFunction(); ThirdAnswerTrueFunction();" 
-					        onmouseover="ThirdAnswerOnmouseover()" onmouseout="ThirdAnswerOnmouseout()">Rosja
+					        onclick="oneTimeActiveQCatHisL3False(); ThirdAnswerBlockadeFunction(); ThirdAnswerFalseFunction();" 
+					        onmouseover="ThirdAnswerOnmouseover()" onmouseout="ThirdAnswerOnmouseout()">As marynarki wojennej
 					</button>
 				  </div>
 			    </div>
@@ -6287,7 +6305,7 @@
 				    <div class="answer-textNumber-proper">D</div>
 				    <button type="button" class="answer-content-proper answer-content-proper-fourth fourth-true-answer fourth-false-answer" 
 					        onclick="oneTimeActiveQCatHisL3False(); FourthAnswerBlockadeFunction(); FourthAnswerFalseFunction();" 
-					        onmouseover="FourthAnswerOnmouseover()" onmouseout="FoutrhAnswerOnmouseout()">Chiny
+					        onmouseover="FourthAnswerOnmouseover()" onmouseout="FoutrhAnswerOnmouseout()">Snajper
 					</button>
 				  </div>
 			    </div>
