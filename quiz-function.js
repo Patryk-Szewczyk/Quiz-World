@@ -345,14 +345,14 @@ document.getElementById("TraffL3Q17Number").innerHTML = "Pytanie 17/" + qTraffLe
 document.getElementById("TraffL3Q18Number").innerHTML = "Pytanie 18/" + qTraffLevThreeQuesAmount + ":";
 document.getElementById("TraffL3Q19Number").innerHTML = "Pytanie 19/" + qTraffLevThreeQuesAmount + ":";
 document.getElementById("TraffL3Q20Number").innerHTML = "Pytanie 20/" + qTraffLevThreeQuesAmount + ":";
-document.getElementById("TraffL3Q21Number").innerHTML = "Pytanie 20/" + qTraffLevThreeQuesAmount + ":";
-document.getElementById("TraffL3Q22Number").innerHTML = "Pytanie 20/" + qTraffLevThreeQuesAmount + ":";
-document.getElementById("TraffL3Q23Number").innerHTML = "Pytanie 20/" + qTraffLevThreeQuesAmount + ":";
-document.getElementById("TraffL3Q24Number").innerHTML = "Pytanie 20/" + qTraffLevThreeQuesAmount + ":";
-document.getElementById("TraffL3Q25Number").innerHTML = "Pytanie 20/" + qTraffLevThreeQuesAmount + ":";
-document.getElementById("TraffL3Q26Number").innerHTML = "Pytanie 20/" + qTraffLevThreeQuesAmount + ":";
-document.getElementById("TraffL3Q27Number").innerHTML = "Pytanie 20/" + qTraffLevThreeQuesAmount + ":";
-document.getElementById("TraffL3Q28Number").innerHTML = "Pytanie 20/" + qTraffLevThreeQuesAmount + ":";
+document.getElementById("TraffL3Q21Number").innerHTML = "Pytanie 21/" + qTraffLevThreeQuesAmount + ":";
+document.getElementById("TraffL3Q22Number").innerHTML = "Pytanie 22/" + qTraffLevThreeQuesAmount + ":";
+document.getElementById("TraffL3Q23Number").innerHTML = "Pytanie 23/" + qTraffLevThreeQuesAmount + ":";
+document.getElementById("TraffL3Q24Number").innerHTML = "Pytanie 24/" + qTraffLevThreeQuesAmount + ":";
+document.getElementById("TraffL3Q25Number").innerHTML = "Pytanie 25/" + qTraffLevThreeQuesAmount + ":";
+document.getElementById("TraffL3Q26Number").innerHTML = "Pytanie 26/" + qTraffLevThreeQuesAmount + ":";
+document.getElementById("TraffL3Q27Number").innerHTML = "Pytanie 27/" + qTraffLevThreeQuesAmount + ":";
+document.getElementById("TraffL3Q28Number").innerHTML = "Pytanie 28/" + qTraffLevThreeQuesAmount + ":";
 var userScoreQuizTrafficRegulationsLevelThree = 0;
 var nextQuizTrafficRegulationsLevelThreePage = 0; //maksymalnie 20 stron pytań
 var userPercentScoreQTraffLevThree = 0;
@@ -591,7 +591,10 @@ function quizCategoryCountriesLevelOneStart() {
 	if (nextQuizCountriesLevelOnePage == 1) {
 		document.getElementById("QuizCountriesLevelOnePage1QaA").style.display = "block";
 		document.getElementById("quizBottomPanelCountriesLevelOne").style.display = "flex";
-		document.getElementById("next_question_button_text").innerHTML = "Następne Pytanie";
+		const nextAnswButtTitle_NP1 = document.getElementsByClassName("next_question_button_text");
+		for (let i = 0; i < nextAnswButtTitle_NP1.length; i++) {
+			nextAnswButtTitle_NP1[i].innerHTML = "Nastepne Pytanie";
+		}
 	}
 	else {
 		
@@ -609,7 +612,10 @@ function quizCategoryCountriesLevelTwoStart() {
 	if (nextQuizCountriesLevelTwoPage == 1) {
 		document.getElementById("QuizCountriesLevelTwoPage1QaA").style.display = "block";
 		document.getElementById("quizBottomPanelCountriesLevelTwo").style.display = "flex";
-		document.getElementById("next_question_button_text").innerHTML = "Następne Pytanie";
+		const nextAnswButtTitle_NP2 = document.getElementsByClassName("next_question_button_text");
+		for (let i = 0; i < nextAnswButtTitle_NP2.length; i++) {
+			nextAnswButtTitle_NP2[i].innerHTML = "Nastepne Pytanie";
+		}
 	}
 	else {
 		
@@ -627,7 +633,10 @@ function quizCategoryCountriesLevelThreeStart() {
 	if (nextQuizCountriesLevelThreePage == 1) {
 		document.getElementById("QuizCountriesLevelThreePage1QaA").style.display = "block";
 		document.getElementById("quizBottomPanelCountriesLevelThree").style.display = "flex";
-		document.getElementById("next_question_button_text").innerHTML = "Następne Pytanie";
+		const nextAnswButtTitle_NP3 = document.getElementsByClassName("next_question_button_text");
+		for (let i = 0; i < nextAnswButtTitle_NP3.length; i++) {
+			nextAnswButtTitle_NP3[i].innerHTML = "Nastepne Pytanie";
+		}
 	}
 	else {
 		
@@ -645,7 +654,10 @@ function quizCategoryHistoryLevelOneStart() {
 	if (nextQuizHistoryLevelOnePage == 1) {
 		document.getElementById("QuizHistoryLevelOnePage1QaA").style.display = "block";
 		document.getElementById("quizBottomPanelHistoryLevelOne").style.display = "flex";
-		document.getElementById("next_question_button_text").innerHTML = "Następne Pytanie";
+		const nextAnswButtTitle_NP4 = document.getElementsByClassName("next_question_button_text");
+		for (let i = 0; i < nextAnswButtTitle_NP4.length; i++) {
+			nextAnswButtTitle_NP4[i].innerHTML = "Nastepne Pytanie";
+		}
 	}
 	else {
 		
@@ -663,7 +675,10 @@ function quizCategoryHistoryLevelTwoStart() {
 	if (nextQuizHistoryLevelTwoPage == 1) {
 		document.getElementById("QuizHistoryLevelTwoPage1QaA").style.display = "block";
 		document.getElementById("quizBottomPanelHistoryLevelTwo").style.display = "flex";
-		document.getElementById("next_question_button_text").innerHTML = "Następne Pytanie";
+		const nextAnswButtTitle_NP5 = document.getElementsByClassName("next_question_button_text");
+		for (let i = 0; i < nextAnswButtTitle_NP5.length; i++) {
+			nextAnswButtTitle_NP5[i].innerHTML = "Nastepne Pytanie";
+		}
 	}
 	else {
 		
@@ -681,7 +696,10 @@ function quizCategoryHistoryLevelThreeStart() {
 	if (nextQuizHistoryLevelThreePage == 1) {
 		document.getElementById("QuizHistoryLevelThreePage1QaA").style.display = "block";
 		document.getElementById("quizBottomPanelHistoryLevelThree").style.display = "flex";
-		document.getElementById("next_question_button_text").innerHTML = "Następne Pytanie";
+		const nextAnswButtTitle_NP6 = document.getElementsByClassName("next_question_button_text");
+		for (let i = 0; i < nextAnswButtTitle_NP6.length; i++) {
+			nextAnswButtTitle_NP6[i].innerHTML = "Nastepne Pytanie";
+		}
 	}
 	else {
 		
@@ -699,7 +717,10 @@ function quizCategoryTrafficRegulationsLevelOneStart() {
 	if (nextQuizTrafficRegulationsLevelOnePage == 1) {
 		document.getElementById("QuizTrafficRegulationsLevelOnePage1QaA").style.display = "block";
 		document.getElementById("quizBottomPanelTrafficRegulationsLevelOne").style.display = "flex";
-		document.getElementById("next_question_button_text").innerHTML = "Następne Pytanie";
+		const nextAnswButtTitle_NP7 = document.getElementsByClassName("next_question_button_text");
+		for (let i = 0; i < nextAnswButtTitle_NP7.length; i++) {
+			nextAnswButtTitle_NP7[i].innerHTML = "Nastepne Pytanie";
+		}
 	}
 	else {
 		
@@ -717,7 +738,10 @@ function quizCategoryTrafficRegulationsLevelTwoStart() {
 	if (nextQuizTrafficRegulationsLevelTwoPage == 1) {
 		document.getElementById("QuizTrafficRegulationsLevelTwoPage1QaA").style.display = "block";
 		document.getElementById("quizBottomPanelTrafficRegulationsLevelTwo").style.display = "flex";
-		document.getElementById("next_question_button_text").innerHTML = "Następne Pytanie";
+		const nextAnswButtTitle_NP8 = document.getElementsByClassName("next_question_button_text");
+		for (let i = 0; i < nextAnswButtTitle_NP8.length; i++) {
+			nextAnswButtTitle_NP8[i].innerHTML = "Nastepne Pytanie";
+		}
 	}
 	else {
 		
@@ -735,7 +759,10 @@ function quizCategoryTrafficRegulationsLevelThreeStart() {
 	if (nextQuizTrafficRegulationsLevelThreePage == 1) {
 		document.getElementById("QuizTrafficRegulationsLevelThreePage1QaA").style.display = "block";
 		document.getElementById("quizBottomPanelTrafficRegulationsLevelThree").style.display = "flex";
-		document.getElementById("next_question_button_text").innerHTML = "Następne Pytanie";
+		const nextAnswButtTitle_NP9 = document.getElementsByClassName("next_question_button_text");
+		for (let i = 0; i < nextAnswButtTitle_NP9.length; i++) {
+			nextAnswButtTitle_NP9[i].innerHTML = "Nastepne Pytanie";
+		}
 	}
 	else {
 		
@@ -1014,6 +1041,7 @@ function oneTimeActiveQCatTraffL2False() {
 		document.getElementById("info_Proper_Block_T_L2").style.backgroundColor = "rgba(236,65,65,1.0)";
 		document.getElementById("info_Proper_Value_T_L2").innerHTML = "Błędna odpowiedź!";
 		document.getElementById("audio_Laugh_8").play();
+		document.getElementById("audio_Laugh_8").volume = 0.5;
     }
 	else {
 		
@@ -1070,7 +1098,7 @@ function nextQuizCountLevelOnePage() {
 		document.getElementById("helpValueOneTimeFPAnswerBackgroundColorBlockade").innerHTML = oneTimeFuncPointAnswerBackgroundColorBlockade;
 		const collectionAnswerContentProperResetBgColor = document.getElementsByClassName("answer-content-proper");
 		for (let i = 0; i < collectionAnswerContentProperResetBgColor.length; i++) {
-			collectionAnswerContentProperResetBgColor[i].style.backgroundColor = "rgba(154,129,228,1.0)";
+			collectionAnswerContentProperResetBgColor[i].style.backgroundColor = "hsl(227,100%,71%)";
 		}
 		document.getElementById("info_Proper_Block_C_L1").style.backgroundColor = "rgba(236,148,65,1.0)";
 		document.getElementById("info_Proper_Value_C_L1").innerHTML = "Wybierz poprawną odpowiedź!";
@@ -1153,7 +1181,10 @@ function nextQuizCountLevelOnePage() {
 			else if (nextQuizCountriesLevelOnePage == 20) {
 				document.getElementById("QuizCountriesLevelOnePage19QaA").style.display = "none";
 				document.getElementById("QuizCountriesLevelOnePage20QaA").style.display = "block";
-				document.getElementById("next_question_button_text").innerHTML = "Podsumowanie";
+				const nextAnswButtTitle_P1 = document.getElementsByClassName("next_question_button_text");
+				for (let i = 0; i < nextAnswButtTitle_P1.length; i++) {
+					nextAnswButtTitle_P1[i].innerHTML = "Podsumowanie";
+				}
 			}
 			else if (nextQuizCountriesLevelOnePage == 21) {
 				backgroundMusic.pause();
@@ -1403,7 +1434,7 @@ function nextQuizCountLevelTwoPage() {
 		document.getElementById("helpValueOneTimeFPAnswerBackgroundColorBlockade").innerHTML = oneTimeFuncPointAnswerBackgroundColorBlockade;
 		const collectionAnswerContentProperResetBgColor = document.getElementsByClassName("answer-content-proper");
 		for (let i = 0; i < collectionAnswerContentProperResetBgColor.length; i++) {
-			collectionAnswerContentProperResetBgColor[i].style.backgroundColor = "rgba(154,129,228,1.0)";
+			collectionAnswerContentProperResetBgColor[i].style.backgroundColor = "hsl(227,100%,71%)";
 		}
 		document.getElementById("info_Proper_Block_C_L2").style.backgroundColor = "rgba(236,148,65,1.0)";
 		document.getElementById("info_Proper_Value_C_L2").innerHTML = "Wybierz poprawną odpowiedź!";
@@ -1494,7 +1525,10 @@ function nextQuizCountLevelTwoPage() {
 			else if (nextQuizCountriesLevelTwoPage == 22) {
 				document.getElementById("QuizCountriesLevelTwoPage21QaA").style.display = "none";
 				document.getElementById("QuizCountriesLevelTwoPage22QaA").style.display = "block";
-				document.getElementById("next_question_button_text").innerHTML = "Podsumowanie";
+				const nextAnswButtTitle_P2 = document.getElementsByClassName("next_question_button_text");
+				for (let i = 0; i < nextAnswButtTitle_P2.length; i++) {
+					nextAnswButtTitle_P2[i].innerHTML = "Podsumowanie";
+				}
 			}
 			else if (nextQuizCountriesLevelTwoPage == 23) {
 				backgroundMusic.pause();
@@ -1744,7 +1778,7 @@ function nextQuizCountLevelThreePage() {
 		document.getElementById("helpValueOneTimeFPAnswerBackgroundColorBlockade").innerHTML = oneTimeFuncPointAnswerBackgroundColorBlockade;
 		const collectionAnswerContentProperResetBgColor = document.getElementsByClassName("answer-content-proper");
 		for (let i = 0; i < collectionAnswerContentProperResetBgColor.length; i++) {
-			collectionAnswerContentProperResetBgColor[i].style.backgroundColor = "rgba(154,129,228,1.0)";
+			collectionAnswerContentProperResetBgColor[i].style.backgroundColor = "hsl(227,100%,71%)";
 		}
 		document.getElementById("info_Proper_Block_C_L3").style.backgroundColor = "rgba(236,148,65,1.0)";
 		document.getElementById("info_Proper_Value_C_L3").innerHTML = "Wybierz poprawną odpowiedź!";
@@ -1843,7 +1877,10 @@ function nextQuizCountLevelThreePage() {
 			else if (nextQuizCountriesLevelThreePage == 24) {
 				document.getElementById("QuizCountriesLevelThreePage23QaA").style.display = "none";
 				document.getElementById("QuizCountriesLevelThreePage24QaA").style.display = "block";
-				document.getElementById("next_question_button_text").innerHTML = "Podsumowanie";
+				const nextAnswButtTitle_P3 = document.getElementsByClassName("next_question_button_text");
+				for (let i = 0; i < nextAnswButtTitle_P3.length; i++) {
+					nextAnswButtTitle_P3[i].innerHTML = "Podsumowanie";
+				}
 			}
 			else if (nextQuizCountriesLevelThreePage == 25) {
 				backgroundMusic.pause();
@@ -2087,7 +2124,7 @@ function nextQuizHisLevelOnePage() {
 		document.getElementById("helpValueOneTimeFPAnswerBackgroundColorBlockade").innerHTML = oneTimeFuncPointAnswerBackgroundColorBlockade;
 		const collectionAnswerContentProperResetBgColor = document.getElementsByClassName("answer-content-proper");
 		for (let i = 0; i < collectionAnswerContentProperResetBgColor.length; i++) {
-			collectionAnswerContentProperResetBgColor[i].style.backgroundColor = "rgba(154,129,228,1.0)";
+			collectionAnswerContentProperResetBgColor[i].style.backgroundColor = "hsl(227,100%,71%)";
 		}
 		document.getElementById("info_Proper_Block_H_L1").style.backgroundColor = "rgba(236,148,65,1.0)";
 		document.getElementById("info_Proper_Value_H_L1").innerHTML = "Wybierz poprawną odpowiedź!";
@@ -2162,6 +2199,10 @@ function nextQuizHisLevelOnePage() {
 			else if (nextQuizHistoryLevelOnePage == 18) {
 				document.getElementById("QuizHistoryLevelOnePage17QaA").style.display = "none";
 				document.getElementById("QuizHistoryLevelOnePage18QaA").style.display = "block";
+				const nextAnswButtTitle_P4 = document.getElementsByClassName("next_question_button_text");
+				for (let i = 0; i < nextAnswButtTitle_P4.length; i++) {
+					nextAnswButtTitle_P4[i].innerHTML = "Podsumowanie";
+				}
 			}
 			else if (nextQuizHistoryLevelOnePage == 19) {
 				backgroundMusic.pause();
@@ -2412,7 +2453,7 @@ function nextQuizHisLevelTwoPage() {
 		document.getElementById("helpValueOneTimeFPAnswerBackgroundColorBlockade").innerHTML = oneTimeFuncPointAnswerBackgroundColorBlockade;
 		const collectionAnswerContentProperResetBgColor = document.getElementsByClassName("answer-content-proper");
 		for (let i = 0; i < collectionAnswerContentProperResetBgColor.length; i++) {
-			collectionAnswerContentProperResetBgColor[i].style.backgroundColor = "rgba(154,129,228,1.0)";
+			collectionAnswerContentProperResetBgColor[i].style.backgroundColor = "hsl(227,100%,71%)";
 		}
 		document.getElementById("info_Proper_Block_H_L2").style.backgroundColor = "rgba(236,148,65,1.0)";
 		document.getElementById("info_Proper_Value_H_L2").innerHTML = "Wybierz poprawną odpowiedź!";
@@ -2495,7 +2536,10 @@ function nextQuizHisLevelTwoPage() {
 			else if (nextQuizHistoryLevelTwoPage == 20) {
 				document.getElementById("QuizHistoryLevelTwoPage19QaA").style.display = "none";
 				document.getElementById("QuizHistoryLevelTwoPage20QaA").style.display = "block";
-				document.getElementById("next_question_button_text").innerHTML = "Podsumowanie";
+				const nextAnswButtTitle_P5 = document.getElementsByClassName("next_question_button_text");
+				for (let i = 0; i < nextAnswButtTitle_P5.length; i++) {
+					nextAnswButtTitle_P5[i].innerHTML = "Podsumowanie";
+				}
 			}
 			else if (nextQuizHistoryLevelTwoPage == 21) {
 				backgroundMusic.pause();
@@ -2746,7 +2790,7 @@ function nextQuizHisLevelThreePage() {
 		document.getElementById("helpValueOneTimeFPAnswerBackgroundColorBlockade").innerHTML = oneTimeFuncPointAnswerBackgroundColorBlockade;
 		const collectionAnswerContentProperResetBgColor = document.getElementsByClassName("answer-content-proper");
 		for (let i = 0; i < collectionAnswerContentProperResetBgColor.length; i++) {
-			collectionAnswerContentProperResetBgColor[i].style.backgroundColor = "rgba(154,129,228,1.0)";
+			collectionAnswerContentProperResetBgColor[i].style.backgroundColor = "hsl(227,100%,71%)";
 		}
 		document.getElementById("info_Proper_Block_H_L3").style.backgroundColor = "rgba(236,148,65,1.0)";
 		document.getElementById("info_Proper_Value_H_L3").innerHTML = "Wybierz poprawną odpowiedź!";
@@ -2837,7 +2881,10 @@ function nextQuizHisLevelThreePage() {
 			else if (nextQuizHistoryLevelThreePage == 22) {
 				document.getElementById("QuizHistoryLevelThreePage21QaA").style.display = "none";
 				document.getElementById("QuizHistoryLevelThreePage22QaA").style.display = "block";
-				document.getElementById("next_question_button_text").innerHTML = "Podsumowanie";
+				const nextAnswButtTitle_P6 = document.getElementsByClassName("next_question_button_text");
+				for (let i = 0; i < nextAnswButtTitle_P6.length; i++) {
+					nextAnswButtTitle_P6[i].innerHTML = "Podsumowanie";
+				}
 			}
 			else if (nextQuizHistoryLevelThreePage == 23) {
 				backgroundMusic.pause();
@@ -3081,7 +3128,7 @@ function nextQuizTraffLevelOnePage() {
 		document.getElementById("helpValueOneTimeFPAnswerBackgroundColorBlockade").innerHTML = oneTimeFuncPointAnswerBackgroundColorBlockade;
 		const collectionAnswerContentProperResetBgColor = document.getElementsByClassName("answer-content-proper");
 		for (let i = 0; i < collectionAnswerContentProperResetBgColor.length; i++) {
-			collectionAnswerContentProperResetBgColor[i].style.backgroundColor = "rgba(154,129,228,1.0)";
+			collectionAnswerContentProperResetBgColor[i].style.backgroundColor = "hsl(227,100%,71%)";
 		}
 		document.getElementById("info_Proper_Block_T_L1").style.backgroundColor = "rgba(236,148,65,1.0)";
 		document.getElementById("info_Proper_Value_T_L1").innerHTML = "Wybierz poprawną odpowiedź!";
@@ -3172,7 +3219,10 @@ function nextQuizTraffLevelOnePage() {
 			else if (nextQuizTrafficRegulationsLevelOnePage == 22) {
 				document.getElementById("QuizTrafficRegulationsLevelOnePage21QaA").style.display = "none";
 				document.getElementById("QuizTrafficRegulationsLevelOnePage22QaA").style.display = "block";
-				document.getElementById("next_question_button_text").innerHTML = "Podsumowanie";
+				const nextAnswButtTitle_P7 = document.getElementsByClassName("next_question_button_text");
+				for (let i = 0; i < nextAnswButtTitle_P7.length; i++) {
+					nextAnswButtTitle_P7[i].innerHTML = "Podsumowanie";
+				}
 			}
 			else if (nextQuizTrafficRegulationsLevelOnePage == 23) {
 				backgroundMusic.pause();
@@ -3423,7 +3473,7 @@ function nextQuizTraffLevelTwoPage() {
 		document.getElementById("helpValueOneTimeFPAnswerBackgroundColorBlockade").innerHTML = oneTimeFuncPointAnswerBackgroundColorBlockade;
 		const collectionAnswerContentProperResetBgColor = document.getElementsByClassName("answer-content-proper");
 		for (let i = 0; i < collectionAnswerContentProperResetBgColor.length; i++) {
-			collectionAnswerContentProperResetBgColor[i].style.backgroundColor = "rgba(154,129,228,1.0)";
+			collectionAnswerContentProperResetBgColor[i].style.backgroundColor = "hsl(227,100%,71%)";
 		}
 		document.getElementById("info_Proper_Block_T_L2").style.backgroundColor = "rgba(236,148,65,1.0)";
 		document.getElementById("info_Proper_Value_T_L2").innerHTML = "Wybierz poprawną odpowiedź!";
@@ -3526,7 +3576,10 @@ function nextQuizTraffLevelTwoPage() {
 			else if (nextQuizTrafficRegulationsLevelTwoPage == 25) {
 				document.getElementById("QuizTrafficRegulationsLevelTwoPage24QaA").style.display = "none";
 				document.getElementById("QuizTrafficRegulationsLevelTwoPage25QaA").style.display = "block";
-				document.getElementById("next_question_button_text").innerHTML = "Podsumowanie";
+				const nextAnswButtTitle_P8 = document.getElementsByClassName("next_question_button_text");
+				for (let i = 0; i < nextAnswButtTitle_P8.length; i++) {
+					nextAnswButtTitle_P8[i].innerHTML = "Podsumowanie";
+				}
 			}
 			else if (nextQuizTrafficRegulationsLevelTwoPage == 26) {
 				backgroundMusic.pause();
@@ -3777,7 +3830,7 @@ function nextQuizTraffLevelThreePage() {
 		document.getElementById("helpValueOneTimeFPAnswerBackgroundColorBlockade").innerHTML = oneTimeFuncPointAnswerBackgroundColorBlockade;
 		const collectionAnswerContentProperResetBgColor = document.getElementsByClassName("answer-content-proper");
 		for (let i = 0; i < collectionAnswerContentProperResetBgColor.length; i++) {
-			collectionAnswerContentProperResetBgColor[i].style.backgroundColor = "rgba(154,129,228,1.0)";
+			collectionAnswerContentProperResetBgColor[i].style.backgroundColor = "hsl(227,100%,71%)";
 		}
 		document.getElementById("info_Proper_Block_T_L3").style.backgroundColor = "rgba(236,148,65,1.0)";
 		document.getElementById("info_Proper_Value_T_L3").innerHTML = "Wybierz poprawną odpowiedź!";
@@ -3892,7 +3945,10 @@ function nextQuizTraffLevelThreePage() {
 			else if (nextQuizTrafficRegulationsLevelThreePage == 28) {
 				document.getElementById("QuizTrafficRegulationsLevelThreePage27QaA").style.display = "none";
 				document.getElementById("QuizTrafficRegulationsLevelThreePage28QaA").style.display = "block";
-				document.getElementById("next_question_button_text").innerHTML = "Podsumowanie";
+				const nextAnswButtTitle_P9 = document.getElementsByClassName("next_question_button_text");
+				for (let i = 0; i < nextAnswButtTitle_P9.length; i++) {
+					nextAnswButtTitle_P9[i].innerHTML = "Podsumowanie";
+				}
 			}
 			else if (nextQuizTrafficRegulationsLevelThreePage == 29) {
 				backgroundMusic.pause();
@@ -4183,7 +4239,7 @@ const FtAOutBgColor = document.getElementsByClassName("answer-content-proper-fou
 function FirstAnswerOnmouseover() {
 	if (oneTimeFuncPointAnswerBlockade == 0) {
 		for (let i = 0; i < FAOverBgColor.length; i++) {
-			FAOverBgColor[i].style.backgroundColor = "rgba(160,140,230,1.0)";
+			FAOverBgColor[i].style.backgroundColor = "hsl(227,100%,75%)";
 			FAOverBgColor[i].style.cursor = "pointer";
 		}
 	}
@@ -4196,7 +4252,7 @@ function FirstAnswerOnmouseover() {
 function FirstAnswerOnmouseout() {
 	if (oneTimeFuncPointAnswerBlockade == 0) {
 		for (let i = 0; i < FAOutBgColor.length; i++) {
-			FAOutBgColor[i].style.backgroundColor = "rgba(154,129,228,1.0)";
+			FAOutBgColor[i].style.backgroundColor = "hsl(227,100%,71%)";
 			FAOutBgColor[i].style.cursor = "default";
 		}
 	}
@@ -4210,7 +4266,7 @@ function FirstAnswerOnmouseout() {
 function SecondAnswerOnmouseover() {
 	if (oneTimeFuncPointAnswerBlockade == 0) {
 		for (let i = 0; i < SAOverBgColor.length; i++) {
-			SAOverBgColor[i].style.backgroundColor = "rgba(160,140,230,1.0)";
+			SAOverBgColor[i].style.backgroundColor = "hsl(227,100%,75%)";
 			SAOverBgColor[i].style.cursor = "pointer";
 		}
 	}
@@ -4223,7 +4279,7 @@ function SecondAnswerOnmouseover() {
 function SecondAnswerOnmouseout() {
 	if (oneTimeFuncPointAnswerBlockade == 0) {
 		for (let i = 0; i < SAOutBgColor.length; i++) {
-			SAOutBgColor[i].style.backgroundColor = "rgba(154,129,228,1.0)";
+			SAOutBgColor[i].style.backgroundColor = "hsl(227,100%,71%)";
 			SAOutBgColor[i].style.cursor = "default";
 		}
 	}
@@ -4237,7 +4293,7 @@ function SecondAnswerOnmouseout() {
 function ThirdAnswerOnmouseover() {
 	if (oneTimeFuncPointAnswerBlockade == 0) {
 		for (let i = 0; i < TAOverBgColor.length; i++) {
-			TAOverBgColor[i].style.backgroundColor = "rgba(160,140,230,1.0)";
+			TAOverBgColor[i].style.backgroundColor = "hsl(227,100%,75%)";
 			TAOverBgColor[i].style.cursor = "pointer";
 		}
 	}
@@ -4250,7 +4306,7 @@ function ThirdAnswerOnmouseover() {
 function ThirdAnswerOnmouseout() {
 	if (oneTimeFuncPointAnswerBlockade == 0) {
 		for (let i = 0; i < TAOutBgColor.length; i++) {
-			TAOutBgColor[i].style.backgroundColor = "rgba(154,129,228,1.0)";
+			TAOutBgColor[i].style.backgroundColor = "hsl(227,100%,71%)";
 			TAOutBgColor[i].style.cursor = "default";
 		}
 	}
@@ -4264,7 +4320,7 @@ function ThirdAnswerOnmouseout() {
 function FourthAnswerOnmouseover() {
 	if (oneTimeFuncPointAnswerBlockade == 0) {
 		for (let i = 0; i < FtAOverBgColor.length; i++) {
-			FtAOverBgColor[i].style.backgroundColor = "rgba(160,140,230,1.0)";
+			FtAOverBgColor[i].style.backgroundColor = "hsl(227,100%,75%)";
 			FtAOverBgColor[i].style.cursor = "pointer";
 		}
 	}
@@ -4277,7 +4333,7 @@ function FourthAnswerOnmouseover() {
 function FoutrhAnswerOnmouseout() {
 	if (oneTimeFuncPointAnswerBlockade == 0) {
 		for (let i = 0; i < FtAOutBgColor.length; i++) {
-			FtAOutBgColor[i].style.backgroundColor = "rgba(154,129,228,1.0)";
+			FtAOutBgColor[i].style.backgroundColor = "hsl(227,100%,71%)";
 			FtAOutBgColor[i].style.cursor = "default";
 		}
 	}
