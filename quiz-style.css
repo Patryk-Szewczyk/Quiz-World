@@ -913,7 +913,7 @@ body {
 					    	display: flex;
 					    	justify-content: flex-end;
 					    	align-items: center;
-					    	background-color: rgba(70,124,208,1.0); /*rgba(247,85,145,1.0)*/
+					    	background-color: hsl(213,80%,44%); /*rgba(247,85,145,1.0)*/
 					    	color: rgba(255,255,255,1.0);
 					    	font-family: Verdana;
 					    	font-size: 110%;
@@ -993,7 +993,7 @@ body {
 									display: flex;
 									justify-content: center;
 									align-items: center;
-					            	background-color: rgba(70,124,208,1.0); /*rbga(247,85,145,1.0)*/
+					            	background-color: hsl(213,80%,44%); /*rbga(247,85,145,1.0)*/
 									color: rgba(255,255,255,1.0);
 					            	font-family: Verdana;
 					            	font-size: 110%;
@@ -1007,7 +1007,7 @@ body {
 					            	display: flex;
 									justify-content: flex-start;
 									align-items: center;
-					            	background-color: rgba(154,129,228,1.0); /*rgba(154,129,228,1.0)*/
+					            	background-color: hsl(227,100%,71%); /*rgba(154,129,228,1.0)*/
 									color: rgba(255,255,255,1.0);
 					            	font-family: Verdana;
 					            	font-size: 105%; /*Unikaj dwóch linijek!*/
@@ -1069,17 +1069,17 @@ body {
 						display: none; /*flex*/
 						justify-content: flex-start;
 						align-items: center;
-						background-color: rgba(247,85,145,1.0);
+						background-color: hsl(213,80%,44%); /*rgba(257,85,145,1.0)*/
 						color: rgba(255,255,255,1.0);
 						font-family: Verdana;
 						font-size: 110%;
 					}
 					.next-question-proper:hover {
-						background-color: rgba(248,109,160,1.0);
+						background-color: hsl(213,80%,49%);
 						cursor: pointer;
 					}
 					.next-question-proper:active {
-						background-color: rgba(249,134,176,1.0);
+						background-color: hsl(213,80%,54%);
 					}
 		
 		/*Quiz World: Introduction*/
@@ -1632,4 +1632,5 @@ body {
 	position: absolute;
 	top: 30px;
 	font-size: 90%;
+	display: none;
 }
