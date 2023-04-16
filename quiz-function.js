@@ -20,8 +20,6 @@ function zoom() {
 //var userPercentScoreQuizWorldProgress = 0;
 //document.getElementById("completeQuizProgress").innerHTML = parseFloat(userPercentScoreQuizWorldProgress).toFixed(1) + "%";
 
-//alert("Aplikacja Quiz World nie jest jescze ukończona. Aktualnie jest ukończona w około 90%. Są gotowe wszystkie testy z kategorii: Geografia i pierwszy z kategorii: Historia. Pomimo tego Quiz World ma zrobione wszystkie funkcje, więc można z niego korzystać. Z lewej strony są liczniki pomocniecze (przy procesie programowania, które po ukończniu pracy zostaną zakryte).");
-
 //Postęp osiągnięć:
 var AchivAmount = 5; // Ilość osiągnięć
 //var userPercentScoreAchivements = 0;
@@ -158,8 +156,8 @@ var userPercentScoreQCountLevThree = 0;
 //document.getElementById("qHisAllLevelsProg").innerHTML = parseFloat(userPercentScoreQHisAllLevelsProgress).toFixed(1) + "%";
 
 //Historia: odblokowanie poziomów:
-var HisL2Target = 50; // ilość wymaganych % do odblokowania testu: History - Level 2
-var HisL3Target = 75; // ilość wymaganych % do odblokowania testu: History - Level 3
+var HisL2Target = 40; // ilość wymaganych % do odblokowania testu: History - Level 2
+var HisL3Target = 65; // ilość wymaganych % do odblokowania testu: History - Level 3
 
 //Historia - poziom 1:
 var qHisLevOneQuesAmount = 18;   // 18
@@ -255,8 +253,8 @@ var userPercentScoreQHisLevThree = 0;
 //document.getElementById("qTraffAllLevelsProg").innerHTML = parseFloat(userPercentScoreQTraffAllLevelsProgress).toFixed(1) + "%";
 
 //Prawo jazdy: odblokowanie poziomów:
-var TraffL2Target = 90; // ilość wymaganych % do odblokowania testu: History - Level 2
-var TraffL3Target = 95; // ilość wymaganych % do odblokowania testu: History - Level 3
+var TraffL2Target = 65; // ilość wymaganych % do odblokowania testu: History - Level 2
+var TraffL3Target = 85; // ilość wymaganych % do odblokowania testu: History - Level 3
 
 //Prawo jazdy - poziom 1:
 var qTraffLevOneQuesAmount = 22;   // 22
@@ -1041,7 +1039,7 @@ function oneTimeActiveQCatTraffL2False() {
 		document.getElementById("info_Proper_Block_T_L2").style.backgroundColor = "rgba(236,65,65,1.0)";
 		document.getElementById("info_Proper_Value_T_L2").innerHTML = "Błędna odpowiedź!";
 		document.getElementById("audio_Laugh_8").play();
-		document.getElementById("audio_Laugh_8").volume = 0.5;
+		document.getElementById("audio_Laugh_8").volume = 0.4;
     }
 	else {
 		
@@ -1227,6 +1225,7 @@ function nextQuizCountLevelOnePage() {
 					document.getElementById("qCountLev1BestScore").innerHTML = userBestScoreQCountLevOne;
 				}
 				else {
+					
 				}
 				if (Number(window.localStorage.getItem("localStorage_userPercentScoreQCountLevOneProgress")) >= CountL2Target) {
 					document.getElementById("catCountL2Block").style.display = "none";
@@ -1235,6 +1234,9 @@ function nextQuizCountLevelOnePage() {
 				else {
 					
 				}
+				// MEGA ULTRA HIPER ważna linijka. Tutaj w tej instrukcji warunkowej nie jest potrzebna i nie wiem dlaczego..., 
+				// ale zawsze trzeba ją umiećcić, gdyż kasuje zminną, która jest podstawiana do obliczeń, które to z kolei idą do localStorage:
+				userScoreQuizCountriesLevelOne = (userScoreQuizCountriesLevelOne * 0);
 				// +TUTAJ+ // userPercentScoreQuizWorldProgress
 				// Nie trzeba dalej nic zmieniać, przy kopiowaniu tej funkcji i zmienianiu nazw zmiennych do nowego testu.
 				if (Number(window.localStorage.getItem("localStorage_userPercentScoreQuizWorldProgress")) >= Achiv1Target) {
@@ -1571,6 +1573,7 @@ function nextQuizCountLevelTwoPage() {
 					document.getElementById("qCountLev2BestScore").innerHTML = userBestScoreQCountLevTwo;
 				}
 				else {
+					
 				}
 				if (Number(window.localStorage.getItem("localStorage_userPercentScoreQCountLevTwoProgress")) >= CountL3Target) {
 					document.getElementById("catCountL3Block").style.display = "none";
@@ -1579,6 +1582,9 @@ function nextQuizCountLevelTwoPage() {
 				else {
 					
 				}
+				// MEGA ULTRA HIPER ważna linijka. Tutaj w tej instrukcji warunkowej nie jest potrzebna i nie wiem dlaczego..., 
+				// ale zawsze trzeba ją umiećcić, gdyż kasuje zminną, która jest podstawiana do obliczeń, które to z kolei idą do localStorage:
+				userScoreQuizCountriesLevelTwo = (userScoreQuizCountriesLevelTwo * 0);
 				// +TUTAJ+ // userPercentScoreQuizWorldProgress
 				// Nie trzeba dalej nic zmieniać, przy kopiowaniu tej funkcji i zmienianiu nazw zmiennych do nowego testu.
 				if (Number(window.localStorage.getItem("localStorage_userPercentScoreQuizWorldProgress")) >= Achiv1Target) {
@@ -1925,6 +1931,9 @@ function nextQuizCountLevelThreePage() {
 				else {
 					
 				}
+				// MEGA ULTRA HIPER ważna linijka. Tutaj w tej instrukcji warunkowej nie jest potrzebna i nie wiem dlaczego..., 
+				// ale zawsze trzeba ją umiećcić, gdyż kasuje zminną, która jest podstawiana do obliczeń, które to z kolei idą do localStorage:
+				userScoreQuizCountriesLevelThree = (userScoreQuizCountriesLevelThree * 0);
 				// +TUTAJ+ // userPercentScoreQuizWorldProgress
 				// Nie trzeba dalej nic zmieniać, przy kopiowaniu tej funkcji i zmienianiu nazw zmiennych do nowego testu.
 				if (Number(window.localStorage.getItem("localStorage_userPercentScoreQuizWorldProgress")) >= Achiv1Target) {
@@ -2254,6 +2263,9 @@ function nextQuizHisLevelOnePage() {
 				else {
 					
 				}
+				// MEGA ULTRA HIPER ważna linijka. Tutaj w tej instrukcji warunkowej nie jest potrzebna i nie wiem dlaczego..., 
+				// ale zawsze trzeba ją umiećcić, gdyż kasuje zminną, która jest podstawiana do obliczeń, które to z kolei idą do localStorage:
+				userScoreQuizHistoryLevelOne = (userScoreQuizHistoryLevelOne * 0);
 				// +TUTAJ+ // userPercentScoreQuizWorldProgress
 				// Nie trzeba dalej nic zmieniać, przy kopiowaniu tej funkcji i zmienianiu nazw zmiennych do nowego testu.
 				if (Number(window.localStorage.getItem("localStorage_userPercentScoreQuizWorldProgress")) >= Achiv1Target) {
@@ -2591,6 +2603,9 @@ function nextQuizHisLevelTwoPage() {
 				else {
 					
 				}
+				// MEGA ULTRA HIPER ważna linijka. Tutaj w tej instrukcji warunkowej nie jest potrzebna i nie wiem dlaczego..., 
+				// ale zawsze trzeba ją umiećcić, gdyż kasuje zminną, która jest podstawiana do obliczeń, które to z kolei idą do localStorage:
+				userScoreQuizHistoryLevelTwo = (userScoreQuizHistoryLevelTwo * 0);
 				// +TUTAJ+ // userPercentScoreQuizWorldProgress
 				// Nie trzeba dalej nic zmieniać, przy kopiowaniu tej funkcji i zmienianiu nazw zmiennych do nowego testu.
 				if (Number(window.localStorage.getItem("localStorage_userPercentScoreQuizWorldProgress")) >= Achiv1Target) {
@@ -2929,6 +2944,9 @@ function nextQuizHisLevelThreePage() {
 				else {
 					
 				}
+				// MEGA ULTRA HIPER ważna linijka. Tutaj w tej instrukcji warunkowej nie jest potrzebna i nie wiem dlaczego..., 
+				// ale zawsze trzeba ją umiećcić, gdyż kasuje zminną, która jest podstawiana do obliczeń, które to z kolei idą do localStorage:
+				userScoreQuizHistoryLevelThree = (userScoreQuizHistoryLevelThree * 0);
 				// +TUTAJ+ // userPercentScoreQuizWorldProgress
 				// Nie trzeba dalej nic zmieniać, przy kopiowaniu tej funkcji i zmienianiu nazw zmiennych do nowego testu.
 				if (Number(window.localStorage.getItem("localStorage_userPercentScoreQuizWorldProgress")) >= Achiv1Target) {
@@ -3116,7 +3134,7 @@ function nextQuizHisLevelThreePage() {
 	}
 }
 
-// Traffic Regulations - Level 1:
+// Traffic Regulations - Level 1:    TrafficRegulations   Traff
 function nextQuizTraffLevelOnePage() {
 	document.getElementById("nextQuizTrafficRegulationsLevelOnePageBlock").style.display = "none";
 	if (oneTimeFuncPointScoreBlockade == 1 && oneTimeFuncPointAnswerBlockade == 1) {
@@ -3237,23 +3255,23 @@ function nextQuizTraffLevelOnePage() {
 				// Najwyższy wynik danego testu - localStorage:
 				// Zachowanie najwyższych wartości:
 				if (userScoreQuizTrafficRegulationsLevelOne > Number(window.localStorage.getItem("localstorage_userBestScoreQTraffLevOne"))) {
-					// Najlepszy wynik 1 poziomu, kategorii - Prawo jazdy:
+					//Najlepszy wynik 2 poziomu, kategorii - Państwa:
 					var userBestScoreQTraffLevOne = Number(window.localStorage.getItem("localstorage_userBestScoreQTraffLevOne"));
 					userBestScoreQTraffLevOne = ((userBestScoreQTraffLevOne * 0) + userScoreQuizTrafficRegulationsLevelOne);
 					window.localStorage.setItem("localstorage_userBestScoreQTraffLevOne", userBestScoreQTraffLevOne);
 					document.getElementById("qTraffLev1BestScore").innerHTML = userBestScoreQTraffLevOne;
-					// Postęp 1 poziomu, kategorii - Prawo jazdy://    parseFloat(ZMIENNA).toFixed(0)
-					var userPercentScoreQTraffLevOneProgress = Number(window.localStorage.getItem("localStorage_userPercentScoreQTraffLevOneProgress")); //Postęp danego testu:
+					// Postęp 2 poziomu, kategorii - Państwa://    parseFloat(ZMIENNA).toFixed(0)
+					var userPercentScoreQTraffLevOneProgress = Number(window.localStorage.getItem("localStorage_userPercentScoreQTraffLevOneProgress"));
 					userPercentScoreQTraffLevOneProgress = ((100/qTraffLevOneQuesAmount) * Number(window.localStorage.getItem("localstorage_userBestScoreQTraffLevOne")));
 					window.localStorage.setItem("localStorage_userPercentScoreQTraffLevOneProgress", userPercentScoreQTraffLevOneProgress);
 					document.getElementById("qTraffLev1Prog").innerHTML = parseFloat(userPercentScoreQTraffLevOneProgress).toFixed(0) + "%";
-		            // Całkowity postęp kategorii - Prawo jazdy:
+					// Całkowity postęp kategorii - Państwa:
 					var userPercentScoreQTraffAllLevelsProgress = Number(window.localStorage.getItem("localStorage_userPercentScoreQTraffAllLevelsProgress"));
 	                userPercentScoreQTraffAllLevelsProgress = ((userPercentScoreQTraffAllLevelsProgress * 0) + ((Number(window.localStorage.getItem("localStorage_userPercentScoreQTraffLevOneProgress")) + Number(window.localStorage.getItem("localStorage_userPercentScoreQTraffLevTwoProgress")) + Number(window.localStorage.getItem("localStorage_userPercentScoreQTraffLevThreeProgress"))) / 3));
 					window.localStorage.setItem("localStorage_userPercentScoreQTraffAllLevelsProgress", userPercentScoreQTraffAllLevelsProgress);
                     document.getElementById("qTraffAllLevelsProg").innerHTML = parseFloat(userPercentScoreQTraffAllLevelsProgress).toFixed(0) + "%";
-					// Całkowity postęp całego Quiz World:
-                    var userPercentScoreQuizWorldProgress = Number(window.localStorage.getItem("localStorage_userPercentScoreQuizWorldProgress"));
+                    // Całkowity postęp całego Quiz World:
+					var userPercentScoreQuizWorldProgress = Number(window.localStorage.getItem("localStorage_userPercentScoreQuizWorldProgress"));
 					userPercentScoreQuizWorldProgress = ((userPercentScoreQuizWorldProgress * 0) + ((Number(window.localStorage.getItem("localStorage_userPercentScoreQCountAllLevelsProgress")) + Number(window.localStorage.getItem("localStorage_userPercentScoreQHisAllLevelsProgress")) + Number(window.localStorage.getItem("localStorage_userPercentScoreQTraffAllLevelsProgress"))) / 3));
                     window.localStorage.setItem("localStorage_userPercentScoreQuizWorldProgress", userPercentScoreQuizWorldProgress);
 					document.getElementById("completeQuizProgress").innerHTML = parseFloat(userPercentScoreQuizWorldProgress).toFixed(0) + "%";
@@ -3274,6 +3292,9 @@ function nextQuizTraffLevelOnePage() {
 				else {
 					
 				}
+				// MEGA ULTRA HIPER ważna linijka, tylko w tej kategorii, ponieważ tylko w niej nie chce mi się kasować najlepszy wynik, 
+				// na którym są robione przyszłe operacje:
+				userScoreQuizTrafficRegulationsLevelOne = (userScoreQuizTrafficRegulationsLevelOne * 0);
 				// +TUTAJ+ // userPercentScoreQuizWorldProgress
 				// Nie trzeba dalej nic zmieniać, przy kopiowaniu tej funkcji i zmienianiu nazw zmiennych do nowego testu.
 				if (Number(window.localStorage.getItem("localStorage_userPercentScoreQuizWorldProgress")) >= Achiv1Target) {
@@ -3321,7 +3342,7 @@ function nextQuizTraffLevelOnePage() {
 						    alert('Zdobyłeś osiągnięcie: "Przeciętny". Do odblokowania tego osiągnięcia było wymagane uzyskanie 50% całkowitego postępu Quiz World.');
 					    }
 					    else if (Number(window.localStorage.getItem("localStorage_Achiv_2_alert_point")) == 3) {
-						    var Achiv_2_alert_point = Number(window.localStorage.getItem("localStorage_Achiv_2_alert_point"));
+							var Achiv_2_alert_point = Number(window.localStorage.getItem("localStorage_Achiv_2_alert_point"));
 						    Achiv_2_alert_point = Achiv_2_alert_point - 1;
 							window.localStorage.setItem("localStorage_Achiv_2_alert_point", Achiv_2_alert_point);
 					    }
@@ -3351,7 +3372,7 @@ function nextQuizTraffLevelOnePage() {
 						        alert('Zdobyłeś osiągnięcie: "Wyższa liga". Do odblokowania tego osiągnięcia było wymagane uzyskanie 75% całkowitego postępu Quiz World.');
 					        }
 					        else if (Number(window.localStorage.getItem("localStorage_Achiv_3_alert_point")) == 3) {
-						        var Achiv_3_alert_point = Number(window.localStorage.getItem("localStorage_Achiv_3_alert_point"));
+								var Achiv_3_alert_point = Number(window.localStorage.getItem("localStorage_Achiv_3_alert_point"));
 						        Achiv_3_alert_point = Achiv_3_alert_point - 1;
 								window.localStorage.setItem("localStorage_Achiv_3_alert_point", Achiv_3_alert_point);
 					        }
@@ -3381,7 +3402,7 @@ function nextQuizTraffLevelOnePage() {
 						            alert('Zdobyłeś osiągnięcie: "Ekspert". Do odblokowania tego osiągnięcia było wymagane uzyskanie 90% całkowitego postępu Quiz World.');
 					            }
 					            else if (Number(window.localStorage.getItem("localStorage_Achiv_4_alert_point")) == 3) {
-						            var Achiv_4_alert_point = Number(window.localStorage.getItem("localStorage_Achiv_4_alert_point"));
+									var Achiv_4_alert_point = Number(window.localStorage.getItem("localStorage_Achiv_4_alert_point"));
 						            Achiv_4_alert_point = Achiv_4_alert_point - 1;
 									window.localStorage.setItem("localStorage_Achiv_4_alert_point", Achiv_4_alert_point);
 					            }
@@ -3392,7 +3413,7 @@ function nextQuizTraffLevelOnePage() {
 					            var achiv4value = Number(window.localStorage.getItem("localStorege_achiv4value"));
 					            achiv4value = ((achiv4value * 0) + 1);
 					            window.localStorage.setItem("localStorege_achiv4value", achiv4value); 
-					            //Wzór na obliczenie postępu osiągnięć:
+					            // Wzór na obliczenie postępu osiągnięć:
 					            var userPercentScoreAchivements = Number(window.localStorage.getItem("localStorage_userPercentScoreAchivements"));
 								userPercentScoreAchivements = ((100/AchivAmount) * (Number(window.localStorage.getItem("localStorege_achiv1value")) + Number(window.localStorage.getItem("localStorege_achiv2value")) + Number(window.localStorage.getItem("localStorege_achiv3value")) + Number(window.localStorage.getItem("localStorege_achiv4value")) + Number(window.localStorage.getItem("localStorege_achiv5value"))));
 					            window.localStorage.setItem("localStorage_userPercentScoreAchivements", userPercentScoreAchivements);
@@ -3411,7 +3432,7 @@ function nextQuizTraffLevelOnePage() {
 						                alert('Zdobyłeś osiągnięcie: "Wszechwiedzący". Do odblokowania tego osiągnięcia było wymagane uzyskanie 100% całkowitego postępu Quiz World.');
 					                }
 					                else if (Number(window.localStorage.getItem("localStorage_Achiv_5_alert_point")) == 3) {
-						                var Achiv_5_alert_point = Number(window.localStorage.getItem("localStorage_Achiv_5_alert_point"));
+										var Achiv_5_alert_point = Number(window.localStorage.getItem("localStorage_Achiv_5_alert_point"));
 						                Achiv_5_alert_point = Achiv_5_alert_point - 1;
 										window.localStorage.setItem("localStorage_Achiv_5_alert_point", Achiv_5_alert_point);
 					                }
@@ -3422,7 +3443,7 @@ function nextQuizTraffLevelOnePage() {
 					                var achiv5value = Number(window.localStorage.getItem("localStorege_achiv5value"));
 					                achiv5value = ((achiv5value * 0) + 1);
 					                window.localStorage.setItem("localStorege_achiv5value", achiv5value);
-					                //Wzór na obliczenie postępu osiągnięć:
+					                // Wzór na obliczenie postępu osiągnięć:
 					                var userPercentScoreAchivements = Number(window.localStorage.getItem("localStorage_userPercentScoreAchivements"));
 									userPercentScoreAchivements = ((100/AchivAmount) * (Number(window.localStorage.getItem("localStorege_achiv1value")) + Number(window.localStorage.getItem("localStorege_achiv2value")) + Number(window.localStorage.getItem("localStorege_achiv3value")) + Number(window.localStorage.getItem("localStorege_achiv4value")) + Number(window.localStorage.getItem("localStorege_achiv5value"))));
 					                window.localStorage.setItem("localStorage_userPercentScoreAchivements", userPercentScoreAchivements);
@@ -3631,6 +3652,9 @@ function nextQuizTraffLevelTwoPage() {
 				else {
 					
 				}
+				// MEGA ULTRA HIPER ważna linijka, tylko w tej kategorii, ponieważ tylko w niej nie chce mi się kasować najlepszy wynik, 
+				// na którym są robione przyszłe operacje:
+				userScoreQuizTrafficRegulationsLevelTwo = (userScoreQuizTrafficRegulationsLevelTwo * 0);
 				// +TUTAJ+ // userPercentScoreQuizWorldProgress
 				// Nie trzeba dalej nic zmieniać, przy kopiowaniu tej funkcji i zmienianiu nazw zmiennych do nowego testu.
 				if (Number(window.localStorage.getItem("localStorage_userPercentScoreQuizWorldProgress")) >= Achiv1Target) {
@@ -3993,6 +4017,9 @@ function nextQuizTraffLevelThreePage() {
 				else {
 					
 				}
+				// MEGA ULTRA HIPER ważna linijka, tylko w tej kategorii, ponieważ tylko w niej nie chce mi się kasować najlepszy wynik, 
+				// na którym są robione przyszłe operacje:
+				userScoreQuizTrafficRegulationsLevelThree = (userScoreQuizTrafficRegulationsLevelThree * 0);
 				// +TUTAJ+ // userPercentScoreQuizWorldProgress
 				// Nie trzeba dalej nic zmieniać, przy kopiowaniu tej funkcji i zmienianiu nazw zmiennych do nowego testu.
 				if (Number(window.localStorage.getItem("localStorage_userPercentScoreQuizWorldProgress")) >= Achiv1Target) {
